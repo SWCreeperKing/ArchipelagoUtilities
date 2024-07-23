@@ -143,7 +143,7 @@ namespace KaitoKid.ArchipelagoUtilities.Net
                 return Enumerable.Empty<string>();
             }
 
-            return _archipelago.Session.Locations.AllMissingLocations.Select(_archipelago.GetLocationName)
+            return _archipelago.GetSession().Locations.AllMissingLocations.Select(_archipelago.GetLocationName)
                 .Where(x => x != null);
         }
     }

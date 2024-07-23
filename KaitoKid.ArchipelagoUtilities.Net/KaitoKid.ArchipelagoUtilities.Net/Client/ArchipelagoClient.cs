@@ -24,8 +24,6 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Client
         private DataPackageCache _localDataPackage;
 
         private Action _itemReceivedFunction;
-
-        public ArchipelagoSession Session => _session;
         public bool IsConnected { get; private set; }
         protected ISlotData _slotData;
         public Dictionary<string, ScoutedLocation> ScoutedLocations { get; set; }
@@ -385,14 +383,14 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Client
         {
             if (!MakeSureConnected())
             {
-                return Array.Empty<Hint>();
+                return new Hint[0];
             }
 
             var hintTask = _session.DataStorage.GetHintsAsync();
             hintTask.Wait(2000);
             if (hintTask.IsCanceled || hintTask.IsFaulted || !hintTask.IsCompleted || hintTask.Status != TaskStatus.RanToCompletion)
             {
-                return Array.Empty<Hint>();
+                return new Hint[0];
             }
 
             return hintTask.Result;
@@ -402,7 +400,7 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Client
         {
             if (!MakeSureConnected())
             {
-                return Array.Empty<Hint>();
+                return new Hint[0];
             }
 
             return GetHints().Where(x => !x.Found && GetPlayerName(x.FindingPlayer) == _slotData.SlotName).ToArray();
@@ -553,6 +551,78 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Client
 
         protected abstract void KillPlayerDeathLink(DeathLink deathlink);
 
+        public Dictionary<string, ScoutedLocation> ScoutManyLocations(IEnumerable<string> locationNames)
+        {
+            var scoutResult = new Dictionary<string, ScoutedLocation>();
+            if (!MakeSureConnected() || locationNames == null || !locationNames.Any())
+            {
+                Logger.LogWarning($"Could not scout locations {locationNames}");
+                return scoutResult;
+            }
+
+            var namesToScout = new List<string>();
+            var idsToScout = new List<long>();
+            foreach (var locationName in locationNames)
+            {
+                if (ScoutedLocations.ContainsKey(locationName))
+                {
+                    scoutResult.Add(locationName, ScoutedLocations[locationName]);
+                    continue;
+                }
+
+                var locationId = GetLocationId(locationName);
+                if (locationId == -1)
+                {
+                    Logger.LogWarning($"Could get location id for \"{locationName}\".");
+                    continue;
+                }
+
+                namesToScout.Add(locationName);
+                idsToScout.Add(locationId);
+            }
+
+            if (!idsToScout.Any())
+            {
+                return scoutResult;
+            }
+
+            ScoutedItemInfo[] scoutResponse;
+            try
+            {
+                scoutResponse = ScoutLocations(idsToScout.ToArray(), false);
+                if (scoutResponse.Length < 1)
+                {
+                    Logger.LogInfo($"Could not scout location ids \"{idsToScout}\".");
+                    return scoutResult;
+                }
+            }
+            catch (Exception e)
+            {
+                Logger.LogInfo($"Could not scout location ids \"{idsToScout}\". Message: {e.Message}");
+                return scoutResult;
+            }
+
+            for (var i = 0; i < idsToScout.Count; i++)
+            {
+                if (scoutResponse.Length <= i)
+                {
+                    break;
+                }
+
+                var itemScouted = scoutResponse[i];
+                var itemName = GetItemName(itemScouted);
+                var playerSlotName = _session.Players.GetPlayerName(itemScouted.Player);
+                var itemClassification = GetItemClassification(itemScouted.Flags);
+
+                var scoutedLocation = new ScoutedLocation(namesToScout[i], itemName, playerSlotName, idsToScout[i], itemScouted.ItemId, itemScouted.Player, itemClassification);
+
+                ScoutedLocations.Add(namesToScout[i], scoutedLocation);
+                scoutResult.Add(namesToScout[i], scoutedLocation);
+            }
+
+            return scoutResult;
+        }
+
         public ScoutedLocation ScoutSingleLocation(string locationName, bool createAsHint = false)
         {
             if (ScoutedLocations.ContainsKey(locationName))
@@ -630,6 +700,13 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Client
             }
 
             return scoutedItems.First().Value;
+        }
+
+        private ScoutedItemInfo[] ScoutLocations(long[] locationIds, bool createAsHint)
+        {
+            var scoutTask = _session.Locations.ScoutLocationsAsync(createAsHint, locationIds);
+            scoutTask.Wait();
+            return scoutTask.Result.Values.ToArray();
         }
 
         private void SessionErrorReceived(Exception e, string message)
@@ -746,7 +823,7 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Client
                 return Enumerable.Empty<PlayerInfo>();
             }
 
-            return Session.Players.AllPlayers;
+            return _session.Players.AllPlayers;
         }
 
         public PlayerInfo GetCurrentPlayer()
@@ -757,6 +834,16 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Client
             }
 
             return GetAllPlayers().FirstOrDefault(x => x.Slot == _session.ConnectionInfo.Slot);
+        }
+
+        public ArchipelagoSession GetSession()
+        {
+            if (!MakeSureConnected())
+            {
+                return null;
+            }
+
+            return _session;
         }
     }
 }
