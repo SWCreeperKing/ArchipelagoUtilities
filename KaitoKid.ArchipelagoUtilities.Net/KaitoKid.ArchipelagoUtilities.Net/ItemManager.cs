@@ -1,24 +1,21 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using KaitoKid.ArchipelagoUtilities.Net.Client;
-using KaitoKid.ArchipelagoUtilities.Net.Interfaces;
 
 namespace KaitoKid.ArchipelagoUtilities.Net
 {
     public abstract class ItemManager
     {
-        private ArchipelagoClient _archipelago;
-        private IItemParser _itemParser;
-        private HashSet<ReceivedItem> _itemsAlreadyProcessed;
+        private readonly ArchipelagoClient _archipelago;
+        protected HashSet<ReceivedItem> _itemsAlreadyProcessed;
 
-        public ItemManager(ArchipelagoClient archipelago, IItemParser itemParser, IEnumerable<ReceivedItem> itemsAlreadyProcessed)
+        protected ItemManager(ArchipelagoClient archipelago, IEnumerable<ReceivedItem> itemsAlreadyProcessed)
         {
             _archipelago = archipelago;
-            _itemParser = itemParser;
             _itemsAlreadyProcessed = new HashSet<ReceivedItem>(itemsAlreadyProcessed);
         }
 
-        public void ReceiveAllNewItems(bool immediatelyIfPossible)
+        public void ReceiveAllNewItems(bool immediatelyIfPossible = true)
         {
             var allReceivedItems = _archipelago.GetAllReceivedItems();
 
