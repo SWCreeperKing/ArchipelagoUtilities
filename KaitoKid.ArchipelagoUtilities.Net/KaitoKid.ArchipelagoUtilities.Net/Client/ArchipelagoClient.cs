@@ -527,7 +527,7 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Client
             return itemName;
         }
 
-        public void SendDeathLink(string player, string reason = "Unknown cause")
+        public void SendDeathLink(string reason = "Unknown cause")
         {
             if (!MakeSureConnected())
             {
@@ -535,7 +535,7 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Client
             }
 
             Logger.LogMessage($"Sending a deathlink with reason [{reason}]");
-            _deathLinkService.SendDeathLink(new DeathLink(player, reason));
+            _deathLinkService.SendDeathLink(new DeathLink(GetPlayerName(), reason));
         }
 
         private void ReceiveDeathLink(DeathLink deathlink)
