@@ -24,10 +24,6 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Client
         private DataPackageCache _localDataPackage;
 
         private Action _itemReceivedFunction;
-        private Action<DeathLink> _deathLinkFunction;
-        private Action _errorFunction;
-        private Action _reconnectSuccessFunction;
-        private Action _reconnectFailFunction;
 
         public ArchipelagoSession Session => _session;
         public bool IsConnected { get; private set; }
@@ -38,16 +34,12 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Client
         public abstract string ModName { get; }
         public abstract string ModVersion { get; }
 
-        public ArchipelagoClient(ILogger logger, DataPackageCache dataPackageCache, Action itemReceivedFunction, Action<DeathLink> deathLinkFunction, Action errorFunction, Action reconnectSuccessFunction, Action reconnectFailFunction)
+        public ArchipelagoClient(ILogger logger, DataPackageCache dataPackageCache, Action itemReceivedFunction)
         {
             _logger = logger;
             _localDataPackage = dataPackageCache;
             _itemReceivedFunction = itemReceivedFunction;
-            _deathLinkFunction = deathLinkFunction;
-            _reconnectSuccessFunction = reconnectSuccessFunction;
-            _reconnectFailFunction = reconnectFailFunction;
 
-            _errorFunction = errorFunction;
             IsConnected = false;
             ScoutedLocations = new Dictionary<string, ScoutedLocation>();
         }
@@ -556,8 +548,10 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Client
             var deathLinkMessage = $"You have been killed by {deathlink.Source} ({deathlink.Cause})";
             _logger.LogInfo(deathLinkMessage);
 
-            _deathLinkFunction(deathlink);
+            KillPlayerDeathLink(deathlink);
         }
+
+        protected abstract void KillPlayerDeathLink(DeathLink deathlink);
 
         public ScoutedLocation ScoutSingleLocation(string locationName, bool createAsHint = false)
         {
@@ -641,7 +635,7 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Client
         private void SessionErrorReceived(Exception e, string message)
         {
             _logger.LogError(message);
-            _errorFunction();
+            OnError();
             _lastConnectFailure = DateTime.Now;
             DisconnectAndCleanup();
         }
@@ -649,10 +643,12 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Client
         private void SessionSocketClosed(string reason)
         {
             _logger.LogError($"Connection to Archipelago lost: {reason}");
-            _errorFunction();
+            OnError();
             _lastConnectFailure = DateTime.Now;
             DisconnectAndCleanup();
         }
+
+        protected abstract void OnError();
 
         public void DisconnectAndCleanup()
         {
@@ -704,14 +700,17 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Client
             TryConnect(_connectionInfo, out _);
             if (!IsConnected)
             {
-                _reconnectFailFunction();
+                OnReconnectFailure();
                 _lastConnectFailure = DateTime.Now;
                 return false;
             }
 
-            _reconnectSuccessFunction();
+            OnReconnectSuccess();
             return IsConnected;
         }
+
+        protected abstract void OnReconnectSuccess();
+        protected abstract void OnReconnectFailure();
 
         public void APUpdate()
         {
