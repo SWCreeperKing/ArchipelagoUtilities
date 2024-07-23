@@ -17,7 +17,7 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Client
     public abstract class ArchipelagoClient
     {
         private const string MISSING_LOCATION_NAME = "Thin Air";
-        private ILogger _logger;
+        protected ILogger Logger;
         private ArchipelagoSession _session;
         private DeathLinkService _deathLinkService;
         private ArchipelagoConnectionInfo _connectionInfo;
@@ -27,7 +27,7 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Client
 
         public ArchipelagoSession Session => _session;
         public bool IsConnected { get; private set; }
-        public ISlotData SlotData { get; private set; }
+        public ISlotData SlotData { get; protected set; }
         public Dictionary<string, ScoutedLocation> ScoutedLocations { get; set; }
         public bool DeathLink => _connectionInfo?.DeathLink == true;
         public abstract string GameName { get; }
@@ -36,7 +36,7 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Client
 
         public ArchipelagoClient(ILogger logger, DataPackageCache dataPackageCache, Action itemReceivedFunction)
         {
-            _logger = logger;
+            Logger = logger;
             _localDataPackage = dataPackageCache;
             _itemReceivedFunction = itemReceivedFunction;
 
@@ -78,7 +78,7 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Client
             {
                 var message = e.GetBaseException().Message;
                 result = new LoginFailure(message);
-                _logger.LogError($"An error occured trying to connect to archipelago. Message: {message}");
+                Logger.LogError($"An error occured trying to connect to archipelago. Message: {message}");
             }
 
             if (!result.Successful)
@@ -96,7 +96,7 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Client
                     detailedErrorMessage += $"\n    {error}";
                 }
 
-                _logger.LogError(detailedErrorMessage);
+                Logger.LogError(detailedErrorMessage);
                 DisconnectAndCleanup();
                 return false; // Did not connect, show the user the contents of `errorMessage`
             }
@@ -106,7 +106,7 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Client
             // Successfully connected, `ArchipelagoSession` (assume statically defined as `session` from now on) can now be used to interact with the server and the returned `LoginSuccessful` contains some useful information about the initial connection (e.g. a copy of the slot data as `loginSuccess.SlotData`)
             var loginSuccess = (LoginSuccessful)result;
             var loginMessage = $"Connected to Archipelago server as {connectionInfo.SlotName} (Team {loginSuccess.Team}).";
-            _logger.LogInfo(loginMessage);
+            Logger.LogInfo(loginMessage);
 
             // Must go AFTER a successful connection attempt
             InitializeSlotData(connectionInfo.SlotName, loginSuccess.SlotData);
@@ -449,7 +449,7 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Client
             {
                 if (required)
                 {
-                    _logger.LogError($"Failed at getting the location name for location {locationId}. This is probably due to a corrupted datapackage. Unexpected behaviors may follow");
+                    Logger.LogError($"Failed at getting the location name for location {locationId}. This is probably due to a corrupted datapackage. Unexpected behaviors may follow");
                 }
 
                 return MISSING_LOCATION_NAME;
@@ -520,7 +520,7 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Client
 
             if (string.IsNullOrWhiteSpace(itemName))
             {
-                _logger.LogError($"Failed at getting the item name for item {itemId}. This is probably due to a corrupted datapackage. Unexpected behaviors may follow");
+                Logger.LogError($"Failed at getting the item name for item {itemId}. This is probably due to a corrupted datapackage. Unexpected behaviors may follow");
                 return "Error Item";
             }
 
@@ -534,7 +534,7 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Client
                 return;
             }
 
-            _logger.LogMessage($"Sending a deathlink with reason [{reason}]");
+            Logger.LogMessage($"Sending a deathlink with reason [{reason}]");
             _deathLinkService.SendDeathLink(new DeathLink(player, reason));
         }
 
@@ -546,7 +546,7 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Client
             }
 
             var deathLinkMessage = $"You have been killed by {deathlink.Source} ({deathlink.Cause})";
-            _logger.LogInfo(deathLinkMessage);
+            Logger.LogInfo(deathLinkMessage);
 
             KillPlayerDeathLink(deathlink);
         }
@@ -562,7 +562,7 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Client
 
             if (!MakeSureConnected())
             {
-                _logger.LogWarning($"Could not find the id for location \"{locationName}\".");
+                Logger.LogWarning($"Could not find the id for location \"{locationName}\".");
                 return null;
             }
 
@@ -571,14 +571,14 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Client
                 var locationId = GetLocationId(locationName);
                 if (locationId == -1)
                 {
-                    _logger.LogWarning($"Could not find the id for location \"{locationName}\".");
+                    Logger.LogWarning($"Could not find the id for location \"{locationName}\".");
                     return null;
                 }
 
                 var scoutedItemInfo = ScoutLocation(locationId, createAsHint);
                 if (scoutedItemInfo == null)
                 {
-                    _logger.LogWarning($"Could not scout location \"{locationName}\".");
+                    Logger.LogWarning($"Could not scout location \"{locationName}\".");
                     return null;
                 }
 
@@ -594,7 +594,7 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Client
             }
             catch (Exception e)
             {
-                _logger.LogError($"Could not scout location \"{locationName}\". Message: {e.Message}");
+                Logger.LogError($"Could not scout location \"{locationName}\". Message: {e.Message}");
                 return null;
             }
         }
@@ -634,7 +634,7 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Client
 
         private void SessionErrorReceived(Exception e, string message)
         {
-            _logger.LogError(message);
+            Logger.LogError(message);
             OnError();
             _lastConnectFailure = DateTime.Now;
             DisconnectAndCleanup();
@@ -642,13 +642,15 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Client
 
         private void SessionSocketClosed(string reason)
         {
-            _logger.LogError($"Connection to Archipelago lost: {reason}");
+            Logger.LogError($"Connection to Archipelago lost: {reason}");
             OnError();
             _lastConnectFailure = DateTime.Now;
             DisconnectAndCleanup();
         }
 
-        protected abstract void OnError();
+        protected virtual void OnError()
+        {
+        }
 
         public void DisconnectAndCleanup()
         {
@@ -709,8 +711,13 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Client
             return IsConnected;
         }
 
-        protected abstract void OnReconnectSuccess();
-        protected abstract void OnReconnectFailure();
+        protected virtual void OnReconnectSuccess()
+        {
+        }
+
+        protected virtual void OnReconnectFailure()
+        {
+        }
 
         public void APUpdate()
         {
