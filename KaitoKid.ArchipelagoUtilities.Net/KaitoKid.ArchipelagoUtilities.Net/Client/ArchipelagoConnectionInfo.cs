@@ -1,4 +1,4 @@
-﻿namespace KaitoKid.ArchipelagoUtilities.Net
+﻿namespace KaitoKid.ArchipelagoUtilities.Net.Client
 {
     public class ArchipelagoConnectionInfo
     {

@@ -12,7 +12,7 @@ using Archipelago.MultiClient.Net.Models;
 using Archipelago.MultiClient.Net.Packets;
 using KaitoKid.ArchipelagoUtilities.Net.Interfaces;
 
-namespace KaitoKid.ArchipelagoUtilities.Net
+namespace KaitoKid.ArchipelagoUtilities.Net.Client
 {
     public abstract class ArchipelagoClient
     {
@@ -24,6 +24,10 @@ namespace KaitoKid.ArchipelagoUtilities.Net
         private DataPackageCache _localDataPackage;
 
         private Action _itemReceivedFunction;
+        private Action<DeathLink> _deathLinkFunction;
+        private Action _errorFunction;
+        private Action _reconnectSuccessFunction;
+        private Action _reconnectFailFunction;
 
         public ArchipelagoSession Session => _session;
         public bool IsConnected { get; private set; }
@@ -34,11 +38,16 @@ namespace KaitoKid.ArchipelagoUtilities.Net
         public abstract string ModName { get; }
         public abstract string ModVersion { get; }
 
-        public ArchipelagoClient(ILogger logger, DataPackageCache dataPackageCache, Action itemReceivedFunction)
+        public ArchipelagoClient(ILogger logger, DataPackageCache dataPackageCache, Action itemReceivedFunction, Action<DeathLink> deathLinkFunction, Action errorFunction, Action reconnectSuccessFunction, Action reconnectFailFunction)
         {
             _logger = logger;
             _localDataPackage = dataPackageCache;
             _itemReceivedFunction = itemReceivedFunction;
+            _deathLinkFunction = deathLinkFunction;
+            _reconnectSuccessFunction = reconnectSuccessFunction;
+            _reconnectFailFunction = reconnectFailFunction;
+
+            _errorFunction = errorFunction;
             IsConnected = false;
             ScoutedLocations = new Dictionary<string, ScoutedLocation>();
         }
@@ -389,10 +398,11 @@ namespace KaitoKid.ArchipelagoUtilities.Net
 
             var hintTask = _session.DataStorage.GetHintsAsync();
             hintTask.Wait(2000);
-            if (hintTask == null || hintTask.IsCanceled || hintTask.IsFaulted || !hintTask.IsCompletedSuccessfully)
+            if (hintTask.IsCanceled || hintTask.IsFaulted || !hintTask.IsCompleted || hintTask.Status != TaskStatus.RanToCompletion)
             {
                 return Array.Empty<Hint>();
             }
+
             return hintTask.Result;
         }
 
@@ -413,8 +423,10 @@ namespace KaitoKid.ArchipelagoUtilities.Net
                 return;
             }
 
-            var statusUpdatePacket = new StatusUpdatePacket();
-            statusUpdatePacket.Status = ArchipelagoClientState.ClientGoal;
+            var statusUpdatePacket = new StatusUpdatePacket
+            {
+                Status = ArchipelagoClientState.ClientGoal,
+            };
             _session.Socket.SendPacket(statusUpdatePacket);
         }
 
@@ -445,7 +457,7 @@ namespace KaitoKid.ArchipelagoUtilities.Net
             {
                 if (required)
                 {
-                    _logger.Log($"Failed at getting the location name for location {locationId}. This is probably due to a corrupted datapackage. Unexpected behaviors may follow", LogLevel.Error);
+                    _logger.LogError($"Failed at getting the location name for location {locationId}. This is probably due to a corrupted datapackage. Unexpected behaviors may follow");
                 }
 
                 return MISSING_LOCATION_NAME;
@@ -475,7 +487,12 @@ namespace KaitoKid.ArchipelagoUtilities.Net
             return _session.Locations.AllMissingLocations;
         }
 
-        public long GetLocationId(string locationName, string gameName = GameName)
+        public long GetLocationId(string locationName)
+        {
+            return GetLocationId(locationName, GameName);
+        }
+
+        public long GetLocationId(string locationName, string gameName)
         {
             if (!MakeSureConnected())
             {
@@ -511,7 +528,7 @@ namespace KaitoKid.ArchipelagoUtilities.Net
 
             if (string.IsNullOrWhiteSpace(itemName))
             {
-                _logger.Log($"Failed at getting the item name for item {itemId}. This is probably due to a corrupted datapackage. Unexpected behaviors may follow", LogLevel.Error);
+                _logger.LogError($"Failed at getting the item name for item {itemId}. This is probably due to a corrupted datapackage. Unexpected behaviors may follow");
                 return "Error Item";
             }
 
@@ -525,6 +542,7 @@ namespace KaitoKid.ArchipelagoUtilities.Net
                 return;
             }
 
+            _logger.LogMessage($"Sending a deathlink with reason [{reason}]");
             _deathLinkService.SendDeathLink(new DeathLink(player, reason));
         }
 
@@ -535,10 +553,10 @@ namespace KaitoKid.ArchipelagoUtilities.Net
                 return;
             }
 
-            DeathManager.ReceiveDeathLink();
             var deathLinkMessage = $"You have been killed by {deathlink.Source} ({deathlink.Cause})";
-            _logger.Log(deathLinkMessage, LogLevel.Info);
-            Game1.chatBox?.addInfoMessage(deathLinkMessage);
+            _logger.LogInfo(deathLinkMessage);
+
+            _deathLinkFunction(deathlink);
         }
 
         public ScoutedLocation ScoutSingleLocation(string locationName, bool createAsHint = false)
@@ -550,7 +568,7 @@ namespace KaitoKid.ArchipelagoUtilities.Net
 
             if (!MakeSureConnected())
             {
-                _logger.Log($"Could not find the id for location \"{locationName}\".");
+                _logger.LogWarning($"Could not find the id for location \"{locationName}\".");
                 return null;
             }
 
@@ -559,14 +577,14 @@ namespace KaitoKid.ArchipelagoUtilities.Net
                 var locationId = GetLocationId(locationName);
                 if (locationId == -1)
                 {
-                    _logger.Log($"Could not find the id for location \"{locationName}\".");
+                    _logger.LogWarning($"Could not find the id for location \"{locationName}\".");
                     return null;
                 }
 
                 var scoutedItemInfo = ScoutLocation(locationId, createAsHint);
                 if (scoutedItemInfo == null)
                 {
-                    _logger.Log($"Could not scout location \"{locationName}\".");
+                    _logger.LogWarning($"Could not scout location \"{locationName}\".");
                     return null;
                 }
 
@@ -582,7 +600,7 @@ namespace KaitoKid.ArchipelagoUtilities.Net
             }
             catch (Exception e)
             {
-                _logger.Log($"Could not scout location \"{locationName}\". Message: {e.Message}");
+                _logger.LogError($"Could not scout location \"{locationName}\". Message: {e.Message}");
                 return null;
             }
         }
@@ -593,10 +611,12 @@ namespace KaitoKid.ArchipelagoUtilities.Net
             {
                 return "Progression";
             }
+
             if (itemFlags.HasFlag(ItemFlags.NeverExclude))
             {
                 return "Useful";
             }
+
             if (itemFlags.HasFlag(ItemFlags.Trap))
             {
                 return "Trap";
@@ -620,16 +640,16 @@ namespace KaitoKid.ArchipelagoUtilities.Net
 
         private void SessionErrorReceived(Exception e, string message)
         {
-            _logger.Log(message, LogLevel.Error);
-            Game1.chatBox?.addMessage("Connection to Archipelago lost. The game will try reconnecting later. Check the SMAPI logger for details", Color.Red);
+            _logger.LogError(message);
+            _errorFunction();
             _lastConnectFailure = DateTime.Now;
             DisconnectAndCleanup();
         }
 
         private void SessionSocketClosed(string reason)
         {
-            _logger.Log($"Connection to Archipelago lost: {reason}", LogLevel.Error);
-            Game1.chatBox?.addMessage("Connection to Archipelago lost. The game will try reconnecting later. Check the SMAPI logger for details", Color.Red);
+            _logger.LogError($"Connection to Archipelago lost: {reason}");
+            _errorFunction();
             _lastConnectFailure = DateTime.Now;
             DisconnectAndCleanup();
         }
@@ -650,7 +670,6 @@ namespace KaitoKid.ArchipelagoUtilities.Net
                 _session.Socket.DisconnectAsync();
             }
             _session = null;
-            _bigIntegerDataStorage = null;
             IsConnected = false;
         }
 
@@ -685,12 +704,12 @@ namespace KaitoKid.ArchipelagoUtilities.Net
             TryConnect(_connectionInfo, out _);
             if (!IsConnected)
             {
-                Game1.chatBox?.addMessage("Reconnection attempt failed", Color.Red);
+                _reconnectFailFunction();
                 _lastConnectFailure = DateTime.Now;
                 return false;
             }
 
-            Game1.chatBox?.addMessage("Reconnection attempt successful!", Color.Green);
+            _reconnectSuccessFunction();
             return IsConnected;
         }
 
@@ -701,8 +720,8 @@ namespace KaitoKid.ArchipelagoUtilities.Net
 
         private bool IsMultiworldVersionSupported()
         {
-            var majorVersion = _modManifest.Version.MajorVersion.ToString();
-            var multiworldVersionParts = SlotData.MultiworldVersion.Split(".");
+            var majorVersion = ModVersion.Split('.').First();
+            var multiworldVersionParts = SlotData.MultiworldVersion.Split('.');
             if (multiworldVersionParts.Length < 3)
             {
                 return false;
@@ -724,7 +743,7 @@ namespace KaitoKid.ArchipelagoUtilities.Net
             return Session.Players.AllPlayers;
         }
 
-        public PlayerInfo? GetCurrentPlayer()
+        public PlayerInfo GetCurrentPlayer()
         {
             if (!MakeSureConnected())
             {

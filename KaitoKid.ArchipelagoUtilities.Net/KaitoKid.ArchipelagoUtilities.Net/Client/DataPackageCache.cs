@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 
-namespace KaitoKid.ArchipelagoUtilities.Net
+namespace KaitoKid.ArchipelagoUtilities.Net.Client
 {
     public class DataPackageCache
     {

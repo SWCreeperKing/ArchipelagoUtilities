@@ -3,7 +3,7 @@ using System.IO;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
-namespace KaitoKid.ArchipelagoUtilities.Net
+namespace KaitoKid.ArchipelagoUtilities.Net.Client
 {
     public class ArchipelagoLocation
     {

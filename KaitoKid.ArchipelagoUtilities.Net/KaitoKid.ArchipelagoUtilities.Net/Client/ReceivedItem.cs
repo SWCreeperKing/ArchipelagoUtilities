@@ -1,4 +1,4 @@
-﻿namespace KaitoKid.ArchipelagoUtilities.Net
+﻿namespace KaitoKid.ArchipelagoUtilities.Net.Client
 {
     public class ReceivedItem
     {
@@ -27,13 +27,13 @@
             unchecked
             {
                 var hash = 21;
-                hash = (hash * 13) + ItemId.GetHashCode();
-                hash = (hash * 13) + LocationId.GetHashCode();
-                hash = (hash * 13) + PlayerId.GetHashCode();
-                hash = (hash * 13) + ItemName.GetHashCode();
-                hash = (hash * 13) + LocationName.GetHashCode();
-                hash = (hash * 13) + PlayerName.GetHashCode();
-                hash = (hash * 13) + UniqueId.GetHashCode();
+                hash = hash * 13 + ItemId.GetHashCode();
+                hash = hash * 13 + LocationId.GetHashCode();
+                hash = hash * 13 + PlayerId.GetHashCode();
+                hash = hash * 13 + ItemName.GetHashCode();
+                hash = hash * 13 + LocationName.GetHashCode();
+                hash = hash * 13 + PlayerName.GetHashCode();
+                hash = hash * 13 + UniqueId.GetHashCode();
                 return hash;
             }
         }
