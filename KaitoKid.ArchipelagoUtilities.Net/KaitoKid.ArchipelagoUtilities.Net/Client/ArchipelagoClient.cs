@@ -27,7 +27,7 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Client
 
         public ArchipelagoSession Session => _session;
         public bool IsConnected { get; private set; }
-        public ISlotData SlotData { get; protected set; }
+        protected ISlotData _slotData;
         public Dictionary<string, ScoutedLocation> ScoutedLocations { get; set; }
         public bool DeathLink => _connectionInfo?.DeathLink == true;
         public abstract string GameName { get; }
@@ -56,7 +56,7 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Client
 
             if (!IsMultiworldVersionSupported())
             {
-                var genericVersion = SlotData.MultiworldVersion.Replace("0", "x");
+                var genericVersion = _slotData.MultiworldVersion.Replace("0", "x");
                 errorMessage = $"This Multiworld has been created for {ModName} version {genericVersion},\nbut this is {ModName} version {ModVersion}.\nPlease update to a compatible mod version.";
                 DisconnectPermanently();
                 return;
@@ -103,7 +103,7 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Client
 
             errorMessage = "";
 
-            // Successfully connected, `ArchipelagoSession` (assume statically defined as `session` from now on) can now be used to interact with the server and the returned `LoginSuccessful` contains some useful information about the initial connection (e.g. a copy of the slot data as `loginSuccess.SlotData`)
+            // Successfully connected, `ArchipelagoSession` (assume statically defined as `session` from now on) can now be used to interact with the server and the returned `LoginSuccessful` contains some useful information about the initial connection (e.g. a copy of the slot data as `loginSuccess._slotData`)
             var loginSuccess = (LoginSuccessful)result;
             var loginMessage = $"Connected to Archipelago server as {connectionInfo.SlotName} (Team {loginSuccess.Team}).";
             Logger.LogInfo(loginMessage);
@@ -112,7 +112,7 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Client
             InitializeSlotData(connectionInfo.SlotName, loginSuccess.SlotData);
             if (connectionInfo.DeathLink == null)
             {
-                connectionInfo.DeathLink = SlotData.DeathLink;
+                connectionInfo.DeathLink = _slotData.DeathLink;
             }
 
             InitializeAfterConnection();
@@ -129,7 +129,7 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Client
             _session.Socket.SocketClosed += SessionSocketClosed;
 
             InitializeDeathLink();
-            // MultiRandom = new Random(SlotData.Seed);
+            // MultiRandom = new Random(_slotData.Seed);
         }
 
         public void Sync()
@@ -405,7 +405,7 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Client
                 return Array.Empty<Hint>();
             }
 
-            return GetHints().Where(x => !x.Found && GetPlayerName(x.FindingPlayer) == SlotData.SlotName).ToArray();
+            return GetHints().Where(x => !x.Found && GetPlayerName(x.FindingPlayer) == _slotData.SlotName).ToArray();
         }
 
         public void ReportGoalCompletion()
@@ -727,7 +727,7 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Client
         private bool IsMultiworldVersionSupported()
         {
             var majorVersion = ModVersion.Split('.').First();
-            var multiworldVersionParts = SlotData.MultiworldVersion.Split('.');
+            var multiworldVersionParts = _slotData.MultiworldVersion.Split('.');
             if (multiworldVersionParts.Length < 3)
             {
                 return false;
