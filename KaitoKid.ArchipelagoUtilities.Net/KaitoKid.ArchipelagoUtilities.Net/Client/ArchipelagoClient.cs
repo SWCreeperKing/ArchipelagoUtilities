@@ -525,6 +525,11 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Client
             return itemName;
         }
 
+        public void SendDeathLinkAsync(string reason = "Unknown cause")
+        {
+            Task.Run(() => SendDeathLink(reason));
+        }
+
         public void SendDeathLink(string reason = "Unknown cause")
         {
             if (!MakeSureConnected())
@@ -532,8 +537,15 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Client
                 return;
             }
 
-            Logger.LogMessage($"Sending a deathlink with reason [{reason}]");
-            _deathLinkService.SendDeathLink(new DeathLink(GetPlayerName(), reason));
+            try
+            {
+                Logger.LogMessage($"Sending a deathlink with reason [{reason}]");
+                _deathLinkService.SendDeathLink(new DeathLink(GetPlayerName(), reason));
+            }
+            catch (Exception ex)
+            {
+                Logger.LogError(ex.Message);
+            }
         }
 
         private void ReceiveDeathLink(DeathLink deathlink)
@@ -748,6 +760,18 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Client
             IsConnected = false;
         }
 
+        public void DisconnectTemporarily()
+        {
+            DisconnectAndCleanup();
+            _allowRetries = false;
+        }
+
+        public void ReconnectAfterTemporaryDisconnect()
+        {
+            _allowRetries = true;
+            MakeSureConnected(0);
+        }
+
         public void DisconnectPermanently()
         {
             DisconnectAndCleanup();
@@ -756,6 +780,7 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Client
 
         private DateTime _lastConnectFailure;
         private const int THRESHOLD_TO_RETRY_CONNECTION_IN_SECONDS = 15;
+        private bool _allowRetries = true;
 
         public bool MakeSureConnected(int threshold = THRESHOLD_TO_RETRY_CONNECTION_IN_SECONDS)
         {
@@ -773,6 +798,13 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Client
             var timeSinceLastFailure = now - _lastConnectFailure;
             if (timeSinceLastFailure.TotalSeconds < threshold)
             {
+                return false;
+            }
+
+            if (!_allowRetries)
+            {
+                Logger.LogError("Reconnection attempt failed");
+                _lastConnectFailure = DateTime.Now;
                 return false;
             }
 

@@ -25,7 +25,7 @@ namespace KaitoKid.ArchipelagoUtilities.Net
             }
         }
 
-        private void ReceiveNewItem(ReceivedItem receivedItem, bool immediatelyIfPossible)
+        protected virtual void ReceiveNewItem(ReceivedItem receivedItem, bool immediatelyIfPossible)
         {
             if (_itemsAlreadyProcessed.Contains(receivedItem))
             {

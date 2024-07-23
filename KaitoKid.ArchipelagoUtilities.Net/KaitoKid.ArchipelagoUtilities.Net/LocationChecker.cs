@@ -49,7 +49,27 @@ namespace KaitoKid.ArchipelagoUtilities.Net
             return _archipelago.GetAllMissingLocations().Select(x => _archipelago.GetLocationName(x)).ToArray();
         }
 
+        public void AddCheckedLocations(string[] locationNames)
+        {
+            RememberCheckedLocations(locationNames);
+            SendAllLocationChecks();
+        }
+
         public void AddCheckedLocation(string locationName)
+        {
+            RememberCheckedLocation(locationName);
+            SendAllLocationChecks();
+        }
+
+        public void RememberCheckedLocations(string[] locationNames)
+        {
+            foreach (var locationName in locationNames)
+            {
+                RememberCheckedLocation(locationName);
+            }
+        }
+
+        private void RememberCheckedLocation(string locationName)
         {
             if (_checkedLocations.ContainsKey(locationName))
             {
@@ -72,7 +92,7 @@ namespace KaitoKid.ArchipelagoUtilities.Net
             }
 
             _checkedLocations.Add(locationName, locationId);
-            SendAllLocationChecks();
+            return;
         }
 
         public void SendAllLocationChecks()
