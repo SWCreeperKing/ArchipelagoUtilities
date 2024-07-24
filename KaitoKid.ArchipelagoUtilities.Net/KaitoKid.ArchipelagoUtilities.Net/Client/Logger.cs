@@ -25,27 +25,37 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Client
 
         public void LogDebug(string message, params object[] arguments)
         {
-            LogDebug($"{message}\n\t{GenerateArgumentsString(arguments)})");
+            LogDebug($"{message}{Environment.NewLine}{GenerateArgumentsString(arguments)})");
+        }
+
+        public void LogErrorException(string prefixMessage, Exception ex, params object[] arguments)
+        {
+            LogError($"{prefixMessage}:{Environment.NewLine}{ex}{Environment.NewLine}{GenerateArgumentsString(arguments)}");
+        }
+
+        public void LogWarningException(string prefixMessage, Exception ex, params object[] arguments)
+        {
+            LogWarning($"{prefixMessage}:{Environment.NewLine}{ex}{Environment.NewLine}{GenerateArgumentsString(arguments)}");
         }
 
         public void LogErrorException(Exception ex, params object[] arguments)
         {
-            LogError($"Exception Thrown:\n\t{ex}\n\t{GenerateArgumentsString(arguments)}");
+            LogErrorException("Exception Thrown", ex, arguments);
         }
 
         public void LogWarningException(Exception ex, params object[] arguments)
         {
-            LogWarning($"Exception Thrown:\n\t{ex}\n\t{GenerateArgumentsString(arguments)}");
+            LogWarningException("Exception Thrown", ex, arguments);
         }
 
         public void LogErrorMessage(string message, params object[] arguments)
         {
-            LogError($"{message}\n\t{GenerateArgumentsString(arguments)}");
+            LogError($"{message}{Environment.NewLine}{GenerateArgumentsString(arguments)}");
         }
 
         public void LogErrorException(string patchType, string patchMethod, Exception ex, params object[] arguments)
         {
-            LogError($"Failed in {patchType}.{patchMethod}:\n\t{ex}\n\t{GenerateArgumentsString(arguments)}");
+            LogError($"Failed in {patchType}.{patchMethod}:{Environment.NewLine}{ex}{Environment.NewLine}{GenerateArgumentsString(arguments)}");
         }
 
         private static string GenerateArgumentsString(object[] arguments)
