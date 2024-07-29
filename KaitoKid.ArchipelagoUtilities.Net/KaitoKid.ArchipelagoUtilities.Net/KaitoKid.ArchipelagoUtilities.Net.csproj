@@ -4,9 +4,9 @@
 	<TargetFrameworks>net452;netstandard2.0;net5.0;net6.0</TargetFrameworks>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Authors>KaitoKid</Authors>
-	<AssemblyVersion>1.0.21</AssemblyVersion>
-	<FileVersion>1.0.21</FileVersion>
-	<Version>1.0.21</Version>
+	<AssemblyVersion>1.0.22</AssemblyVersion>
+	<FileVersion>1.0.22</FileVersion>
+	<Version>1.0.22</Version>
     <Description>.NET library for Archipelago Utilities</Description>
     <PackageProjectUrl>https://github.com/agilbert1412/ArchipelagoUtilities/blob/main/README.md</PackageProjectUrl>
     <PackageReadmeFile>README.md</PackageReadmeFile>
