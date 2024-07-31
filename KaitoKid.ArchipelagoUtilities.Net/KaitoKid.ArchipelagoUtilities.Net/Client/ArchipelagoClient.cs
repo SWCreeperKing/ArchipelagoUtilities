@@ -127,7 +127,6 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Client
             _session.Socket.SocketClosed += SessionSocketClosed;
 
             InitializeDeathLink();
-            // MultiRandom = new Random(_slotData.Seed);
         }
 
         public void Sync()
@@ -741,7 +740,7 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Client
         {
         }
 
-        public void DisconnectAndCleanup()
+        public virtual void DisconnectAndCleanup()
         {
             if (!IsConnected)
             {

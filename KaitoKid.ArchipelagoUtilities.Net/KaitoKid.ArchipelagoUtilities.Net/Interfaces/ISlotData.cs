@@ -10,6 +10,6 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Interfaces
     {
         string SlotName { get; }
         string MultiworldVersion { get; }
-        bool? DeathLink { get; }
+        bool DeathLink { get; }
     }
 }

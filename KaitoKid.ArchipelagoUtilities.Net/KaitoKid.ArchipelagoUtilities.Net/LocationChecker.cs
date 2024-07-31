@@ -92,10 +92,11 @@ namespace KaitoKid.ArchipelagoUtilities.Net
             }
 
             _checkedLocations.Add(locationName, locationId);
+            ClearCache();
             return;
         }
 
-        public void SendAllLocationChecks()
+        public virtual void SendAllLocationChecks()
         {
             if (!_archipelago.IsConnected)
             {
@@ -120,8 +121,13 @@ namespace KaitoKid.ArchipelagoUtilities.Net
                 if (!_checkedLocations.ContainsKey(checkedLocation.Key))
                 {
                     _checkedLocations.Add(checkedLocation.Key, checkedLocation.Value);
+                    ClearCache();
                 }
             }
+        }
+
+        public virtual void ClearCache()
+        {
         }
 
         private void TryToIdentifyUnknownLocationNames()
@@ -153,6 +159,7 @@ namespace KaitoKid.ArchipelagoUtilities.Net
                 }
 
                 _checkedLocations.Remove(location);
+                ClearCache();
             }
         }
 
