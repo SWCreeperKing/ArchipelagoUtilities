@@ -36,7 +36,22 @@ namespace KaitoKid.ArchipelagoUtilities.Net
 
         public bool IsLocationMissing(string locationName)
         {
-            return _archipelago.LocationExists(locationName) && IsLocationNotChecked(locationName);
+            return LocationExists(locationName) && IsLocationNotChecked(locationName);
+        }
+
+        public bool LocationExists(string locationName)
+        {
+            if (_archipelago.LocationExists(locationName))
+            {
+                return true;
+            }
+
+            if (TryGetCloseEnoughNameFromAllLocations(locationName, out _))
+            {
+                return true;
+            }
+
+            return false;
         }
 
         public IReadOnlyCollection<long> GetAllMissingLocations()
@@ -76,24 +91,67 @@ namespace KaitoKid.ArchipelagoUtilities.Net
                 return;
             }
 
-            var locationId = _archipelago.GetLocationId(locationName);
-
-            if (locationId == -1)
+            if (!TryGetLocationId(locationName, out var locationId))
             {
-                var alternateName = GetAllLocationsNotChecked().FirstOrDefault(x => x.Equals(locationName, StringComparison.InvariantCultureIgnoreCase));
-                if (alternateName == null)
-                {
-                    _logger.LogError($"Location \"{locationName}\" could not be converted to an Archipelago id");
-                    return;
-                }
-
-                locationId = _archipelago.GetLocationId(alternateName);
-                _logger.LogWarning($"Location \"{locationName}\" not found, checking location \"{alternateName}\" instead");
+                return;
             }
 
             _checkedLocations.Add(locationName, locationId);
             ClearCache();
             return;
+        }
+
+        private bool TryGetLocationId(string locationName, out long locationId)
+        {
+            locationId = _archipelago.GetLocationId(locationName);
+
+            if (locationId != -1)
+            {
+                return true;
+            }
+            
+            if (!TryGetCloseEnoughNameFromAllLocations(locationName, out var alternateName))
+            {
+                _logger.LogError($"Location \"{locationName}\" could not be converted to an Archipelago id");
+                return false;
+            }
+
+            locationId = _archipelago.GetLocationId(alternateName);
+            _logger.LogWarning($"Location \"{locationName}\" not found, using \"{alternateName}\" instead");
+
+            return true;
+        }
+
+        public bool TryGetCloseEnoughNameFromUncheckedLocations(string locationName, out string closeEnoughName)
+        {
+            var allLocationsNotChecked = new HashSet<string>(GetAllLocationsNotChecked());
+
+            return TryGetCloseEnoughName(allLocationsNotChecked, locationName, out closeEnoughName);
+        }
+
+        public bool TryGetCloseEnoughNameFromAllLocations(string locationName, out string closeEnoughName)
+        {
+            var allLocationsNotChecked = new HashSet<string>(GetAllLocations());
+
+            return TryGetCloseEnoughName(allLocationsNotChecked, locationName, out closeEnoughName);
+        }
+
+        private bool TryGetCloseEnoughName(ICollection<string> validNames, string locationName, out string closeEnoughName)
+        {
+            closeEnoughName = validNames.FirstOrDefault(x => x.Equals(locationName, StringComparison.InvariantCultureIgnoreCase));
+            if (!string.IsNullOrEmpty(closeEnoughName))
+            {
+                return true;
+            }
+
+            closeEnoughName = validNames.FirstOrDefault(x => x.Replace(" ", "").Equals(locationName.Replace(" ", ""), StringComparison.InvariantCultureIgnoreCase));
+            if (!string.IsNullOrEmpty(closeEnoughName))
+            {
+                return true;
+            }
+
+
+            return false;
         }
 
         public virtual void SendAllLocationChecks()
@@ -172,6 +230,16 @@ namespace KaitoKid.ArchipelagoUtilities.Net
 
             return _archipelago.GetSession().Locations.AllMissingLocations.Select(_archipelago.GetLocationName)
                 .Where(x => x != null);
+        }
+
+        public IEnumerable<string> GetAllLocations()
+        {
+            if (!_archipelago.IsConnected)
+            {
+                return Enumerable.Empty<string>();
+            }
+
+            return _archipelago.GetSession().Locations.AllLocations.Select(_archipelago.GetLocationName).Where(x => x != null);
         }
     }
 }
