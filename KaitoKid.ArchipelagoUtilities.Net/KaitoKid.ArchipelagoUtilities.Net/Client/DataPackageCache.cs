@@ -1,5 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using KaitoKid.ArchipelagoUtilities.Net.Interfaces;
+using KaitoKid.ArchipelagoUtilities.Net.Json;
 
 namespace KaitoKid.ArchipelagoUtilities.Net.Client
 {
@@ -10,15 +12,19 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Client
         private readonly Dictionary<string, ArchipelagoLocation> _locationCacheByName;
         private readonly Dictionary<long, ArchipelagoLocation> _locationCacheById;
 
-        public DataPackageCache(string snakeCaseGameName, params string[] pathsToFolder)
+        public DataPackageCache(string snakeCaseGameName, params string[] pathsToFolder) : this(new NewtonsoftJsonLoader(), snakeCaseGameName, pathsToFolder)
+        {
+        }
+
+        public DataPackageCache(IJsonLoader jsonLoader, string snakeCaseGameName, params string[] pathsToFolder)
         {
             var itemsPath = pathsToFolder.ToList();
             itemsPath.Add($"{snakeCaseGameName}_item_table.json");
-            var items = ArchipelagoItem.LoadItems(itemsPath.ToArray());
+            var items = ArchipelagoItem.LoadItems(jsonLoader, itemsPath.ToArray());
 
             var locationsPath = pathsToFolder.ToList();
             locationsPath.Add($"{snakeCaseGameName}_location_table.json");
-            var locations = ArchipelagoLocation.LoadLocations(locationsPath.ToArray());
+            var locations = ArchipelagoLocation.LoadLocations(jsonLoader, locationsPath.ToArray());
 
             _itemCacheByName = new Dictionary<string, ArchipelagoItem>();
             _itemCacheById = new Dictionary<long, ArchipelagoItem>();

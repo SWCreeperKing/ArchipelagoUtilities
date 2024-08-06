@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using KaitoKid.ArchipelagoUtilities.Net.Interfaces;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
@@ -19,11 +20,10 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Client
             Classification = classification;
         }
 
-        public static IEnumerable<ArchipelagoItem> LoadItems(params string[] path)
+        public static IEnumerable<ArchipelagoItem> LoadItems(IJsonLoader jsonLoader, params string[] path)
         {
             var pathToItemTable = Path.Combine(path);
-            var jsonContent = File.ReadAllText(pathToItemTable);
-            var itemsTable = JsonConvert.DeserializeObject<Dictionary<string, JObject>>(jsonContent);
+            var itemsTable = jsonLoader.DeserializeFile(pathToItemTable);
             var items = itemsTable["items"];
             foreach (var itemJson in items)
             {

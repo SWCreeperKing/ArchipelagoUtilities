@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.IO;
+using KaitoKid.ArchipelagoUtilities.Net.Interfaces;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
@@ -16,11 +17,10 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Client
             Id = id;
         }
 
-        public static IEnumerable<ArchipelagoLocation> LoadLocations(params string[] path)
+        public static IEnumerable<ArchipelagoLocation> LoadLocations(IJsonLoader jsonLoader, params string[] path)
         {
             var pathToLocationTable = Path.Combine(path);
-            var jsonContent = File.ReadAllText(pathToLocationTable);
-            var locationsTable = JsonConvert.DeserializeObject<Dictionary<string, JObject>>(jsonContent);
+            var locationsTable = jsonLoader.DeserializeFile(pathToLocationTable);
             var locations = locationsTable["locations"];
             foreach (var locationJson in locations)
             {
