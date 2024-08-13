@@ -342,10 +342,15 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Client
 
         public bool HasReceivedItem(string itemName)
         {
-            return HasReceivedItem(itemName, out _);
+            return HasReceivedItem(itemName, false);
         }
 
-        public bool HasReceivedItem(string itemName, out string sendingPlayer)
+        public bool HasReceivedItem(string itemName, bool ignoreCase)
+        {
+            return HasReceivedItem(itemName, ignoreCase, out _);
+        }
+
+        public bool HasReceivedItem(string itemName, bool ignoreCase, out string sendingPlayer)
         {
             sendingPlayer = "";
             if (!MakeSureConnected())
@@ -353,9 +358,10 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Client
                 return false;
             }
 
+            var stringComparison = ignoreCase ? StringComparison.InvariantCultureIgnoreCase : StringComparison.OrdinalIgnoreCase;
             foreach (var receivedItem in _session.Items.AllItemsReceived)
             {
-                if (GetItemName(receivedItem) != itemName)
+                if (!GetItemName(receivedItem).Equals(itemName, stringComparison))
                 {
                     continue;
                 }
