@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Archipelago.MultiClient.Net.Enums;
+using System;
 
 namespace KaitoKid.ArchipelagoUtilities.Net.Client
 {
@@ -12,10 +13,10 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Client
         public long LocationId { get; private set; }
         public long ItemId { get; private set; }
         public long PlayerId { get; private set; }
-        public string Classification { get; private set; }
+        public ItemFlags Classification { get; private set; }
 
         public ScoutedLocation(string locationName, string itemName, string playerName, long locationId, long itemId,
-            long playerId, string classification)
+            long playerId, ItemFlags classification)
         {
             LocationName = locationName;
             ItemName = itemName;
@@ -44,6 +45,31 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Client
         public static string GenericItemName()
         {
             return UNKNOWN_AP_ITEM;
+        }
+
+        private string GetClassificationString()
+        {
+            return GetItemClassification(Classification);
+        }
+
+        private static string GetItemClassification(ItemFlags itemFlags)
+        {
+            if (itemFlags.HasFlag(ItemFlags.Advancement))
+            {
+                return "Progression";
+            }
+
+            if (itemFlags.HasFlag(ItemFlags.NeverExclude))
+            {
+                return "Useful";
+            }
+
+            if (itemFlags.HasFlag(ItemFlags.Trap))
+            {
+                return "Trap";
+            }
+
+            return "Filler";
         }
     }
 }

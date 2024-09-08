@@ -628,9 +628,8 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Client
                 var itemScouted = scoutResponse[i];
                 var itemName = GetItemName(itemScouted);
                 var playerSlotName = _session.Players.GetPlayerName(itemScouted.Player);
-                var itemClassification = GetItemClassification(itemScouted.Flags);
 
-                var scoutedLocation = new ScoutedLocation(namesToScout[i], itemName, playerSlotName, idsToScout[i], itemScouted.ItemId, itemScouted.Player, itemClassification);
+                var scoutedLocation = new ScoutedLocation(namesToScout[i], itemName, playerSlotName, idsToScout[i], itemScouted.ItemId, itemScouted.Player, itemScouted.Flags);
 
                 ScoutedLocations.Add(namesToScout[i], scoutedLocation);
                 scoutResult.Add(namesToScout[i], scoutedLocation);
@@ -670,10 +669,9 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Client
 
                 var itemName = GetItemName(scoutedItemInfo);
                 var playerSlotName = _session.Players.GetPlayerName(scoutedItemInfo.Player);
-                var classification = GetItemClassification(scoutedItemInfo.Flags);
 
                 var scoutedLocation = new ScoutedLocation(locationName, itemName, playerSlotName, locationId,
-                    scoutedItemInfo.ItemId, scoutedItemInfo.Player, classification);
+                    scoutedItemInfo.ItemId, scoutedItemInfo.Player, scoutedItemInfo.Flags);
 
                 ScoutedLocations.Add(locationName, scoutedLocation);
                 return scoutedLocation;
@@ -683,26 +681,6 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Client
                 Logger.LogError($"Could not scout location \"{locationName}\". Message: {e.Message}");
                 return null;
             }
-        }
-
-        private string GetItemClassification(ItemFlags itemFlags)
-        {
-            if (itemFlags.HasFlag(ItemFlags.Advancement))
-            {
-                return "Progression";
-            }
-
-            if (itemFlags.HasFlag(ItemFlags.NeverExclude))
-            {
-                return "Useful";
-            }
-
-            if (itemFlags.HasFlag(ItemFlags.Trap))
-            {
-                return "Trap";
-            }
-
-            return "Filler";
         }
 
         private ScoutedItemInfo ScoutLocation(long locationId, bool createAsHint)
