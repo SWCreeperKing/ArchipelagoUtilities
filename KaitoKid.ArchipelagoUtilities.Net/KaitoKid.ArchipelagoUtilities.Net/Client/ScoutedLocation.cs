@@ -17,6 +17,12 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Client
         public ItemFlags ClassificationFlags { get; private set; }
 
         public ScoutedLocation(string locationName, string itemName, string playerName, long locationId, long itemId,
+            long playerId, string classification) : this(locationName, itemName, playerName, locationId, itemId, playerId, GetFlagsFromText(classification))
+        {
+            Classification = classification;
+        }
+
+        public ScoutedLocation(string locationName, string itemName, string playerName, long locationId, long itemId,
             long playerId, ItemFlags classification)
         {
             LocationName = locationName;
@@ -72,6 +78,23 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Client
             }
 
             return "Filler";
+        }
+
+        public static ItemFlags GetFlagsFromText(string classification)
+        {
+            switch (classification)
+            {
+                case "Progression":
+                    return ItemFlags.Advancement;
+                case "Trap":
+                    return ItemFlags.Trap;
+                case "Useful":
+                    return ItemFlags.NeverExclude;
+                case "Filler":
+                    return ItemFlags.None;
+                default:
+                    return ItemFlags.None;
+            }
         }
     }
 }
