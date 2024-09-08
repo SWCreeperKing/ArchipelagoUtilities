@@ -13,7 +13,8 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Client
         public long LocationId { get; private set; }
         public long ItemId { get; private set; }
         public long PlayerId { get; private set; }
-        public ItemFlags Classification { get; private set; }
+        public string Classification { get; private set; }
+        public ItemFlags ClassificationFlags { get; private set; }
 
         public ScoutedLocation(string locationName, string itemName, string playerName, long locationId, long itemId,
             long playerId, ItemFlags classification)
@@ -24,7 +25,8 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Client
             LocationId = locationId;
             ItemId = itemId;
             PlayerId = playerId;
-            Classification = classification;
+            ClassificationFlags = classification;
+            Classification = GetClassificationString();
         }
 
         public string GetItemName(Func<string, string> nameTransform = null)
@@ -49,7 +51,7 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Client
 
         public string GetClassificationString()
         {
-            return GetItemClassification(Classification);
+            return GetItemClassification(ClassificationFlags);
         }
 
         public static string GetItemClassification(ItemFlags itemFlags)
