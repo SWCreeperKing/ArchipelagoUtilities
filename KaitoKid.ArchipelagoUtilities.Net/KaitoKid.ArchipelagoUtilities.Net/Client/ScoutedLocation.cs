@@ -47,12 +47,12 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Client
             return UNKNOWN_AP_ITEM;
         }
 
-        private string GetClassificationString()
+        public string GetClassificationString()
         {
             return GetItemClassification(Classification);
         }
 
-        private static string GetItemClassification(ItemFlags itemFlags)
+        public static string GetItemClassification(ItemFlags itemFlags)
         {
             if (itemFlags.HasFlag(ItemFlags.Advancement))
             {
