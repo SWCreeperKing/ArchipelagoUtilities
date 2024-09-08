@@ -7,19 +7,18 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Client
     {
         private const string UNKNOWN_AP_ITEM = "Item for another world in this Archipelago";
 
-        public string LocationName { get; private set; }
-        public string ItemName { get; private set; }
-        public string PlayerName { get; private set; }
-        public long LocationId { get; private set; }
-        public long ItemId { get; private set; }
-        public long PlayerId { get; private set; }
-        public string Classification { get; private set; }
-        public ItemFlags ClassificationFlags { get; private set; }
+        public string LocationName { get; set; }
+        public string ItemName { get; set; }
+        public string PlayerName { get; set; }
+        public long LocationId { get; set; }
+        public long ItemId { get; set; }
+        public long PlayerId { get; set; }
+        public string Classification { get; set; }
+        public ItemFlags ClassificationFlags { get; set; }
 
-        public ScoutedLocation(string locationName, string itemName, string playerName, long locationId, long itemId,
-            long playerId, string classification) : this(locationName, itemName, playerName, locationId, itemId, playerId, GetFlagsFromText(classification))
+        public ScoutedLocation()
         {
-            Classification = classification;
+            // Parameterless constructor for the json stuff
         }
 
         public ScoutedLocation(string locationName, string itemName, string playerName, long locationId, long itemId,
