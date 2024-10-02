@@ -41,14 +41,14 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Client
             ScoutedLocations = new Dictionary<string, ScoutedLocation>();
         }
 
-        public virtual void Connect(ArchipelagoConnectionInfo connectionInfo, out string errorMessage)
+        public virtual bool ConnectToMultiworld(ArchipelagoConnectionInfo connectionInfo, out string errorMessage)
         {
             DisconnectPermanently();
             var success = TryConnect(connectionInfo, out errorMessage);
             if (!success)
             {
                 DisconnectPermanently();
-                return;
+                return false;
             }
 
             if (!IsMultiworldVersionSupported())
@@ -56,8 +56,10 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Client
                 var genericVersion = _slotData.MultiworldVersion.Replace("0", "x");
                 errorMessage = $"This Multiworld has been created for {ModName} version {genericVersion},\nbut this is {ModName} version {ModVersion}.\nPlease update to a compatible mod version.";
                 DisconnectPermanently();
-                return;
+                return false;
             }
+
+            return true;
         }
 
         private bool TryConnect(ArchipelagoConnectionInfo connectionInfo, out string errorMessage)
