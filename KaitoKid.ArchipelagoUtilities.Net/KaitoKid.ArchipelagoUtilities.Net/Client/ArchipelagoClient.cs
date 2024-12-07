@@ -306,6 +306,40 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Client
             return allLocationsChecked;
         }
 
+        public IReadOnlyCollection<long> GetAllMissingLocations()
+        {
+            if (!MakeSureConnected())
+            {
+                return new List<long>();
+            }
+
+            return _session.Locations.AllMissingLocations;
+        }
+
+        public Dictionary<string, long> GetAllLocations()
+        {
+            if (!MakeSureConnected())
+            {
+                return new Dictionary<string, long>();
+            }
+
+            var allLocationsCheckedIds = _session.Locations.AllLocations;
+            var allLocationsChecked = allLocationsCheckedIds.ToDictionary(GetLocationName, x => x);
+            return allLocationsChecked;
+        }
+
+        public List<string> GetAllLocationNames()
+        {
+            if (!MakeSureConnected())
+            {
+                return new List<string>();
+            }
+
+            var allLocationsCheckedIds = _session.Locations.AllLocations;
+            var allLocationsChecked = allLocationsCheckedIds.Select(GetLocationName).ToList();
+            return allLocationsChecked;
+        }
+
         public List<ReceivedItem> GetAllReceivedItems()
         {
             if (!MakeSureConnected())
@@ -471,16 +505,6 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Client
 
             var id = GetLocationId(locationName);
             return _session.Locations.AllLocations.Contains(id);
-        }
-
-        public IReadOnlyCollection<long> GetAllMissingLocations()
-        {
-            if (!MakeSureConnected())
-            {
-                return new List<long>();
-            }
-
-            return _session.Locations.AllMissingLocations;
         }
 
         public long GetLocationId(string locationName)
