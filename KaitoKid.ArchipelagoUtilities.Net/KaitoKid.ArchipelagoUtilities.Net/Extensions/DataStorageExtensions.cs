@@ -1,10 +1,10 @@
 ﻿using System;
-using System.Threading.Tasks;
+using Archipelago.MultiClient.Net.Models;
 using KaitoKid.ArchipelagoUtilities.Net.Interfaces;
 
 namespace KaitoKid.ArchipelagoUtilities.Net.Extensions
 {
-    public static class TaskExtensions
+    public static class DataStorageExtensions
     {
         private static ILogger _logger = null;
 
@@ -13,15 +13,15 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Extensions
             _logger = logger;
         }
 
-        public static async void FireAndForget(this Task task)
+        public static void InitializeToZero(this DataStorageElement dataStorageElement)
         {
             try
             {
-                await task;
+                dataStorageElement.Initialize(0);
             }
             catch (Exception ex)
             {
-                _logger?.LogError($"Exception occurred in FireAndForget task: {ex}");
+                _logger?.LogError($"Exception occurred in InitializeToZero task: {ex}");
             }
         }
     }
