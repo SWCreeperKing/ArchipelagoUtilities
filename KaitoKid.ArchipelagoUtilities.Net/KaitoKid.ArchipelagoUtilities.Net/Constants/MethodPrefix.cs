@@ -1,6 +1,6 @@
 ﻿namespace KaitoKid.ArchipelagoUtilities.Net.Constants
 {
-    public static class Prefix
+    public static class MethodPrefix
     {
         public const bool RUN_ORIGINAL = true;
         public const bool DONT_RUN_ORIGINAL = false;
