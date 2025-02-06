@@ -13,7 +13,7 @@ using KaitoKid.ArchipelagoUtilities.Net.Interfaces;
 
 namespace KaitoKid.ArchipelagoUtilities.Net.Client
 {
-    public abstract class ArchipelagoClient
+    public abstract class ArchipelagoClient : ISessionProvider
     {
         private const string MISSING_LOCATION_NAME = "Thin Air";
         protected ILogger Logger;
