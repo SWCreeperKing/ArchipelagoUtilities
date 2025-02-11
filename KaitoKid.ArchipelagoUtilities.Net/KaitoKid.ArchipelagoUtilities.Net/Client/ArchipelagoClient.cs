@@ -669,7 +669,7 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Client
             return scoutResult;
         }
 
-        public ScoutedLocation ScoutSingleLocation(int locationId, bool createAsHint = false)
+        public ScoutedLocation ScoutSingleLocation(long locationId, bool createAsHint = false)
         {
             var locationName = GetLocationName(locationId);
             return ScoutSingleLocation(locationName, createAsHint);
