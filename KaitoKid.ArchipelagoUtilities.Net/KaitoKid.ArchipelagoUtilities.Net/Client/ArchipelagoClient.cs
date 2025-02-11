@@ -316,6 +316,11 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Client
             return _session.Locations.AllMissingLocations;
         }
 
+        public IReadOnlyCollection<string> GetAllMissingLocationNames()
+        {
+            return GetAllMissingLocations().Select(GetLocationName).ToArray();
+        }
+
         public Dictionary<string, long> GetAllLocations()
         {
             if (!MakeSureConnected())
@@ -662,6 +667,12 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Client
             }
 
             return scoutResult;
+        }
+
+        public ScoutedLocation ScoutSingleLocation(int locationId, bool createAsHint = false)
+        {
+            var locationName = GetLocationName(locationId);
+            return ScoutSingleLocation(locationName, createAsHint);
         }
 
         public ScoutedLocation ScoutSingleLocation(string locationName, bool createAsHint = false)
