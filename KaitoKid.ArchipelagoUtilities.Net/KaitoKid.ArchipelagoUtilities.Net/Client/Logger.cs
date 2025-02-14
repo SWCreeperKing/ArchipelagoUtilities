@@ -18,9 +18,7 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Client
 
         public void LogDebugPatchIsRunning(string patchedType, string patchedMethod, string patchType, string patchMethod, params object[] arguments)
         {
-#if DEBUG
             LogDebug($"{patchedType}.{patchedMethod}.{patchType}.{patchMethod}({GenerateArgumentsString(arguments)})");
-#endif
         }
 
         public void LogDebug(string message, params object[] arguments)
