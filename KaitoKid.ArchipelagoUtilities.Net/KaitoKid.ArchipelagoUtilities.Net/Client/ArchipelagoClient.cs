@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
 using Archipelago.MultiClient.Net;
 using Archipelago.MultiClient.Net.BounceFeatures.DeathLink;
@@ -22,7 +23,7 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Client
         private ArchipelagoConnectionInfo _connectionInfo;
         private DataPackageCache _localDataPackage;
 
-        private Action _itemReceivedFunction;
+        private Action<ReceivedItemsHelper> _itemReceivedFunction;
         public bool IsConnected { get; private set; }
         protected ISlotData _slotData;
         public Dictionary<string, ScoutedLocation> ScoutedLocations { get; set; }
@@ -31,7 +32,16 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Client
         public abstract string ModName { get; }
         public abstract string ModVersion { get; }
 
+        public ArchipelagoClient(ILogger logger, DataPackageCache dataPackageCache) : this(logger, dataPackageCache, (Action)null)
+        {
+        }
+
         public ArchipelagoClient(ILogger logger, DataPackageCache dataPackageCache, Action itemReceivedFunction)
+        : this(logger, dataPackageCache, itemReceivedFunction != null ? (_) => itemReceivedFunction() : (Action<ReceivedItemsHelper>)((_) => {}))
+        {
+        }
+
+        public ArchipelagoClient(ILogger logger, DataPackageCache dataPackageCache, Action<ReceivedItemsHelper> itemReceivedFunction)
         {
             Logger = logger;
             _localDataPackage = dataPackageCache;
@@ -200,7 +210,7 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Client
                 return;
             }
 
-            _itemReceivedFunction();
+            _itemReceivedFunction(receivedItemsHelper);
         }
 
         public void ReportCheckedLocations(long[] locationIds)
