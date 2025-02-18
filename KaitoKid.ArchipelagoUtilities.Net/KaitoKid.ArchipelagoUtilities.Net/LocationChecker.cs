@@ -171,7 +171,7 @@ namespace KaitoKid.ArchipelagoUtilities.Net
             _archipelago.ReportCheckedLocations(allCheckedLocations.ToArray());
         }
 
-        public void VerifyNewLocationChecksWithArchipelago()
+        public virtual void VerifyNewLocationChecksWithArchipelago()
         {
             var allCheckedLocations = _archipelago.GetAllCheckedLocations();
             foreach (var checkedLocation in allCheckedLocations)
