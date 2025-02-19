@@ -64,19 +64,19 @@ namespace KaitoKid.ArchipelagoUtilities.Net
             return _archipelago.GetAllMissingLocations().Select(x => _archipelago.GetLocationName(x)).ToArray();
         }
 
-        public void AddCheckedLocations(string[] locationNames)
+        public virtual void AddCheckedLocations(string[] locationNames)
         {
             RememberCheckedLocations(locationNames);
             SendAllLocationChecks();
         }
 
-        public void AddCheckedLocation(string locationName)
+        public virtual void AddCheckedLocation(string locationName)
         {
             RememberCheckedLocation(locationName);
             SendAllLocationChecks();
         }
 
-        public void RememberCheckedLocations(string[] locationNames)
+        public virtual void RememberCheckedLocations(string[] locationNames)
         {
             foreach (var locationName in locationNames)
             {
@@ -84,7 +84,7 @@ namespace KaitoKid.ArchipelagoUtilities.Net
             }
         }
 
-        private void RememberCheckedLocation(string locationName)
+        protected virtual void RememberCheckedLocation(string locationName)
         {
             if (_checkedLocations.ContainsKey(locationName))
             {
