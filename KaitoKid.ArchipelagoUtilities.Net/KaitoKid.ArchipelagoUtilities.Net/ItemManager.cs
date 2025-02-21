@@ -6,7 +6,7 @@ namespace KaitoKid.ArchipelagoUtilities.Net
 {
     public abstract class ItemManager
     {
-        private readonly ArchipelagoClient _archipelago;
+        protected readonly ArchipelagoClient _archipelago;
         protected HashSet<ReceivedItem> _itemsAlreadyProcessed;
 
         protected ItemManager(ArchipelagoClient archipelago, IEnumerable<ReceivedItem> itemsAlreadyProcessed)
