@@ -4,9 +4,9 @@
 	<TargetFrameworks>net452;netstandard2.0;net5.0;net6.0</TargetFrameworks>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Authors>KaitoKid</Authors>
-	<AssemblyVersion>1.1.27</AssemblyVersion>
-	<FileVersion>1.1.27</FileVersion>
-	<Version>1.1.27</Version>
+	<AssemblyVersion>1.2.0</AssemblyVersion>
+	<FileVersion>1.2.0</FileVersion>
+	<Version>1.2.0</Version>
     <Description>.NET library for Archipelago Utilities</Description>
     <PackageProjectUrl>https://github.com/agilbert1412/ArchipelagoUtilities/blob/main/README.md</PackageProjectUrl>
     <PackageReadmeFile>README.md</PackageReadmeFile>
@@ -32,8 +32,8 @@
   </ItemGroup>
 
   <ItemGroup>
-	<PackageReference Include="Archipelago.MultiClient.Net" Version="6.3.0" />
-	<PackageReference Include="Archipelago.MultiClient.Net.Analyzers" Version="1.0.0">
+	<PackageReference Include="Archipelago.MultiClient.Net" Version="6.6.0" />
+	<PackageReference Include="Archipelago.MultiClient.Net.Analyzers" Version="1.1.0">
 	  <PrivateAssets>all</PrivateAssets>
 	  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
 	</PackageReference>
