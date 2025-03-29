@@ -134,6 +134,7 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Client
 
             _session.Items.ItemReceived += OnItemReceived;
             _session.MessageLog.OnMessageReceived += OnMessageReceived;
+            _session.Socket.PacketReceived += OnPacketReceived;
             _session.Socket.ErrorReceived += SessionErrorReceived;
             _session.Socket.SocketClosed += SessionSocketClosed;
 
@@ -187,6 +188,8 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Client
         }
 
         protected abstract void OnMessageReceived(LogMessage message);
+
+        protected abstract void OnPacketReceived(ArchipelagoPacketBase packet);
 
         public void SendMessage(string text)
         {
@@ -781,6 +784,7 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Client
             {
                 _session.Items.ItemReceived -= OnItemReceived;
                 _session.MessageLog.OnMessageReceived -= OnMessageReceived;
+                _session.Socket.PacketReceived -= OnPacketReceived;
                 _session.Socket.ErrorReceived -= SessionErrorReceived;
                 _session.Socket.SocketClosed -= SessionSocketClosed;
                 _session.Socket.DisconnectAsync();
