@@ -925,25 +925,12 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Client
             EnableMoveLink();
             var data = new Dictionary<string, JToken>()
             {
-                { "slot", slot },
-                { "timespan", timespan },
-                { "x", x },
-                { "y", y },
+                { "slot", slot }, // Unique identifier to be able to ignore your own packets. Can be just your slot number if you don't care about supporting slot coop
+                { "timespan", timespan }, // Duration of this movement, in seconds. Helps scaling between games. Recommended 0.25 or 0.5
+                { "x", x }, // Movement in number of "tiles". If your engine doesn't have tiles, scale it how you'd like. Your character should be about 1 tile wide
+                { "y", y }, // Movement in number of "tiles". If your engine doesn't have tiles, scale it how you'd like. Your character should be about 1 tile wide
             };
             SendBouncePacket(new[] { MOVE_LINK_TAG }, data);
-        }
-
-        public void SendBouncePacket(IEnumerable<string> tags, Dictionary<string, JToken> data)
-        {
-            if (!MakeSureConnected())
-            {
-                return;
-            }
-            
-            var bouncePacket = new BouncePacket();
-            bouncePacket.Tags.AddRange(tags);
-            bouncePacket.Data = data;
-            _session.Socket.SendPacketAsync(bouncePacket).FireAndForget();
         }
 
         private void EnableMoveLink()
@@ -959,6 +946,19 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Client
             }
             var newTags = _session.ConnectionInfo.Tags.Concat(new[] { MOVE_LINK_TAG }).ToArray();
             _session.ConnectionInfo.UpdateConnectionOptions(newTags);
+        }
+
+        public void SendBouncePacket(IEnumerable<string> tags, Dictionary<string, JToken> data)
+        {
+            if (!MakeSureConnected())
+            {
+                return;
+            }
+
+            var bouncePacket = new BouncePacket();
+            bouncePacket.Tags.AddRange(tags);
+            bouncePacket.Data = data;
+            _session.Socket.SendPacketAsync(bouncePacket).FireAndForget();
         }
     }
 }
