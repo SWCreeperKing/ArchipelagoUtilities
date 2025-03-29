@@ -10,12 +10,16 @@ using Archipelago.MultiClient.Net.Helpers;
 using Archipelago.MultiClient.Net.MessageLog.Messages;
 using Archipelago.MultiClient.Net.Models;
 using Archipelago.MultiClient.Net.Packets;
+using KaitoKid.ArchipelagoUtilities.Net.Extensions;
 using KaitoKid.ArchipelagoUtilities.Net.Interfaces;
+using Newtonsoft.Json.Linq;
+using static System.Collections.Specialized.BitVector32;
 
 namespace KaitoKid.ArchipelagoUtilities.Net.Client
 {
     public abstract class ArchipelagoClient : ISessionProvider
     {
+        public const string MOVE_LINK_TAG = "MoveLink";
         private const string MISSING_LOCATION_NAME = "Thin Air";
         protected ILogger Logger;
         private ArchipelagoSession _session;
@@ -909,6 +913,52 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Client
             }
 
             return _session;
+        }
+
+        public void SendMoveLinkPacket(string slot, float timespan, float x, float y)
+        {
+            if (!MakeSureConnected())
+            {
+                return;
+            }
+
+            EnableMoveLink();
+            var data = new Dictionary<string, JToken>()
+            {
+                { "slot", slot },
+                { "timespan", timespan },
+                { "x", x },
+                { "y", y },
+            };
+            SendBouncePacket(new[] { MOVE_LINK_TAG }, data);
+        }
+
+        public void SendBouncePacket(IEnumerable<string> tags, Dictionary<string, JToken> data)
+        {
+            if (!MakeSureConnected())
+            {
+                return;
+            }
+            
+            var bouncePacket = new BouncePacket();
+            bouncePacket.Tags.AddRange(tags);
+            bouncePacket.Data = data;
+            _session.Socket.SendPacketAsync(bouncePacket).FireAndForget();
+        }
+
+        private void EnableMoveLink()
+        {
+            if (!MakeSureConnected())
+            {
+                return;
+            }
+
+            if (Array.IndexOf(_session.ConnectionInfo.Tags, MOVE_LINK_TAG) != -1)
+            {
+                return;
+            }
+            var newTags = _session.ConnectionInfo.Tags.Concat(new[] { MOVE_LINK_TAG }).ToArray();
+            _session.ConnectionInfo.UpdateConnectionOptions(newTags);
         }
     }
 }
