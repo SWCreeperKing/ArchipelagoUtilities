@@ -39,11 +39,16 @@ namespace KaitoKid.ArchipelagoUtilities.Net
             return LocationExists(locationName) && IsLocationNotChecked(locationName);
         }
 
-        public bool LocationExists(string locationName)
+        public bool LocationExists(string locationName, bool allowCloseEnough = false)
         {
             if (_archipelago.LocationExists(locationName))
             {
                 return true;
+            }
+
+            if (!allowCloseEnough)
+            {
+                return false;
             }
 
             if (TryGetCloseEnoughNameFromAllLocations(locationName, out _))
@@ -131,26 +136,31 @@ namespace KaitoKid.ArchipelagoUtilities.Net
 
         public bool TryGetCloseEnoughNameFromAllLocations(string locationName, out string closeEnoughName)
         {
-            var allLocationsNotChecked = new HashSet<string>(GetAllLocations());
+            var allLocations = new HashSet<string>(GetAllLocations());
 
-            return TryGetCloseEnoughName(allLocationsNotChecked, locationName, out closeEnoughName);
+            return TryGetCloseEnoughName(allLocations, locationName, out closeEnoughName);
         }
 
-        private bool TryGetCloseEnoughName(ICollection<string> validNames, string locationName, out string closeEnoughName)
+        public bool TryGetCloseEnoughName(ICollection<string> validNames, string locationName, out string closeEnoughName)
         {
-            closeEnoughName = validNames.FirstOrDefault(x => x.Equals(locationName, StringComparison.InvariantCultureIgnoreCase));
-            if (!string.IsNullOrEmpty(closeEnoughName))
+            var locationNameNoSpace = locationName.Replace(" ", "");
+            foreach (var validName in validNames)
             {
-                return true;
+                if (locationName.Equals(validName, StringComparison.InvariantCultureIgnoreCase))
+                {
+                    closeEnoughName = validName;
+                    return true;
+                }
+
+                var validNameNoSpace = validName.Replace(" ", "");
+                if (locationNameNoSpace.Equals(validNameNoSpace, StringComparison.InvariantCultureIgnoreCase))
+                {
+                    closeEnoughName = validName;
+                    return true;
+                }
             }
 
-            closeEnoughName = validNames.FirstOrDefault(x => x.Replace(" ", "").Equals(locationName.Replace(" ", ""), StringComparison.InvariantCultureIgnoreCase));
-            if (!string.IsNullOrEmpty(closeEnoughName))
-            {
-                return true;
-            }
-
-
+            closeEnoughName = "";
             return false;
         }
 
