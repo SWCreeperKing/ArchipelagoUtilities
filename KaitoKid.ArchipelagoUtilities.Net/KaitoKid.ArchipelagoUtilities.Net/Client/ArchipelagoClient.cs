@@ -14,6 +14,7 @@ using KaitoKid.ArchipelagoUtilities.Net.Extensions;
 using KaitoKid.ArchipelagoUtilities.Net.Interfaces;
 using Newtonsoft.Json.Linq;
 using static System.Collections.Specialized.BitVector32;
+// ReSharper disable UseArrayEmptyMethod
 
 namespace KaitoKid.ArchipelagoUtilities.Net.Client
 {
@@ -445,14 +446,14 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Client
         {
             if (!MakeSureConnected())
             {
-                return Array.Empty<Hint>();
+                return new Hint[0];
             }
 
             var hintTask = _session.DataStorage.GetHintsAsync();
             hintTask.Wait(2000);
             if (hintTask.IsCanceled || hintTask.IsFaulted || !hintTask.IsCompleted || hintTask.Status != TaskStatus.RanToCompletion)
             {
-                return Array.Empty<Hint>();
+                return new Hint[0];
             }
 
             return hintTask.Result;
@@ -462,7 +463,7 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Client
         {
             if (!MakeSureConnected())
             {
-                return Array.Empty<Hint>();
+                return new Hint[0];
             }
 
             return GetHints().Where(x => !x.Found && GetPlayerName(x.FindingPlayer) == _slotData.SlotName).ToArray();
@@ -485,7 +486,7 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Client
         {
             if (!MakeSureConnected())
             {
-                return Array.Empty<Hint>();
+                return new Hint[0];
             }
 
             return GetHints().Where(x => !x.Found && GetPlayerName(x.FindingPlayer) == _slotData.SlotName && statusToMatch.Contains(x.Status)).ToArray();
