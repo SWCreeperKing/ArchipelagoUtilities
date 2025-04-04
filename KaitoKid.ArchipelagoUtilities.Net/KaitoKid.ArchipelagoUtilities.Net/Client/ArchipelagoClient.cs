@@ -445,14 +445,14 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Client
         {
             if (!MakeSureConnected())
             {
-                return new Hint[0];
+                return Array.Empty<Hint>();
             }
 
             var hintTask = _session.DataStorage.GetHintsAsync();
             hintTask.Wait(2000);
             if (hintTask.IsCanceled || hintTask.IsFaulted || !hintTask.IsCompleted || hintTask.Status != TaskStatus.RanToCompletion)
             {
-                return new Hint[0];
+                return Array.Empty<Hint>();
             }
 
             return hintTask.Result;
@@ -462,10 +462,33 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Client
         {
             if (!MakeSureConnected())
             {
-                return new Hint[0];
+                return Array.Empty<Hint>();
             }
 
             return GetHints().Where(x => !x.Found && GetPlayerName(x.FindingPlayer) == _slotData.SlotName).ToArray();
+        }
+
+        private static readonly HintStatus[] _desiredHintStatus = { HintStatus.Priority };
+        private static readonly HintStatus[] _avoidedHintStatus = { HintStatus.Avoid };
+
+        public Hint[] GetMyActiveDesiredHints()
+        {
+            return GetMyActiveHintsMatchingStatus(_desiredHintStatus);
+        }
+
+        public Hint[] GetMyActiveAvoidedHints()
+        {
+            return GetMyActiveHintsMatchingStatus(_avoidedHintStatus);
+        }
+
+        public Hint[] GetMyActiveHintsMatchingStatus(HintStatus[] statusToMatch)
+        {
+            if (!MakeSureConnected())
+            {
+                return Array.Empty<Hint>();
+            }
+
+            return GetHints().Where(x => !x.Found && GetPlayerName(x.FindingPlayer) == _slotData.SlotName && statusToMatch.Contains(x.Status)).ToArray();
         }
 
         public void ReportGoalCompletion()
