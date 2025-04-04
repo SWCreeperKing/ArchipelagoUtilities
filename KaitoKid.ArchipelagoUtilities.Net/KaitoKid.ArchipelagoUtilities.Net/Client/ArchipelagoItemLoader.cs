@@ -29,7 +29,7 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Client
         public virtual ArchipelagoItem Load(string itemName, JToken itemJson)
         {
             var id = itemJson["code"].Value<long>();
-            var classification = (ItemClassification)Enum.Parse(typeof(ItemClassification), itemJson["classification"].Value<string>(), true);
+            var classification = (ItemClassification)Enum.Parse(typeof(ItemClassification), itemJson["classification"].Value<string>().Replace("|", ","), true);
             var item = new ArchipelagoItem(itemName, id, classification);
             return item;
         }
