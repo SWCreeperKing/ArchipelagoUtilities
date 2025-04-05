@@ -705,7 +705,11 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Client
 
                 var scoutedLocation = new ScoutedLocation(namesToScout[i], itemName, playerSlotName, idsToScout[i], itemScouted.ItemId, itemScouted.Player, itemScouted.Flags);
 
-                ScoutedLocations.Add(namesToScout[i], scoutedLocation);
+
+                if (!ScoutedLocations.ContainsKey(namesToScout[i]))
+                {
+                    ScoutedLocations.Add(namesToScout[i], scoutedLocation);
+                }
                 if (createAsHint)
                 {
                     ScoutHintedLocations.Add(namesToScout[i]);
@@ -757,7 +761,10 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Client
                 var scoutedLocation = new ScoutedLocation(locationName, itemName, playerSlotName, locationId,
                     scoutedItemInfo.ItemId, scoutedItemInfo.Player, scoutedItemInfo.Flags);
 
-                ScoutedLocations.Add(locationName, scoutedLocation);
+                if (!ScoutedLocations.ContainsKey(locationName))
+                {
+                    ScoutedLocations.Add(locationName, scoutedLocation);
+                }
                 if (createAsHint)
                 {
                     ScoutHintedLocations.Add(locationName);
