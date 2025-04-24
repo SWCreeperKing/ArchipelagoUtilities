@@ -667,6 +667,12 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Client
                     continue;
                 }
 
+                if (_session.Locations.AllLocationsChecked.Contains(locationId) || !_session.Locations.AllMissingLocations.Contains(locationId))
+                {
+                    Logger.LogInfo($"Skipping scout operation for location \"{locationName}\" that is missing or already checked");
+                    continue;
+                }
+
                 namesToScout.Add(locationName);
                 idsToScout.Add(locationId);
             }
@@ -745,6 +751,12 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Client
                 if (locationId == -1)
                 {
                     Logger.LogWarning($"Could not find the id for location \"{locationName}\".");
+                    return null;
+                }
+
+                if (_session.Locations.AllLocationsChecked.Contains(locationId) || !_session.Locations.AllMissingLocations.Contains(locationId))
+                {
+                    Logger.LogInfo($"Skipping scout operation for location \"{locationName}\" that is missing or already checked");
                     return null;
                 }
 
