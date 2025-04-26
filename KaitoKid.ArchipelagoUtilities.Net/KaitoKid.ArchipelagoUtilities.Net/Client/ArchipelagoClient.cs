@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
 using Archipelago.MultiClient.Net;
 using Archipelago.MultiClient.Net.BounceFeatures.DeathLink;
@@ -13,7 +12,7 @@ using Archipelago.MultiClient.Net.Packets;
 using KaitoKid.ArchipelagoUtilities.Net.Extensions;
 using KaitoKid.ArchipelagoUtilities.Net.Interfaces;
 using Newtonsoft.Json.Linq;
-using static System.Collections.Specialized.BitVector32;
+
 // ReSharper disable UseArrayEmptyMethod
 
 namespace KaitoKid.ArchipelagoUtilities.Net.Client
@@ -708,8 +707,9 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Client
                 var itemScouted = scoutResponse[i];
                 var itemName = GetItemName(itemScouted);
                 var playerSlotName = _session.Players.GetPlayerName(itemScouted.Player);
+                var gameName = itemScouted.ItemGame;
 
-                var scoutedLocation = new ScoutedLocation(namesToScout[i], itemName, playerSlotName, idsToScout[i], itemScouted.ItemId, itemScouted.Player, itemScouted.Flags);
+                var scoutedLocation = new ScoutedLocation(namesToScout[i], itemName, playerSlotName, gameName, idsToScout[i], itemScouted.ItemId, itemScouted.Player, itemScouted.Flags);
 
 
                 if (!ScoutedLocations.ContainsKey(namesToScout[i]))
@@ -769,8 +769,9 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Client
 
                 var itemName = GetItemName(scoutedItemInfo);
                 var playerSlotName = _session.Players.GetPlayerName(scoutedItemInfo.Player);
+                var gameName = scoutedItemInfo.ItemGame;
 
-                var scoutedLocation = new ScoutedLocation(locationName, itemName, playerSlotName, locationId,
+                var scoutedLocation = new ScoutedLocation(locationName, itemName, playerSlotName, gameName, locationId,
                     scoutedItemInfo.ItemId, scoutedItemInfo.Player, scoutedItemInfo.Flags);
 
                 if (!ScoutedLocations.ContainsKey(locationName))

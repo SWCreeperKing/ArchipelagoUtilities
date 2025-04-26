@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Archipelago.MultiClient.Net.Packets;
+﻿using Archipelago.MultiClient.Net.Packets;
 
 namespace KaitoKid.ArchipelagoUtilities.Net.BouncePackets
 {

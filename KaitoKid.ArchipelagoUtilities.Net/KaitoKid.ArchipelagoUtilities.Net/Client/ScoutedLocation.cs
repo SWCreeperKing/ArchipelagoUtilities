@@ -10,6 +10,7 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Client
         public string LocationName { get; set; }
         public string ItemName { get; set; }
         public string PlayerName { get; set; }
+        public string GameName { get; set; }
         public long LocationId { get; set; }
         public long ItemId { get; set; }
         public long PlayerId { get; set; }
@@ -21,12 +22,13 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Client
             // Parameterless constructor for the json stuff
         }
 
-        public ScoutedLocation(string locationName, string itemName, string playerName, long locationId, long itemId,
+        public ScoutedLocation(string locationName, string itemName, string playerName, string gameName, long locationId, long itemId,
             long playerId, ItemFlags classification)
         {
             LocationName = locationName;
             ItemName = itemName;
             PlayerName = playerName;
+            GameName = gameName;
             LocationId = locationId;
             ItemId = itemId;
             PlayerId = playerId;
@@ -93,6 +95,19 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Client
                     return ItemFlags.None;
                 default:
                     return ItemFlags.None;
+            }
+        }
+
+        public int GetSeed()
+        {
+            unchecked
+            {
+                var seed = 7l;
+                seed = (seed * 13) + LocationId;
+                seed = (seed * 13) + ItemId;
+                seed = (seed * 13) + PlayerId;
+                seed = seed % int.MaxValue;
+                return (int)seed;
             }
         }
     }

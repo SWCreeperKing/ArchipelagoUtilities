@@ -1,42 +1,467 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-	<TargetFrameworks>net452;netstandard2.0;net5.0;net6.0</TargetFrameworks>
-    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <Authors>KaitoKid</Authors>
-	<AssemblyVersion>1.2.10</AssemblyVersion>
-	<FileVersion>1.2.10</FileVersion>
-	<Version>1.2.10</Version>
-    <Description>.NET library for Archipelago Utilities</Description>
-    <PackageProjectUrl>https://github.com/agilbert1412/ArchipelagoUtilities/blob/main/README.md</PackageProjectUrl>
-    <PackageReadmeFile>README.md</PackageReadmeFile>
-    <RepositoryUrl>https://github.com/agilbert1412/ArchipelagoUtilities</RepositoryUrl>
-  </PropertyGroup>
-	
-  <PropertyGroup>
-	<PackageLicenseExpression>MIT</PackageLicenseExpression>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFrameworks>net452;netstandard2.0;net5.0;net6.0</TargetFrameworks>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<Authors>KaitoKid</Authors>
+		<AssemblyVersion>1.3.0</AssemblyVersion>
+		<FileVersion>1.3.0</FileVersion>
+		<Version>1.3.0</Version>
+		<Description>.NET library for Archipelago Utilities</Description>
+		<PackageProjectUrl>https://github.com/agilbert1412/ArchipelagoUtilities/blob/main/README.md</PackageProjectUrl>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<RepositoryUrl>https://github.com/agilbert1412/ArchipelagoUtilities</RepositoryUrl>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <None Include="..\..\README.md">
-      <Pack>True</Pack>
-      <PackagePath>\</PackagePath>
-    </None>
-    <None Include="..\.editorconfig" Link=".editorconfig" />
-  </ItemGroup>
-  <ItemGroup Condition="$(TargetFramework.StartsWith('netcore'))">
+	<PropertyGroup>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+	</PropertyGroup>
 
-  </ItemGroup>
-  <ItemGroup Condition="$(TargetFramework.StartsWith('net4'))">
+	<ItemGroup>
+		<None Include="..\..\README.md">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+		<None Include="..\.editorconfig" Link=".editorconfig" />
+		<Content Include="Custom Assets\**\*.png">
+			<Pack>true</Pack>
+			<PackagePath>\Custom Assets\</PackagePath>
+		</Content>
+		<Content Include="...">
+			<PackageCopyToOutput>true</PackageCopyToOutput>
+		</Content>
+	</ItemGroup>
+	<ItemGroup Condition="$(TargetFramework.StartsWith('netcore'))">
 
-  </ItemGroup>
+	</ItemGroup>
+	<ItemGroup Condition="$(TargetFramework.StartsWith('net4'))">
 
-  <ItemGroup>
-	<PackageReference Include="Archipelago.MultiClient.Net" Version="6.6.0" />
-	<PackageReference Include="Archipelago.MultiClient.Net.Analyzers" Version="1.1.0">
-	  <PrivateAssets>all</PrivateAssets>
-	  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-	</PackageReference>
-  </ItemGroup>
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Archipelago.MultiClient.Net" Version="6.6.0" />
+		<PackageReference Include="Archipelago.MultiClient.Net.Analyzers" Version="1.1.0">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Update="Custom Assets\A Hat in Time\A Hat in Time.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+			<Pack>true</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+		<None Update="Custom Assets\A Hat in Time\A Hat in Time_100 Pons.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Custom Assets\A Hat in Time\A Hat in Time_25 Pons.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Custom Assets\A Hat in Time\A Hat in Time_50 Pons.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Custom Assets\A Hat in Time\A Hat in Time_Baby Trap.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Custom Assets\A Hat in Time\A Hat in Time_Badge Pin.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Custom Assets\A Hat in Time\A Hat in Time_Brewing Hat.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Custom Assets\A Hat in Time\A Hat in Time_Camera Badge.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Custom Assets\A Hat in Time\A Hat in Time_Compass Badge.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Custom Assets\A Hat in Time\A Hat in Time_Dweller Mask.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Custom Assets\A Hat in Time\A Hat in Time_Fast Hatter Badge.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Custom Assets\A Hat in Time\A Hat in Time_Health Pon.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Custom Assets\A Hat in Time\A Hat in Time_Hookshot Badge.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Custom Assets\A Hat in Time\A Hat in Time_Hover Badge.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Custom Assets\A Hat in Time\A Hat in Time_Ice Hat.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Custom Assets\A Hat in Time\A Hat in Time_Item Magnet Badge.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Custom Assets\A Hat in Time\A Hat in Time_Laser Trap.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Custom Assets\A Hat in Time\A Hat in Time_Metro Ticket - Blue.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Custom Assets\A Hat in Time\A Hat in Time_Metro Ticket - Green.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Custom Assets\A Hat in Time\A Hat in Time_Metro Ticket - Pink.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Custom Assets\A Hat in Time\A Hat in Time_Metro Ticket - Yellow.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Custom Assets\A Hat in Time\A Hat in Time_Mumble Badge.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Custom Assets\A Hat in Time\A Hat in Time_No Bonk Badge.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Custom Assets\A Hat in Time\A Hat in Time_One-Hit Hero Badge.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Custom Assets\A Hat in Time\A Hat in Time_Parade Trap.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Custom Assets\A Hat in Time\A Hat in Time_Progressive Painting Unlock.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Custom Assets\A Hat in Time\A Hat in Time_Projectile Badge.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Custom Assets\A Hat in Time\A Hat in Time_Random Cosmetic.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Custom Assets\A Hat in Time\A Hat in Time_Relic %28Blue Crayon%29.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Custom Assets\A Hat in Time\A Hat in Time_Relic %28Burger Cushion%29.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Custom Assets\A Hat in Time\A Hat in Time_Relic %28Burger Patty%29.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Custom Assets\A Hat in Time\A Hat in Time_Relic %28Cake Stand%29.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Custom Assets\A Hat in Time\A Hat in Time_Relic %28Chocolate Cake Slice%29.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Custom Assets\A Hat in Time\A Hat in Time_Relic %28Chocolate Cake%29.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Custom Assets\A Hat in Time\A Hat in Time_Relic %28Cool Cow%29.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Custom Assets\A Hat in Time\A Hat in Time_Relic %28Cow%29.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Custom Assets\A Hat in Time\A Hat in Time_Relic %28Crayon Box%29.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Custom Assets\A Hat in Time\A Hat in Time_Relic %28Green Crayon%29.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Custom Assets\A Hat in Time\A Hat in Time_Relic %28Mountain Set%29.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Custom Assets\A Hat in Time\A Hat in Time_Relic %28Necklace Bust%29.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Custom Assets\A Hat in Time\A Hat in Time_Relic %28Necklace%29.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Custom Assets\A Hat in Time\A Hat in Time_Relic %28Red Crayon%29.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Custom Assets\A Hat in Time\A Hat in Time_Relic %28Shortcake%29.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Custom Assets\A Hat in Time\A Hat in Time_Relic %28Tin-foil Hat Cow%29.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Custom Assets\A Hat in Time\A Hat in Time_Relic %28Train%29.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Custom Assets\A Hat in Time\A Hat in Time_Relic %28UFO%29.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Custom Assets\A Hat in Time\A Hat in Time_Scooter Badge.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Custom Assets\A Hat in Time\A Hat in Time_Snatcher%27s Contract - Mail Delivery Service.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Custom Assets\A Hat in Time\A Hat in Time_Snatcher%27s Contract - Queen Vanessa%27s Manor.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Custom Assets\A Hat in Time\A Hat in Time_Snatcher%27s Contract - The Subcon Well.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Custom Assets\A Hat in Time\A Hat in Time_Snatcher%27s Contract - Toilet of Doom.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Custom Assets\A Hat in Time\A Hat in Time_Sprint Hat.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Custom Assets\A Hat in Time\A Hat in Time_Time Piece.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Custom Assets\A Hat in Time\A Hat in Time_Time Stop Hat.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Custom Assets\A Hat in Time\A Hat in Time_Umbrella.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Custom Assets\A Hat in Time\A Hat in Time_Yarn.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Custom Assets\A Hat in Time\A Hat in Time_Zipline Unlock - The Birdhouse Path.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Custom Assets\A Hat in Time\A Hat in Time_Zipline Unlock - The Lava Cake Path.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Custom Assets\A Hat in Time\A Hat in Time_Zipline Unlock - The Twilight Bell Path.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Custom Assets\A Hat in Time\A Hat in Time_Zipline Unlock - The Windmill Path.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Custom Assets\Hollow Knight\Hollow Knight.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Custom Assets\Hollow Knight\Hollow Knight_Abyss_Shriek.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Custom Assets\Hollow Knight\Hollow Knight_Awoken_Dream_Nail.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Custom Assets\Hollow Knight\Hollow Knight_Crystal_Heart.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Custom Assets\Hollow Knight\Hollow Knight_Descending_Dark.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Custom Assets\Hollow Knight\Hollow Knight_Desolate_Dive.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Custom Assets\Hollow Knight\Hollow Knight_Dreamgate.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Custom Assets\Hollow Knight\Hollow Knight_Dream_Nail.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Custom Assets\Hollow Knight\Hollow Knight_Howling_Wraiths.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Custom Assets\Hollow Knight\Hollow Knight_Isma%27s_Tear.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Custom Assets\Hollow Knight\Hollow Knight_Mantis_Claw.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Custom Assets\Hollow Knight\Hollow Knight_Monarch_Wings.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Custom Assets\Hollow Knight\Hollow Knight_Mothwing_Cloak.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Custom Assets\Hollow Knight\Hollow Knight_Shade_Cloak.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Custom Assets\Hollow Knight\Hollow Knight_Shade_Soul.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Custom Assets\Hollow Knight\Hollow Knight_Vengeful_Spirit.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Custom Assets\Mario &amp; Luigi Superstar Saga\Mario &amp; Luigi Superstar Saga.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Custom Assets\Mario &amp; Luigi Superstar Saga\Mario &amp; Luigi Superstar Saga_Azure Neon Egg.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Custom Assets\Mario &amp; Luigi Superstar Saga\Mario &amp; Luigi Superstar Saga_Beanfruit.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Custom Assets\Mario &amp; Luigi Superstar Saga\Mario &amp; Luigi Superstar Saga_Beanstar Piece.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Custom Assets\Mario &amp; Luigi Superstar Saga\Mario &amp; Luigi Superstar Saga_Blue Neon Egg.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Custom Assets\Mario &amp; Luigi Superstar Saga\Mario &amp; Luigi Superstar Saga_Fake Beanfruit.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Custom Assets\Mario &amp; Luigi Superstar Saga\Mario &amp; Luigi Superstar Saga_Green Neon Egg.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Custom Assets\Mario &amp; Luigi Superstar Saga\Mario &amp; Luigi Superstar Saga_Orange Neon Egg.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None
+			Update="Custom Assets\Mario &amp; Luigi Superstar Saga\Mario &amp; Luigi Superstar Saga_Purple Chuckola Fruit.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Custom Assets\Mario &amp; Luigi Superstar Saga\Mario &amp; Luigi Superstar Saga_Purple Neon Egg.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Custom Assets\Mario &amp; Luigi Superstar Saga\Mario &amp; Luigi Superstar Saga_Red Chuckola Fruit.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Custom Assets\Mario &amp; Luigi Superstar Saga\Mario &amp; Luigi Superstar Saga_Red Neon Egg.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None
+			Update="Custom Assets\Mario &amp; Luigi Superstar Saga\Mario &amp; Luigi Superstar Saga_White Chuckola Fruit.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Custom Assets\Mario &amp; Luigi Superstar Saga\Mario &amp; Luigi Superstar Saga_Yellow Neon Egg.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Custom Assets\Stardew Valley\Stardew Valley.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Custom Assets\Stardew Valley\Stardew Valley_Bridge Repair.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Custom Assets\Stardew Valley\Stardew Valley_Bus Repair.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Custom Assets\Stardew Valley\Stardew Valley_Combat Level.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Custom Assets\Stardew Valley\Stardew Valley_Combat Mastery.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Custom Assets\Stardew Valley\Stardew Valley_Desert Obelisk.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Custom Assets\Stardew Valley\Stardew Valley_Earth Obelisk.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Custom Assets\Stardew Valley\Stardew Valley_Farming Level.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Custom Assets\Stardew Valley\Stardew Valley_Farming Mastery.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Custom Assets\Stardew Valley\Stardew Valley_Fishing Level.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Custom Assets\Stardew Valley\Stardew Valley_Fishing Mastery.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Custom Assets\Stardew Valley\Stardew Valley_Foraging Level.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Custom Assets\Stardew Valley\Stardew Valley_Foraging Mastery.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Custom Assets\Stardew Valley\Stardew Valley_Glittering Boulder Removed.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Custom Assets\Stardew Valley\Stardew Valley_Golden Walnut.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Custom Assets\Stardew Valley\Stardew Valley_Greenhouse.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Custom Assets\Stardew Valley\Stardew Valley_Horse Flute.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Custom Assets\Stardew Valley\Stardew Valley_Iridium Snake Milk.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Custom Assets\Stardew Valley\Stardew Valley_Island Obelisk.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Custom Assets\Stardew Valley\Stardew Valley_Junimo Hut.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Custom Assets\Stardew Valley\Stardew Valley_Key To The Town.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Custom Assets\Stardew Valley\Stardew Valley_Minecarts Repair.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Custom Assets\Stardew Valley\Stardew Valley_Mining Level.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Custom Assets\Stardew Valley\Stardew Valley_Mining Mastery.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Custom Assets\Stardew Valley\Stardew Valley_Pierre%27s Missing Stocklist.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Custom Assets\Stardew Valley\Stardew Valley_Power Horse The Book.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Custom Assets\Stardew Valley\Stardew Valley_Progressive Axe.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Custom Assets\Stardew Valley\Stardew Valley_Progressive Club.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Custom Assets\Stardew Valley\Stardew Valley_Progressive Dagger.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Custom Assets\Stardew Valley\Stardew Valley_Progressive Fishing Rod.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Custom Assets\Stardew Valley\Stardew Valley_Progressive Footwear.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Custom Assets\Stardew Valley\Stardew Valley_Progressive Hoe.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Custom Assets\Stardew Valley\Stardew Valley_Progressive Pan.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Custom Assets\Stardew Valley\Stardew Valley_Progressive Pickaxe.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Custom Assets\Stardew Valley\Stardew Valley_Progressive Raccoon.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Custom Assets\Stardew Valley\Stardew Valley_Progressive Scythe.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Custom Assets\Stardew Valley\Stardew Valley_Progressive Sword.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Custom Assets\Stardew Valley\Stardew Valley_Progressive Trash Can.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Custom Assets\Stardew Valley\Stardew Valley_Progressive Watering Can.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Custom Assets\Stardew Valley\Stardew Valley_Stardrop.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Custom Assets\Stardew Valley\Stardew Valley_Water Obelisk.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Custom Assets\The Witness\The Witness.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Custom Assets\The Witness\The Witness_Doors.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Custom Assets\The Witness\The Witness_Lasers.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Custom Assets\The Witness\The Witness_Obelisk Keys.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Custom Assets\The Witness\The Witness_Panel Keys.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Custom Assets\The Witness\The Witness_Symbols.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+	</ItemGroup>
 
 </Project>
