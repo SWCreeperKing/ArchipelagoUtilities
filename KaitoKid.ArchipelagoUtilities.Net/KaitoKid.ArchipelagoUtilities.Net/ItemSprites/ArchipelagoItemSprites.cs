@@ -64,7 +64,7 @@ namespace KaitoKid.ArchipelagoUtilities.Net.ItemSprites
             }
         }
 
-        public bool TryGetCustomAsset(ScoutedLocation scoutedLocation, string myGameName, out ItemSprite sprite)
+        public bool TryGetCustomAsset(ScoutedLocation scoutedLocation, string myGameName, bool fallbackOnDifferentGameAsset, bool fallbackOnGenericGameAsset, out ItemSprite sprite)
         {
             var myGame = CleanName(myGameName);
             var game = CleanName(scoutedLocation.GameName);
@@ -76,7 +76,7 @@ namespace KaitoKid.ArchipelagoUtilities.Net.ItemSprites
                     return true;
                 }
             }
-            if (_spritesByGameByItemName.TryGetValue(myGame, out var itemsInMyGame))
+            if (fallbackOnDifferentGameAsset && _spritesByGameByItemName.TryGetValue(myGame, out var itemsInMyGame))
             {
                 if (itemsInMyGame.TryGetValue(item, out sprite))
                 {
@@ -84,7 +84,7 @@ namespace KaitoKid.ArchipelagoUtilities.Net.ItemSprites
                 }
             }
 
-            if (_spritesByItemName.TryGetValue(item, out var spritesWithCorrectName) && spritesWithCorrectName.Any())
+            if (fallbackOnDifferentGameAsset && _spritesByItemName.TryGetValue(item, out var spritesWithCorrectName) && spritesWithCorrectName.Any())
             {
                 var random = new Random(scoutedLocation.GetSeed());
                 var index = random.Next(0, spritesWithCorrectName.Count);
@@ -92,7 +92,7 @@ namespace KaitoKid.ArchipelagoUtilities.Net.ItemSprites
                 return true;
             }
 
-            if (_spritesByGameByItemName.TryGetValue(game, out itemsInCorrectGame))
+            if (fallbackOnGenericGameAsset && _spritesByGameByItemName.TryGetValue(game, out itemsInCorrectGame))
             {
                 if (itemsInCorrectGame.TryGetValue(string.Empty, out sprite))
                 {

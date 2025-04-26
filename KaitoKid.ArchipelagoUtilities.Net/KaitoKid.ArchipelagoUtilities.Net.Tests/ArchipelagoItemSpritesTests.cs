@@ -29,7 +29,7 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Tests
             var scoutedLocation = new ScoutedLocation("", itemName, "", gameName, 1, 2, 3, ItemFlags.Advancement);
 
             // Act
-            var success = _itemSprites.TryGetCustomAsset(scoutedLocation, "Stardew Valley", out var sprite);
+            var success = _itemSprites.TryGetCustomAsset(scoutedLocation, "Stardew Valley", true, true, out var sprite);
 
             // Assert
             success.Should().Be(expectedSuccess);
