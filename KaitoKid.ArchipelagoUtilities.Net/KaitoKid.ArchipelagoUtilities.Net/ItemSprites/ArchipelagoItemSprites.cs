@@ -106,7 +106,14 @@ namespace KaitoKid.ArchipelagoUtilities.Net.ItemSprites
 
         public string CleanName(string name)
         {
-            return name.ToLower().Replace(" ", "").Replace("_", "");
+            var charsToIgnore = new string[] { " ", "_", ":", "'" };
+            name = name.ToLower();
+            foreach (var charToIgnore in charsToIgnore)
+            {
+                name = name.Replace(charToIgnore, "");
+            }
+
+            return name;
         }
     }
 }
