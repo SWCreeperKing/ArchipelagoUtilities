@@ -224,13 +224,28 @@
 	  <Content Update="Custom Assets\A Hat in Time\A Hat in Time_Zipline Unlock - The Windmill Path.png">
 	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	  </Content>
+	  <Content Update="Custom Assets\Clique\Clique.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+	  <Content Update="Custom Assets\Clique\Clique_Button Activation.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+	  <Content Update="Custom Assets\Clique\Clique_Feeling of Satisfaction.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
 	  <Content Update="Custom Assets\Hollow Knight\Hollow Knight.png">
 	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	  </Content>
 	  <Content Update="Custom Assets\Hollow Knight\Hollow Knight_Abyss_Shriek.png">
 	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	  </Content>
+	  <Content Update="Custom Assets\Hollow Knight\Hollow Knight_Arcane_Egg.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
 	  <Content Update="Custom Assets\Hollow Knight\Hollow Knight_Awoken_Dream_Nail.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+	  <Content Update="Custom Assets\Hollow Knight\Hollow Knight_BossGeo.png">
 	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	  </Content>
 	  <Content Update="Custom Assets\Hollow Knight\Hollow Knight_Crystal_Heart.png">
@@ -248,13 +263,46 @@
 	  <Content Update="Custom Assets\Hollow Knight\Hollow Knight_Dream_Nail.png">
 	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	  </Content>
+	  <Content Update="Custom Assets\Hollow Knight\Hollow Knight_Elegant_Key.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+	  <Content Update="Custom Assets\Hollow Knight\Hollow Knight_Focus.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+	  <Content Update="Custom Assets\Hollow Knight\Hollow Knight_GeoChests.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+	  <Content Update="Custom Assets\Hollow Knight\Hollow Knight_GeoRocks.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+	  <Content Update="Custom Assets\Hollow Knight\Hollow Knight_Grub.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+	  <Content Update="Custom Assets\Hollow Knight\Hollow Knight_Hallownest_Seal.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
 	  <Content Update="Custom Assets\Hollow Knight\Hollow Knight_Howling_Wraiths.png">
 	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	  </Content>
 	  <Content Update="Custom Assets\Hollow Knight\Hollow Knight_Ismas_Tear.png">
 	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	  </Content>
+	  <Content Update="Custom Assets\Hollow Knight\Hollow Knight_Kings_Idol.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+	  <Content Update="Custom Assets\Hollow Knight\Hollow Knight_Love_Key.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+	  <Content Update="Custom Assets\Hollow Knight\Hollow Knight_Lumafly_Lantern.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
 	  <Content Update="Custom Assets\Hollow Knight\Hollow Knight_Mantis_Claw.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+	  <Content Update="Custom Assets\Hollow Knight\Hollow Knight_Maps.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+	  <Content Update="Custom Assets\Hollow Knight\Hollow Knight_Mask_Shard.png">
 	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	  </Content>
 	  <Content Update="Custom Assets\Hollow Knight\Hollow Knight_Monarch_Wings.png">
@@ -263,13 +311,46 @@
 	  <Content Update="Custom Assets\Hollow Knight\Hollow Knight_Mothwing_Cloak.png">
 	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	  </Content>
+	  <Content Update="Custom Assets\Hollow Knight\Hollow Knight_Nail.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+	  <Content Update="Custom Assets\Hollow Knight\Hollow Knight_One_Geo.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+	  <Content Update="Custom Assets\Hollow Knight\Hollow Knight_Pale_Ore.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+	  <Content Update="Custom Assets\Hollow Knight\Hollow Knight_Quill.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+	  <Content Update="Custom Assets\Hollow Knight\Hollow Knight_Rancid_Egg.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+	  <Content Update="Custom Assets\Hollow Knight\Hollow Knight_Salubras_Blessing.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
 	  <Content Update="Custom Assets\Hollow Knight\Hollow Knight_Shade_Cloak.png">
 	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	  </Content>
 	  <Content Update="Custom Assets\Hollow Knight\Hollow Knight_Shade_Soul.png">
 	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	  </Content>
+	  <Content Update="Custom Assets\Hollow Knight\Hollow Knight_Simple_Key.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+	  <Content Update="Custom Assets\Hollow Knight\Hollow Knight_Tram_Pass.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
 	  <Content Update="Custom Assets\Hollow Knight\Hollow Knight_Vengeful_Spirit.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+	  <Content Update="Custom Assets\Hollow Knight\Hollow Knight_Vessel_Fragment.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+	  <Content Update="Custom Assets\Hollow Knight\Hollow Knight_Wanderers_Journal.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+	  <Content Update="Custom Assets\Hollow Knight\Hollow Knight_World_Sense.png">
 	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	  </Content>
 	  <Content Update="Custom Assets\Mario &amp; Luigi Superstar Saga\Mario &amp; Luigi Superstar Saga.png">
@@ -314,7 +395,115 @@
 	  <Content Update="Custom Assets\Mario &amp; Luigi Superstar Saga\Mario &amp; Luigi Superstar Saga_Yellow Neon Egg.png">
 	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	  </Content>
+	  <Content Update="Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+	  <Content Update="Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Bobbery.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+	  <Content Update="Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Crystal Star.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+	  <Content Update="Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Diamond Star.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+	  <Content Update="Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Emerald Star.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+	  <Content Update="Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Flurrie.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+	  <Content Update="Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Garnet Star.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+	  <Content Update="Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Gold Star.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+	  <Content Update="Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Koops.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+	  <Content Update="Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Ms. Mowz.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+	  <Content Update="Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Progressive Hammer.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+	  <Content Update="Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Ruby Star.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+	  <Content Update="Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Sapphire Star.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+	  <Content Update="Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Vivian.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+	  <Content Update="Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Yoshi.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+	  <Content Update="Custom Assets\Pokemon Red and Blue\Pokemon Red and Blue.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+	  <Content Update="Custom Assets\Pokemon Red and Blue\Pokemon Red and Blue_Boulder Badge.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+	  <Content Update="Custom Assets\Pokemon Red and Blue\Pokemon Red and Blue_Cascade Badge.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+	  <Content Update="Custom Assets\Pokemon Red and Blue\Pokemon Red and Blue_Dome Fossil.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+	  <Content Update="Custom Assets\Pokemon Red and Blue\Pokemon Red and Blue_Earth Badge.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+	  <Content Update="Custom Assets\Pokemon Red and Blue\Pokemon Red and Blue_Great Ball.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+	  <Content Update="Custom Assets\Pokemon Red and Blue\Pokemon Red and Blue_Helix Fossil.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+	  <Content Update="Custom Assets\Pokemon Red and Blue\Pokemon Red and Blue_Marsh Badge.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+	  <Content Update="Custom Assets\Pokemon Red and Blue\Pokemon Red and Blue_Master Ball.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+	  <Content Update="Custom Assets\Pokemon Red and Blue\Pokemon Red and Blue_Old Amber.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+	  <Content Update="Custom Assets\Pokemon Red and Blue\Pokemon Red and Blue_Rainbow Badge.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+	  <Content Update="Custom Assets\Pokemon Red and Blue\Pokemon Red and Blue_Rare Candy.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+	  <Content Update="Custom Assets\Pokemon Red and Blue\Pokemon Red and Blue_Soul Badge.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+	  <Content Update="Custom Assets\Pokemon Red and Blue\Pokemon Red and Blue_Thunder Badge.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+	  <Content Update="Custom Assets\Pokemon Red and Blue\Pokemon Red and Blue_TMs.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+	  <Content Update="Custom Assets\Pokemon Red and Blue\Pokemon Red and Blue_Ultra Ball.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+	  <Content Update="Custom Assets\Pokemon Red and Blue\Pokemon Red and Blue_Volcano Badge.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
 	  <Content Update="Custom Assets\Stardew Valley\Stardew Valley.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+	  <Content Update="Custom Assets\Stardew Valley\Stardew Valley_Baby.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+	  <Content Update="Custom Assets\Stardew Valley\Stardew Valley_Bears Knowledge.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+	  <Content Update="Custom Assets\Stardew Valley\Stardew Valley_Boat Repair.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+	  <Content Update="Custom Assets\Stardew Valley\Stardew Valley_Book Power.png">
 	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	  </Content>
 	  <Content Update="Custom Assets\Stardew Valley\Stardew Valley_Bridge Repair.png">
@@ -323,22 +512,40 @@
 	  <Content Update="Custom Assets\Stardew Valley\Stardew Valley_Bus Repair.png">
 	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	  </Content>
+	  <Content Update="Custom Assets\Stardew Valley\Stardew Valley_Club Card.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
 	  <Content Update="Custom Assets\Stardew Valley\Stardew Valley_Combat Level.png">
 	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	  </Content>
 	  <Content Update="Custom Assets\Stardew Valley\Stardew Valley_Combat Mastery.png">
 	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	  </Content>
+	  <Content Update="Custom Assets\Stardew Valley\Stardew Valley_Craftsanity.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+	  <Content Update="Custom Assets\Stardew Valley\Stardew Valley_Dark Talisman.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
 	  <Content Update="Custom Assets\Stardew Valley\Stardew Valley_Desert Obelisk.png">
 	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	  </Content>
+	  <Content Update="Custom Assets\Stardew Valley\Stardew Valley_Dwarvish Translation Guide.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
 	  <Content Update="Custom Assets\Stardew Valley\Stardew Valley_Earth Obelisk.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+	  <Content Update="Custom Assets\Stardew Valley\Stardew Valley_Fall.png">
 	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	  </Content>
 	  <Content Update="Custom Assets\Stardew Valley\Stardew Valley_Farming Level.png">
 	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	  </Content>
 	  <Content Update="Custom Assets\Stardew Valley\Stardew Valley_Farming Mastery.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+	  <Content Update="Custom Assets\Stardew Valley\Stardew Valley_Fish Pond.png">
 	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	  </Content>
 	  <Content Update="Custom Assets\Stardew Valley\Stardew Valley_Fishing Level.png">
@@ -354,6 +561,9 @@
 	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	  </Content>
 	  <Content Update="Custom Assets\Stardew Valley\Stardew Valley_Glittering Boulder Removed.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+	  <Content Update="Custom Assets\Stardew Valley\Stardew Valley_Golden Egg.png">
 	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	  </Content>
 	  <Content Update="Custom Assets\Stardew Valley\Stardew Valley_Golden Walnut.png">
@@ -377,6 +587,18 @@
 	  <Content Update="Custom Assets\Stardew Valley\Stardew Valley_Key To The Town.png">
 	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	  </Content>
+	  <Content Update="Custom Assets\Stardew Valley\Stardew Valley_Lost Book.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+	  <Content Update="Custom Assets\Stardew Valley\Stardew Valley_Lupini.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+	  <Content Update="Custom Assets\Stardew Valley\Stardew Valley_Magic Ink.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+	  <Content Update="Custom Assets\Stardew Valley\Stardew Valley_Magnifying Glass.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
 	  <Content Update="Custom Assets\Stardew Valley\Stardew Valley_Minecarts Repair.png">
 	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	  </Content>
@@ -395,7 +617,13 @@
 	  <Content Update="Custom Assets\Stardew Valley\Stardew Valley_Progressive Axe.png">
 	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	  </Content>
+	  <Content Update="Custom Assets\Stardew Valley\Stardew Valley_Progressive Barn.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
 	  <Content Update="Custom Assets\Stardew Valley\Stardew Valley_Progressive Club.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+	  <Content Update="Custom Assets\Stardew Valley\Stardew Valley_Progressive Coop.png">
 	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	  </Content>
 	  <Content Update="Custom Assets\Stardew Valley\Stardew Valley_Progressive Dagger.png">
@@ -410,6 +638,12 @@
 	  <Content Update="Custom Assets\Stardew Valley\Stardew Valley_Progressive Hoe.png">
 	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	  </Content>
+	  <Content Update="Custom Assets\Stardew Valley\Stardew Valley_Progressive House.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+	  <Content Update="Custom Assets\Stardew Valley\Stardew Valley_Progressive Movie Theater.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
 	  <Content Update="Custom Assets\Stardew Valley\Stardew Valley_Progressive Pan.png">
 	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	  </Content>
@@ -422,6 +656,12 @@
 	  <Content Update="Custom Assets\Stardew Valley\Stardew Valley_Progressive Scythe.png">
 	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	  </Content>
+	  <Content Update="Custom Assets\Stardew Valley\Stardew Valley_Progressive Season.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+	  <Content Update="Custom Assets\Stardew Valley\Stardew Valley_Progressive Slingshot.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
 	  <Content Update="Custom Assets\Stardew Valley\Stardew Valley_Progressive Sword.png">
 	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	  </Content>
@@ -431,13 +671,109 @@
 	  <Content Update="Custom Assets\Stardew Valley\Stardew Valley_Progressive Watering Can.png">
 	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	  </Content>
+	  <Content Update="Custom Assets\Stardew Valley\Stardew Valley_Qi Gems.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+	  <Content Update="Custom Assets\Stardew Valley\Stardew Valley_Resource Pack Useful.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+	  <Content Update="Custom Assets\Stardew Valley\Stardew Valley_Resource Pack.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+	  <Content Update="Custom Assets\Stardew Valley\Stardew Valley_Return Scepter.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+	  <Content Update="Custom Assets\Stardew Valley\Stardew Valley_Ring.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+	  <Content Update="Custom Assets\Stardew Valley\Stardew Valley_Rusty Key.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+	  <Content Update="Custom Assets\Stardew Valley\Stardew Valley_Skull Key.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+	  <Content Update="Custom Assets\Stardew Valley\Stardew Valley_Slime Hutch.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+	  <Content Update="Custom Assets\Stardew Valley\Stardew Valley_Special Charm.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+	  <Content Update="Custom Assets\Stardew Valley\Stardew Valley_Spring Onion Mastery.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+	  <Content Update="Custom Assets\Stardew Valley\Stardew Valley_Spring.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
 	  <Content Update="Custom Assets\Stardew Valley\Stardew Valley_Stardrop.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+	  <Content Update="Custom Assets\Stardew Valley\Stardew Valley_Summer.png">
 	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	  </Content>
 	  <Content Update="Custom Assets\Stardew Valley\Stardew Valley_Water Obelisk.png">
 	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	  </Content>
+	  <Content Update="Custom Assets\Stardew Valley\Stardew Valley_Winter.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+	  <Content Update="Custom Assets\The Legend of Zelda\The Legend of Zelda.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+	  <Content Update="Custom Assets\The Legend of Zelda\The Legend of Zelda_Blue Ring.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+	  <Content Update="Custom Assets\The Legend of Zelda\The Legend of Zelda_Bomb.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+	  <Content Update="Custom Assets\The Legend of Zelda\The Legend of Zelda_Book of Magic.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+	  <Content Update="Custom Assets\The Legend of Zelda\The Legend of Zelda_Boomerang.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+	  <Content Update="Custom Assets\The Legend of Zelda\The Legend of Zelda_Bow.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+	  <Content Update="Custom Assets\The Legend of Zelda\The Legend of Zelda_Five Rupees.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+	  <Content Update="Custom Assets\The Legend of Zelda\The Legend of Zelda_Food.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+	  <Content Update="Custom Assets\The Legend of Zelda\The Legend of Zelda_Magical Boomerang.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+	  <Content Update="Custom Assets\The Legend of Zelda\The Legend of Zelda_Magical Key.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+	  <Content Update="Custom Assets\The Legend of Zelda\The Legend of Zelda_Magical Sword.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+	  <Content Update="Custom Assets\The Legend of Zelda\The Legend of Zelda_Raft.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+	  <Content Update="Custom Assets\The Legend of Zelda\The Legend of Zelda_Red Ring.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+	  <Content Update="Custom Assets\The Legend of Zelda\The Legend of Zelda_Rupee.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+	  <Content Update="Custom Assets\The Legend of Zelda\The Legend of Zelda_Small Key.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+	  <Content Update="Custom Assets\The Legend of Zelda\The Legend of Zelda_Sword.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+	  <Content Update="Custom Assets\The Legend of Zelda\The Legend of Zelda_Triforce Fragment.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+	  <Content Update="Custom Assets\The Legend of Zelda\The Legend of Zelda_White Sword.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
 	  <Content Update="Custom Assets\The Witness\The Witness.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+	  <Content Update="Custom Assets\The Witness\The Witness_Boat.png">
 	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	  </Content>
 	  <Content Update="Custom Assets\The Witness\The Witness_Doors.png">
