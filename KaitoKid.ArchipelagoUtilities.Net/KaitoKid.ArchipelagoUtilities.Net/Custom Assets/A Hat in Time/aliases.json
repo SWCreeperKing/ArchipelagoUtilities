@@ -1,17 +1,18 @@
 {
   "Aliases": [
     {
-      "AliasName": "PlaceholderAliasA",
+      "AliasName": "Pons",
       "ItemNames": [
-        "PlaceholderItem1",
-        "PlaceholderItem2"
+        "25 Pons",
+        "50 Pons",
+        "100 Pons",
       ]
     },
     {
-      "AliasName": "PlaceholderAliasB",
+      "AliasName": "Relic Necklace",
       "ItemNames": [
-        "PlaceholderItem3",
-        "PlaceholderItem4"
+        "Relic (Necklace Bust)",
+        "Relic (Necklace)",
       ]
     }
   ]
