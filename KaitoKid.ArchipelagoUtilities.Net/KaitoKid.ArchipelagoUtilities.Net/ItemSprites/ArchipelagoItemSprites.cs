@@ -66,6 +66,12 @@ namespace KaitoKid.ArchipelagoUtilities.Net.ItemSprites
 
         public bool TryGetCustomAsset(ScoutedLocation scoutedLocation, string myGameName, bool fallbackOnDifferentGameAsset, bool fallbackOnGenericGameAsset, out ItemSprite sprite)
         {
+            sprite = null;
+            if (scoutedLocation == null)
+            {
+                return false;
+            }
+
             var myGame = CleanName(myGameName);
             var game = CleanName(scoutedLocation.GameName);
             var item = CleanName(scoutedLocation.ItemName);
@@ -100,7 +106,6 @@ namespace KaitoKid.ArchipelagoUtilities.Net.ItemSprites
                 }
             }
 
-            sprite = null;
             return false;
         }
 
