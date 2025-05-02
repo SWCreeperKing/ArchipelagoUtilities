@@ -1,17 +1,24 @@
 {
   "Aliases": [
     {
-      "AliasName": "PlaceholderAliasA",
+      "AliasName": "Beanstar Piece",
       "ItemNames": [
-        "PlaceholderItem1",
-        "PlaceholderItem2"
+        "Beanstar Piece 1",
+        "Beanstar Piece 2",
+        "Beanstar Piece 3",
+        "Beanstar Piece 4"
       ]
     },
     {
-      "AliasName": "PlaceholderAliasB",
+      "AliasName": "Beanfruit",
       "ItemNames": [
-        "PlaceholderItem3",
-        "PlaceholderItem4"
+        "Bean Fruit 1",
+        "Bean Fruit 2",
+        "Bean Fruit 3",
+        "Bean Fruit 4",
+        "Bean Fruit 5",
+        "Bean Fruit 6",
+        "Bean Fruit 7"
       ]
     }
   ]
