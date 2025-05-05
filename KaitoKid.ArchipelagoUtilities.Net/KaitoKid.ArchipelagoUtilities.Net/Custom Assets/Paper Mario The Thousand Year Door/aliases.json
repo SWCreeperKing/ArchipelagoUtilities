@@ -1,10 +1,12 @@
 {
   "Aliases": [
     {
-      "AliasName": "PlaceholderAliasA",
+      "AliasName": "Black Key",
       "ItemNames": [
-        "PlaceholderItem1",
-        "PlaceholderItem2"
+        "Black Key (Plane Curse)",
+        "Black Key (Paper Curse)",
+		"Black Key (Tube Curse)",
+		"Black Key (Boat Curse)"
       ]
     },
     {

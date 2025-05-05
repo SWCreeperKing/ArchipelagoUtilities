@@ -1,17 +1,24 @@
 {
   "Aliases": [
     {
-      "AliasName": "PlaceholderAliasA",
+      "AliasName": "Cannon Unlock BoB",
       "ItemNames": [
-        "PlaceholderItem1",
-        "PlaceholderItem2"
+        "Cannon Unlock CCM",
+        "Cannon Unlock JRB",
+        "Cannon Unlock RR",
+        "Cannon Unlock SL",
+        "Cannon Unlock SSL",
+        "Cannon Unlock THI",
+        "Cannon Unlock TTM",
+        "Cannon Unlock WDW",
+        "Cannon Unlock WF"
       ]
     },
     {
-      "AliasName": "PlaceholderAliasB",
+      "AliasName": "Progressive Key",
       "ItemNames": [
-        "PlaceholderItem3",
-        "PlaceholderItem4"
+        "Second Floor Key",
+        "Basement Key"
       ]
     }
   ]
