@@ -25,7 +25,7 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Client
         private ArchipelagoSession _session;
         private DeathLinkService _deathLinkService;
         private ArchipelagoConnectionInfo _connectionInfo;
-        private DataPackageCache _localDataPackage;
+        public DataPackageCache LocalDataPackage { get; }
 
         private Action<ReceivedItemsHelper> _itemReceivedFunction;
         public bool IsConnected { get; private set; }
@@ -49,7 +49,7 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Client
         public ArchipelagoClient(ILogger logger, DataPackageCache dataPackageCache, Action<ReceivedItemsHelper> itemReceivedFunction)
         {
             Logger = logger;
-            _localDataPackage = dataPackageCache;
+            LocalDataPackage = dataPackageCache;
             _itemReceivedFunction = itemReceivedFunction;
 
             IsConnected = false;
@@ -521,13 +521,13 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Client
         {
             if (!MakeSureConnected())
             {
-                return _localDataPackage.GetLocalLocationName(locationId);
+                return LocalDataPackage.GetLocalLocationName(locationId);
             }
 
             var locationName = _session.Locations.GetLocationNameFromId(locationId);
             if (string.IsNullOrWhiteSpace(locationName))
             {
-                locationName = _localDataPackage.GetLocalLocationName(locationId);
+                locationName = LocalDataPackage.GetLocalLocationName(locationId);
             }
 
             if (string.IsNullOrWhiteSpace(locationName))
@@ -563,13 +563,13 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Client
         {
             if (!MakeSureConnected())
             {
-                return _localDataPackage.GetLocalLocationId(locationName);
+                return LocalDataPackage.GetLocalLocationId(locationName);
             }
 
             var locationId = _session.Locations.GetLocationIdFromName(gameName, locationName);
             if (locationId <= 0)
             {
-                locationId = _localDataPackage.GetLocalLocationId(locationName);
+                locationId = LocalDataPackage.GetLocalLocationId(locationName);
             }
 
             return locationId;
@@ -584,13 +584,13 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Client
         {
             if (!MakeSureConnected())
             {
-                return _localDataPackage.GetLocalItemName(itemId);
+                return LocalDataPackage.GetLocalItemName(itemId);
             }
 
             var itemName = _session.Items.GetItemName(itemId);
             if (string.IsNullOrWhiteSpace(itemName))
             {
-                itemName = _localDataPackage.GetLocalItemName(itemId);
+                itemName = LocalDataPackage.GetLocalItemName(itemId);
             }
 
             if (string.IsNullOrWhiteSpace(itemName))

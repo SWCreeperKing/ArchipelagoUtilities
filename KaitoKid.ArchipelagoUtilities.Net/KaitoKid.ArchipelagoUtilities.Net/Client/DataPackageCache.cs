@@ -7,10 +7,10 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Client
 {
     public class DataPackageCache
     {
-        private readonly Dictionary<string, ArchipelagoItem> _itemCacheByName;
-        private readonly Dictionary<long, ArchipelagoItem> _itemCacheById;
-        private readonly Dictionary<string, ArchipelagoLocation> _locationCacheByName;
-        private readonly Dictionary<long, ArchipelagoLocation> _locationCacheById;
+        protected readonly Dictionary<string, ArchipelagoItem> _itemCacheByName;
+        protected readonly Dictionary<long, ArchipelagoItem> _itemCacheById;
+        protected readonly Dictionary<string, ArchipelagoLocation> _locationCacheByName;
+        protected readonly Dictionary<long, ArchipelagoLocation> _locationCacheById;
 
         public DataPackageCache(string snakeCaseGameName, params string[] pathsToFolder) :
             this(new NewtonsoftJsonLoader(), snakeCaseGameName, pathsToFolder)
