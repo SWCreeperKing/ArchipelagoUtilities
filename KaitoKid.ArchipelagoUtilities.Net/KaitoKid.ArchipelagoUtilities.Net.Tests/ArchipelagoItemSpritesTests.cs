@@ -14,7 +14,7 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Tests
         [SetUp]
         public void SetUp()
         {
-            _logger = null;
+            _logger = new TestLogger();
         }
 
         [TestCase("Hollow Knight", "Desolate_Dive", true, true, null)]

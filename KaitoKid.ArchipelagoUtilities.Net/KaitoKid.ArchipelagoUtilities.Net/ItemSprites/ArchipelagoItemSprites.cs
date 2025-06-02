@@ -58,6 +58,7 @@ namespace KaitoKid.ArchipelagoUtilities.Net.ItemSprites
                 {
                     var jsonAliases = File.ReadAllText(aliasesFile);
                     var aliases = JsonConvert.DeserializeObject<ItemSpriteAliases>(jsonAliases);
+                    return aliases;
                 }
             }
             catch (Exception e)
