@@ -662,7 +662,7 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Client
                 var locationId = GetLocationId(locationName);
                 if (locationId == -1)
                 {
-                    Logger.LogWarning($"Could get location id for \"{locationName}\".");
+                    Logger.LogWarning($"Could not get location id for \"{locationName}\".");
                     continue;
                 }
 

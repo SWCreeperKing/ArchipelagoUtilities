@@ -42,14 +42,30 @@ namespace KaitoKid.ArchipelagoUtilities.Net.ItemSprites
             var gameSubfolders = Directory.EnumerateDirectories(_spritesFolder, "*", SearchOption.TopDirectoryOnly).ToArray();
             foreach (var gameSubfolder in gameSubfolders)
             {
-                var aliasesFile = Path.Combine(gameSubfolder, ALIASES_FILE_NAME);
-
-                var jsonAliases = File.ReadAllText(aliasesFile);
-                var aliases = JsonConvert.DeserializeObject<ItemSpriteAliases>(jsonAliases);
+                var aliases = GetAliases(gameSubfolder);
 
                 RegisterDirectSprites(gameSubfolder, out var gameName);
                 RegisterAliasSprites(aliases, gameName);
             }
+        }
+
+        private ItemSpriteAliases GetAliases(string gameSubfolder)
+        {
+            try
+            {
+                var aliasesFile = Path.Combine(gameSubfolder, ALIASES_FILE_NAME);
+                if (File.Exists(aliasesFile))
+                {
+                    var jsonAliases = File.ReadAllText(aliasesFile);
+                    var aliases = JsonConvert.DeserializeObject<ItemSpriteAliases>(jsonAliases);
+                }
+            }
+            catch (Exception e)
+            {
+                _logger.LogError($"Error getting the aliases in {gameSubfolder}. {e.Message}");
+            }
+
+            return new ItemSpriteAliases();
         }
 
         private void RegisterDirectSprites(string spritesGameFolder, out string game)
