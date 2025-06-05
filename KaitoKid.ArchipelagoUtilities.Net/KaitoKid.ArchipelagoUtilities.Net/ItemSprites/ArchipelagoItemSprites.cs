@@ -22,22 +22,33 @@ namespace KaitoKid.ArchipelagoUtilities.Net.ItemSprites
         public ArchipelagoItemSprites(ILogger logger)
         {
             _logger = logger;
-            _spritesFolder = Directory.EnumerateDirectories(Directory.GetCurrentDirectory(), SPRITE_FOLDER_NAME, SearchOption.AllDirectories).FirstOrDefault();
+            var currentDirectory = Directory.GetCurrentDirectory();
+            try
+            {
+                _spritesFolder = Directory
+                    .EnumerateDirectories(currentDirectory, SPRITE_FOLDER_NAME, SearchOption.AllDirectories)
+                    .FirstOrDefault();
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(
+                    $"Could not scan subdirectories of '{currentDirectory}' to find item sprites. Error: {ex}");
+            }
 
             LoadCustomSprites();
         }
 
         private void LoadCustomSprites()
         {
+            _spritesByGame = new Dictionary<string, List<ItemSprite>>();
+            _spritesByItemName = new Dictionary<string, List<ItemSprite>>();
+            _spritesByGameByItemName = new Dictionary<string, Dictionary<string, ItemSprite>>();
+
             if (string.IsNullOrWhiteSpace(_spritesFolder))
             {
                 _logger.LogError("Could not find Custom Assets Directory");
                 return;
             }
-
-            _spritesByGame = new Dictionary<string, List<ItemSprite>>();
-            _spritesByItemName = new Dictionary<string, List<ItemSprite>>();
-            _spritesByGameByItemName = new Dictionary<string, Dictionary<string, ItemSprite>>();
 
             var gameSubfolders = Directory.EnumerateDirectories(_spritesFolder, "*", SearchOption.TopDirectoryOnly).ToArray();
             foreach (var gameSubfolder in gameSubfolders)
