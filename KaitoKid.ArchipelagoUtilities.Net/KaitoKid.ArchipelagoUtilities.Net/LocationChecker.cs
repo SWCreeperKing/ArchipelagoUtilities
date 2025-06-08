@@ -89,7 +89,7 @@ namespace KaitoKid.ArchipelagoUtilities.Net
             }
         }
 
-        protected virtual void RememberCheckedLocation(string locationName)
+        public virtual void RememberCheckedLocation(string locationName)
         {
             if (_checkedLocations.ContainsKey(locationName))
             {
