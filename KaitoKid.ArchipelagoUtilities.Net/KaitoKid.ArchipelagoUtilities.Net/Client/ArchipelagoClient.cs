@@ -662,13 +662,13 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Client
                 var locationId = GetLocationId(locationName);
                 if (locationId == -1)
                 {
-                    Logger.LogWarning($"Could not get location id for \"{locationName}\".");
+                    Logger.LogDebug($"Could not get location id for \"{locationName}\".");
                     continue;
                 }
 
                 if (_session.Locations.AllLocationsChecked.Contains(locationId) || !_session.Locations.AllMissingLocations.Contains(locationId))
                 {
-                    Logger.LogInfo($"Skipping scout operation for location \"{locationName}\" that is missing or already checked");
+                    Logger.LogDebug($"Skipping scout operation for location \"{locationName}\" that is missing or already checked");
                     continue;
                 }
 
