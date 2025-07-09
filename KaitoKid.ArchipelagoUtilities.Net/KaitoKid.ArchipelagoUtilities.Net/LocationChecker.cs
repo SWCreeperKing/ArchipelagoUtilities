@@ -239,7 +239,7 @@ namespace KaitoKid.ArchipelagoUtilities.Net
             }
 
             return _archipelago.GetSession().Locations.AllMissingLocations.Select(_archipelago.GetLocationName)
-                .Where(x => x != null);
+                .Where(x => x != null && !_checkedLocations.ContainsKey(x));
         }
 
         public IEnumerable<string> GetAllLocations()
