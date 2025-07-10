@@ -9,6 +9,7 @@ using Archipelago.MultiClient.Net.Helpers;
 using Archipelago.MultiClient.Net.MessageLog.Messages;
 using Archipelago.MultiClient.Net.Models;
 using Archipelago.MultiClient.Net.Packets;
+using KaitoKid.ArchipelagoUtilities.Net.Client.ConnectionResults;
 using KaitoKid.ArchipelagoUtilities.Net.Extensions;
 using KaitoKid.ArchipelagoUtilities.Net.Interfaces;
 using Newtonsoft.Json.Linq;
@@ -57,28 +58,28 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Client
             ScoutHintedLocations = new HashSet<string>();
         }
 
-        public virtual bool ConnectToMultiworld(ArchipelagoConnectionInfo connectionInfo, out string errorMessage)
+        public virtual ConnectionResult ConnectToMultiworld(ArchipelagoConnectionInfo connectionInfo)
         {
             DisconnectPermanently();
-            var success = TryConnect(connectionInfo, out errorMessage);
-            if (!success)
+            var result = TryConnect(connectionInfo);
+            if (!result.Success)
             {
                 DisconnectPermanently();
-                return false;
+                return result;
             }
 
-            if (!IsMultiworldVersionSupported())
+            var versionResult = IsMultiworldVersionSupported();
+            if (!versionResult.Success)
             {
                 var genericVersion = _slotData.MultiworldVersion.Replace("0", "x");
-                errorMessage = $"This Multiworld has been created for {ModName} version {genericVersion},\nbut this is {ModName} version {ModVersion}.\nPlease update to a compatible mod version.";
                 DisconnectPermanently();
-                return false;
+                return versionResult;
             }
 
-            return true;
+            return new SuccessConnectionResult();
         }
 
-        private bool TryConnect(ArchipelagoConnectionInfo connectionInfo, out string errorMessage)
+        private ConnectionResult TryConnect(ArchipelagoConnectionInfo connectionInfo)
         {
             LoginResult result;
             try
@@ -99,7 +100,7 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Client
             if (!result.Successful)
             {
                 var failure = (LoginFailure)result;
-                errorMessage = $"Failed to Connect to {_connectionInfo?.HostUrl}:{_connectionInfo?.Port} as {_connectionInfo?.SlotName}:";
+                var errorMessage = $"Failed to Connect to {_connectionInfo?.HostUrl}:{_connectionInfo?.Port} as {_connectionInfo?.SlotName}:";
                 foreach (var error in failure.Errors)
                 {
                     errorMessage += $"\n    {error}";
@@ -113,11 +114,9 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Client
 
                 Logger.LogError(detailedErrorMessage);
                 DisconnectAndCleanup();
-                return false; // Did not connect, show the user the contents of `errorMessage`
+                return new TimeoutConnectionResult(errorMessage); // Did not connect, show the user the contents of `errorMessage`
             }
-
-            errorMessage = "";
-
+            
             // Successfully connected, `ArchipelagoSession` (assume statically defined as `session` from now on) can now be used to interact with the server and the returned `LoginSuccessful` contains some useful information about the initial connection (e.g. a copy of the slot data as `loginSuccess._slotData`)
             var loginSuccess = (LoginSuccessful)result;
             var loginMessage = $"Connected to Archipelago server as {connectionInfo.SlotName} (Team {loginSuccess.Team}).";
@@ -131,7 +130,7 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Client
             }
 
             InitializeAfterConnection();
-            return true;
+            return new SuccessConnectionResult(loginMessage);
         }
 
         protected virtual void InitializeAfterConnection()
@@ -919,7 +918,7 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Client
                 return false;
             }
 
-            TryConnect(_connectionInfo, out _);
+            var result = TryConnect(_connectionInfo);
             if (!IsConnected)
             {
                 OnReconnectFailure();
@@ -944,19 +943,29 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Client
             MakeSureConnected(60);
         }
 
-        private bool IsMultiworldVersionSupported()
+        private ConnectionResult IsMultiworldVersionSupported()
         {
             var majorVersion = ModVersion.Split('.').First();
             var multiworldVersionParts = _slotData.MultiworldVersion.Split('.');
             if (multiworldVersionParts.Length < 3)
             {
-                return false;
+                return new ClientVersionMismatchConnectionResult(ModName, ModVersion, _slotData.MultiworldVersion);
             }
 
             var multiworldMajor = multiworldVersionParts[0];
             var multiworldMinor = multiworldVersionParts[1];
             var multiworldFix = multiworldVersionParts[2];
-            return majorVersion == multiworldMajor;
+            if (majorVersion == multiworldMajor)
+            {
+                return new SuccessConnectionResult();
+            }
+
+            if (int.Parse(majorVersion) > int.Parse(multiworldMajor))
+            {
+                return new TooUpdatedClientConnectionResult(ModName, ModVersion, _slotData.MultiworldVersion);
+            }
+
+            return new OutdatedClientConnectionResult(ModName, ModVersion, _slotData.MultiworldVersion);
         }
 
         public IEnumerable<PlayerInfo> GetAllPlayers()
