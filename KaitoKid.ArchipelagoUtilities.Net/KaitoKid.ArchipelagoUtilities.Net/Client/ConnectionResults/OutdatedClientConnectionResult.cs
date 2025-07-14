@@ -13,7 +13,7 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Client.ConnectionResults
         {
         }
 
-        public OutdatedClientConnectionResult(string errorMessage, string clientName, string currentVersion, string expectedVersion) : base(errorMessage, currentVersion, expectedVersion)
+        public OutdatedClientConnectionResult(string errorMessage, string clientName, string currentVersion, string expectedVersion) : base(errorMessage, clientName, currentVersion, expectedVersion)
         {
         }
     }
