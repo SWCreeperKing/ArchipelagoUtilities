@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading;
 using System.Threading.Tasks;
 using Archipelago.MultiClient.Net;
 using Archipelago.MultiClient.Net.BounceFeatures.DeathLink;
@@ -533,7 +534,7 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Client
             {
                 if (required)
                 {
-                    Logger.LogError($"Failed at getting the location name for location {locationId}. This is probably due to a corrupted datapackage. Unexpected behaviors may follow");
+                    Logger.LogError($"Failed at getting the location name for location {locationId}. This is probably due to a corrupted datapackage. Unexpected behaviors may follow.{Environment.NewLine}Stack Trace: {Environment.StackTrace}");
                 }
 
                 return MISSING_LOCATION_NAME;
@@ -594,7 +595,7 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Client
 
             if (string.IsNullOrWhiteSpace(itemName))
             {
-                Logger.LogError($"Failed at getting the item name for item {itemId}. This is probably due to a corrupted datapackage. Unexpected behaviors may follow");
+                Logger.LogError($"Failed at getting the item name for item {itemId}. This is probably due to a corrupted datapackage. Unexpected behaviors may follow.{Environment.NewLine}Stack Trace: {Environment.StackTrace}");
                 return "Error Item";
             }
 
