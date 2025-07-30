@@ -512,6 +512,12 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Client
             return item?.LocationName ?? GetLocationName(item.LocationId, item.ItemGame, true);
         }
 
+        public string GetLocationName(Hint hintedItem)
+        {
+            var game = GetPlayerGame(hintedItem.FindingPlayer);
+            return GetLocationName(hintedItem.LocationId, game, true);
+        }
+
         public string GetMyLocationName(long locationId)
         {
             return GetLocationName(locationId, GameName);
