@@ -321,7 +321,7 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Client
             }
 
             var allLocationsCheckedIds = _session.Locations.AllLocationsChecked;
-            var allLocationsChecked = allLocationsCheckedIds.ToDictionary(GetLocationName, x => x);
+            var allLocationsChecked = allLocationsCheckedIds.ToDictionary(GetMyLocationName, x => x);
             return allLocationsChecked;
         }
 
@@ -337,7 +337,7 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Client
 
         public IReadOnlyCollection<string> GetAllMissingLocationNames()
         {
-            return GetAllMissingLocations().Select(GetLocationName).ToArray();
+            return GetAllMissingLocations().Select(GetMyLocationName).ToArray();
         }
 
         public Dictionary<string, long> GetAllLocations()
@@ -348,7 +348,7 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Client
             }
 
             var allLocationsCheckedIds = _session.Locations.AllLocations;
-            var allLocationsChecked = allLocationsCheckedIds.ToDictionary(GetLocationName, x => x);
+            var allLocationsChecked = allLocationsCheckedIds.ToDictionary(GetMyLocationName, x => x);
             return allLocationsChecked;
         }
 
@@ -360,7 +360,7 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Client
             }
 
             var allLocationsCheckedIds = _session.Locations.AllLocations;
-            var allLocationsChecked = allLocationsCheckedIds.Select(GetLocationName).ToList();
+            var allLocationsChecked = allLocationsCheckedIds.Select(GetMyLocationName).ToList();
             return allLocationsChecked;
         }
 
@@ -509,22 +509,27 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Client
 
         public string GetLocationName(ItemInfo item)
         {
-            return item?.LocationName ?? GetLocationName(item.LocationId, true);
+            return item?.LocationName ?? GetLocationName(item.LocationId, item.ItemGame, true);
         }
 
-        public string GetLocationName(long locationId)
+        public string GetMyLocationName(long locationId)
         {
-            return GetLocationName(locationId, true);
+            return GetLocationName(locationId, GameName);
         }
 
-        public string GetLocationName(long locationId, bool required)
+        public string GetLocationName(long locationId, string game)
+        {
+            return GetLocationName(locationId, game, true);
+        }
+
+        public string GetLocationName(long locationId, string game, bool required)
         {
             if (!MakeSureConnected())
             {
                 return LocalDataPackage.GetLocalLocationName(locationId);
             }
 
-            var locationName = _session.Locations.GetLocationNameFromId(locationId);
+            var locationName = _session.Locations.GetLocationNameFromId(locationId, game);
             if (string.IsNullOrWhiteSpace(locationName))
             {
                 locationName = LocalDataPackage.GetLocalLocationName(locationId);
@@ -728,7 +733,7 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Client
 
         public ScoutedLocation ScoutSingleLocation(long locationId, bool createAsHint = false)
         {
-            var locationName = GetLocationName(locationId);
+            var locationName = GetMyLocationName(locationId);
             return ScoutSingleLocation(locationName, createAsHint);
         }
 
