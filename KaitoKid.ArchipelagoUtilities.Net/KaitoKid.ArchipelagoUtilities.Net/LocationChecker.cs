@@ -66,7 +66,7 @@ namespace KaitoKid.ArchipelagoUtilities.Net
 
         public IReadOnlyCollection<string> GetAllMissingLocationNames()
         {
-            return _archipelago.GetAllMissingLocations().Select(x => _archipelago.GetLocationName(x)).ToArray();
+            return _archipelago.GetAllMissingLocations().Select(x => _archipelago.GetMyLocationName(x)).ToArray();
         }
 
         public virtual void AddCheckedLocations(string[] locationNames)
@@ -238,7 +238,7 @@ namespace KaitoKid.ArchipelagoUtilities.Net
                 return Enumerable.Empty<string>();
             }
 
-            return _archipelago.GetSession().Locations.AllMissingLocations.Select(_archipelago.GetLocationName)
+            return _archipelago.GetSession().Locations.AllMissingLocations.Select(_archipelago.GetMyLocationName)
                 .Where(x => x != null && !_checkedLocations.ContainsKey(x));
         }
 
@@ -249,7 +249,7 @@ namespace KaitoKid.ArchipelagoUtilities.Net
                 return Enumerable.Empty<string>();
             }
 
-            return _archipelago.GetSession().Locations.AllLocations.Select(_archipelago.GetLocationName).Where(x => x != null);
+            return _archipelago.GetSession().Locations.AllLocations.Select(_archipelago.GetMyLocationName).Where(x => x != null);
         }
     }
 }

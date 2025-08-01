@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading;
 using System.Threading.Tasks;
 using Archipelago.MultiClient.Net;
 using Archipelago.MultiClient.Net.BounceFeatures.DeathLink;
@@ -320,7 +321,7 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Client
             }
 
             var allLocationsCheckedIds = _session.Locations.AllLocationsChecked;
-            var allLocationsChecked = allLocationsCheckedIds.ToDictionary(GetLocationName, x => x);
+            var allLocationsChecked = allLocationsCheckedIds.ToDictionary(GetMyLocationName, x => x);
             return allLocationsChecked;
         }
 
@@ -336,7 +337,7 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Client
 
         public IReadOnlyCollection<string> GetAllMissingLocationNames()
         {
-            return GetAllMissingLocations().Select(GetLocationName).ToArray();
+            return GetAllMissingLocations().Select(GetMyLocationName).ToArray();
         }
 
         public Dictionary<string, long> GetAllLocations()
@@ -347,7 +348,7 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Client
             }
 
             var allLocationsCheckedIds = _session.Locations.AllLocations;
-            var allLocationsChecked = allLocationsCheckedIds.ToDictionary(GetLocationName, x => x);
+            var allLocationsChecked = allLocationsCheckedIds.ToDictionary(GetMyLocationName, x => x);
             return allLocationsChecked;
         }
 
@@ -359,7 +360,7 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Client
             }
 
             var allLocationsCheckedIds = _session.Locations.AllLocations;
-            var allLocationsChecked = allLocationsCheckedIds.Select(GetLocationName).ToList();
+            var allLocationsChecked = allLocationsCheckedIds.Select(GetMyLocationName).ToList();
             return allLocationsChecked;
         }
 
@@ -508,22 +509,33 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Client
 
         public string GetLocationName(ItemInfo item)
         {
-            return item?.LocationName ?? GetLocationName(item.LocationId, true);
+            return item?.LocationName ?? GetLocationName(item.LocationId, item.ItemGame, true);
         }
 
-        public string GetLocationName(long locationId)
+        public string GetLocationName(Hint hintedItem)
         {
-            return GetLocationName(locationId, true);
+            var game = GetPlayerGame(hintedItem.FindingPlayer);
+            return GetLocationName(hintedItem.LocationId, game, true);
         }
 
-        public string GetLocationName(long locationId, bool required)
+        public string GetMyLocationName(long locationId)
+        {
+            return GetLocationName(locationId, GameName);
+        }
+
+        public string GetLocationName(long locationId, string game)
+        {
+            return GetLocationName(locationId, game, true);
+        }
+
+        public string GetLocationName(long locationId, string game, bool required)
         {
             if (!MakeSureConnected())
             {
                 return LocalDataPackage.GetLocalLocationName(locationId);
             }
 
-            var locationName = _session.Locations.GetLocationNameFromId(locationId);
+            var locationName = _session.Locations.GetLocationNameFromId(locationId, game);
             if (string.IsNullOrWhiteSpace(locationName))
             {
                 locationName = LocalDataPackage.GetLocalLocationName(locationId);
@@ -533,7 +545,7 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Client
             {
                 if (required)
                 {
-                    Logger.LogError($"Failed at getting the location name for location {locationId}. This is probably due to a corrupted datapackage. Unexpected behaviors may follow");
+                    Logger.LogError($"Failed at getting the location name for location {locationId}. This is probably due to a corrupted datapackage. Unexpected behaviors may follow.{Environment.NewLine}Stack Trace: {Environment.StackTrace}");
                 }
 
                 return MISSING_LOCATION_NAME;
@@ -594,7 +606,7 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Client
 
             if (string.IsNullOrWhiteSpace(itemName))
             {
-                Logger.LogError($"Failed at getting the item name for item {itemId}. This is probably due to a corrupted datapackage. Unexpected behaviors may follow");
+                Logger.LogError($"Failed at getting the item name for item {itemId}. This is probably due to a corrupted datapackage. Unexpected behaviors may follow.{Environment.NewLine}Stack Trace: {Environment.StackTrace}");
                 return "Error Item";
             }
 
@@ -727,7 +739,7 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Client
 
         public ScoutedLocation ScoutSingleLocation(long locationId, bool createAsHint = false)
         {
-            var locationName = GetLocationName(locationId);
+            var locationName = GetMyLocationName(locationId);
             return ScoutSingleLocation(locationName, createAsHint);
         }
 
