@@ -844,8 +844,8 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Client
 
         private void SessionErrorReceived(Exception e, string message)
         {
-            Logger.LogError(message);
-            OnError();
+            Logger.LogError(message, e);
+            OnError(message, e);
             _lastConnectFailure = DateTime.Now;
             DisconnectAndCleanup();
         }
@@ -853,12 +853,12 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Client
         private void SessionSocketClosed(string reason)
         {
             Logger.LogError($"Connection to Archipelago lost: {reason}");
-            OnError();
+            OnError(reason);
             _lastConnectFailure = DateTime.Now;
             DisconnectAndCleanup();
         }
 
-        protected virtual void OnError()
+        protected virtual void OnError(string message, Exception e = null)
         {
         }
 

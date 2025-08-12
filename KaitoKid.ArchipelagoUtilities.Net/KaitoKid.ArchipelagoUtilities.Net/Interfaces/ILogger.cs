@@ -5,6 +5,7 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Interfaces
     public interface ILogger
     {
         void LogError(string message);
+        void LogError(string message, Exception e);
         void LogWarning(string message);
         void LogInfo(string message);
         void LogMessage(string message);
