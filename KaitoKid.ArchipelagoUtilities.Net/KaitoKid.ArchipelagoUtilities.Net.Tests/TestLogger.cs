@@ -10,6 +10,11 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Tests
             Console.WriteLine($"Test Error: {message}");
         }
 
+        public void LogError(string message, Exception e)
+        {
+            LogError(message);
+        }
+
         public void LogWarning(string message)
         {
             Console.WriteLine($"Test Warning: {message}");

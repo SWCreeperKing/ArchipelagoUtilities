@@ -8,6 +8,10 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Client
     {
         public abstract void LogError(string message);
 
+        public virtual void LogError(string message, Exception e)
+        {
+            LogError(message);
+        }
         public abstract void LogWarning(string message);
 
         public abstract void LogInfo(string message);
