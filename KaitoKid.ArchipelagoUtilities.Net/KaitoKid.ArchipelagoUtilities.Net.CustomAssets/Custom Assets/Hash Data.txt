@@ -1,0 +1,1255 @@
+Custom Assets\A Hat in Time\A Hat in Time.png: DCE595B2060AB3F5CC1569D456059BFC
+Custom Assets\A Hat in Time\A Hat in Time_Baby Trap.png: 7E1F648999C23CEBD8C5B9614DCAFE80
+Custom Assets\A Hat in Time\A Hat in Time_Badge Pin.png: EC38C73219A23039E0888DB9B22BD010
+Custom Assets\A Hat in Time\A Hat in Time_Brewing Hat.png: F68465F03F797BBFA81B1E010BF3C48B
+Custom Assets\A Hat in Time\A Hat in Time_Camera Badge.png: 7DB96A04419C425F6E1F3E68991CF1C5
+Custom Assets\A Hat in Time\A Hat in Time_Compass Badge.png: 76FD940BEF1197A4022C97D0D1197A0F
+Custom Assets\A Hat in Time\A Hat in Time_Dweller Mask.png: 43144DA6E36B2D328B6622D044EB3448
+Custom Assets\A Hat in Time\A Hat in Time_Fast Hatter Badge.png: 135547EC26D9E27B88C520678A81C07C
+Custom Assets\A Hat in Time\A Hat in Time_Health Pon.png: 8EDCD1854C6AA372899EE1EF6691F119
+Custom Assets\A Hat in Time\A Hat in Time_Hookshot Badge.png: 5A219A774236EBA7E5CBD089FB855670
+Custom Assets\A Hat in Time\A Hat in Time_Hover Badge.png: 9C2A23B5F4B5143DC268E618107FE789
+Custom Assets\A Hat in Time\A Hat in Time_Ice Hat.png: 299BFBA81C943DCB16720999538E326B
+Custom Assets\A Hat in Time\A Hat in Time_Item Magnet Badge.png: EBD8154570176E16FCA015BF45A092F7
+Custom Assets\A Hat in Time\A Hat in Time_Laser Trap.png: 8686F55BD9AEDAA4BD9DEF95D51682E5
+Custom Assets\A Hat in Time\A Hat in Time_Metro Ticket - Blue.png: BA82A5691D8E70B95315C4356229586F
+Custom Assets\A Hat in Time\A Hat in Time_Metro Ticket - Green.png: 8CD9AE45AD399960EAA3A357D4DDFEAF
+Custom Assets\A Hat in Time\A Hat in Time_Metro Ticket - Pink.png: 77715AC5FB2313F52745E8F49ADA5914
+Custom Assets\A Hat in Time\A Hat in Time_Metro Ticket - Yellow.png: 83B86C6521020EC63F825FFC4AD01A9E
+Custom Assets\A Hat in Time\A Hat in Time_Mumble Badge.png: FB0181F782F642E270361322D874B505
+Custom Assets\A Hat in Time\A Hat in Time_No Bonk Badge.png: 0E8B8B74F871CDCF636287ED1B96FEBB
+Custom Assets\A Hat in Time\A Hat in Time_One-Hit Hero Badge.png: 9FD0F5192F4C06DE3C943DACB415FB3B
+Custom Assets\A Hat in Time\A Hat in Time_Parade Trap.png: CF339D43CA947E326B8CE72AA148A28B
+Custom Assets\A Hat in Time\A Hat in Time_Pons.png: D4CAA91D1F25ED7B47C068430DEF823C
+Custom Assets\A Hat in Time\A Hat in Time_Progressive Painting Unlock.png: CC5021E90E9EB4365A6F20D9E932D0B3
+Custom Assets\A Hat in Time\A Hat in Time_Projectile Badge.png: 94B632428C7D10C6F0B13C91BBE803F8
+Custom Assets\A Hat in Time\A Hat in Time_Random Cosmetic.png: 62502744594E93509998DB6178AE8850
+Custom Assets\A Hat in Time\A Hat in Time_Relic (Blue Crayon).png: 36A132E124BEF165084EC235B113F4B6
+Custom Assets\A Hat in Time\A Hat in Time_Relic (Burger Cushion).png: D650D31755327FB4E71D979D6C4B754F
+Custom Assets\A Hat in Time\A Hat in Time_Relic (Burger Patty).png: F6587B5FB78B42CD7E7F83E214D0E3E6
+Custom Assets\A Hat in Time\A Hat in Time_Relic (Cake Stand).png: 4AF91486E729CCE723BBB64250B5DF23
+Custom Assets\A Hat in Time\A Hat in Time_Relic (Chocolate Cake Slice).png: 4CD17D962691A46470961D82E75DDEC2
+Custom Assets\A Hat in Time\A Hat in Time_Relic (Chocolate Cake).png: 42A7A0B6E7993A6486576F9C16C30A2A
+Custom Assets\A Hat in Time\A Hat in Time_Relic (Cool Cow).png: A2F655D2FDA45AF08D00E4F8BE1A0BFA
+Custom Assets\A Hat in Time\A Hat in Time_Relic (Cow).png: 9F81D67D7272ADD400830B91C62B4139
+Custom Assets\A Hat in Time\A Hat in Time_Relic (Crayon Box).png: D2AAFCFEB758FA8972C6B5ACE085138F
+Custom Assets\A Hat in Time\A Hat in Time_Relic (Green Crayon).png: B49E76486BDE322FF9E48D4FAB87E889
+Custom Assets\A Hat in Time\A Hat in Time_Relic (Mountain Set).png: 1521293D54BF1CA65835B391CFB73103
+Custom Assets\A Hat in Time\A Hat in Time_Relic (Necklace Bust).png: 03F9648F579CD4E39FBCF445DEA0DC8C
+Custom Assets\A Hat in Time\A Hat in Time_Relic (Red Crayon).png: 88FDE56840288F7557921FE43508ABF1
+Custom Assets\A Hat in Time\A Hat in Time_Relic (Shortcake).png: A810437BE4506F70C587F8CF5FA90E03
+Custom Assets\A Hat in Time\A Hat in Time_Relic (Tin-foil Hat Cow).png: 30D06DD37002C34A28BBDFA04BE268F4
+Custom Assets\A Hat in Time\A Hat in Time_Relic (Train).png: 789E396BEFA63081E984C5698733D016
+Custom Assets\A Hat in Time\A Hat in Time_Relic (UFO).png: 1E9D19BC4F935B2BECAB1AB51D67A560
+Custom Assets\A Hat in Time\A Hat in Time_Relic Necklace.png: 03F9648F579CD4E39FBCF445DEA0DC8C
+Custom Assets\A Hat in Time\A Hat in Time_Scooter Badge.png: 314650CA45E52C517CD3E0C5911BA396
+Custom Assets\A Hat in Time\A Hat in Time_Snatchers Contract - Mail Delivery Service.png: AE0FEBB59AEE285E69E6317641529715
+Custom Assets\A Hat in Time\A Hat in Time_Snatchers Contract - Queen Vanessas Manor.png: 35015682DBBEECCDDA9D249508B0243F
+Custom Assets\A Hat in Time\A Hat in Time_Snatchers Contract - The Subcon Well.png: 7E5F3BC51598503AC66C47376ED8C38C
+Custom Assets\A Hat in Time\A Hat in Time_Snatchers Contract - Toilet of Doom.png: 7D60400E46C3D3194BE26B79E9BF1CAE
+Custom Assets\A Hat in Time\A Hat in Time_Sprint Hat.png: D10141BE63D6D1242F98F16FD62D7394
+Custom Assets\A Hat in Time\A Hat in Time_Time Piece.png: 1A830D60685DC5ACC34AA753749B3AC0
+Custom Assets\A Hat in Time\A Hat in Time_Time Stop Hat.png: 59F047BD18362B61397B6E6C75646DC9
+Custom Assets\A Hat in Time\A Hat in Time_Umbrella.png: D1C8D41A9E3CC647002EE16217CC275B
+Custom Assets\A Hat in Time\A Hat in Time_Yarn.png: 7AF5D91B66CCCF3B07E0FD09BEBF9D19
+Custom Assets\A Hat in Time\A Hat in Time_Zipline Unlock - The Birdhouse Path.png: D87ECE589CEF2C630E62E7830A2BEDA9
+Custom Assets\A Hat in Time\A Hat in Time_Zipline Unlock - The Lava Cake Path.png: 1D6DA0A0271477515C94EA4464FAAF48
+Custom Assets\A Hat in Time\A Hat in Time_Zipline Unlock - The Twilight Bell Path.png: D9EB2856516E972EC6AD7CA5EE859059
+Custom Assets\A Hat in Time\A Hat in Time_Zipline Unlock - The Windmill Path.png: 14A69128BD1BFBBD37FDD0D55F339106
+Custom Assets\A Hat in Time\aliases.json: BCC92FBB34337A3170BDE2FEDA2F7354
+Custom Assets\A Link Between Worlds\A Link Between Worlds.png: C69389BC057334586B65F73E6C2A8010
+Custom Assets\A Link Between Worlds\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\A Link To The Past\A Link To The Past.png: D9E05995E0F650A961D003B45267939A
+Custom Assets\A Link To The Past\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\A Short Hike\A Short Hike.png: 63B44EE4A9CAC177B11AFFCB4309D843
+Custom Assets\A Short Hike\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\Adventure\Adventure.png: 78109AE15A9AF0F1D33EBAECBCD3A63D
+Custom Assets\Adventure\Adventure_Black Key.png: 456ED18A77C8481DBAC87EF65416610F
+Custom Assets\Adventure\Adventure_Bridge.png: 92848F97ADB2BC3A5C036940D67CBCD7
+Custom Assets\Adventure\Adventure_Chalice.png: D8C344D642D8773665981C8AE3D4F722
+Custom Assets\Adventure\Adventure_Left Difficulty Switch.png: FD5BD7A6B426FB6425137534DBBE21AD
+Custom Assets\Adventure\Adventure_Magnet.png: 9617489476304167538440659F030A05
+Custom Assets\Adventure\Adventure_nothing.png: 85C48F201B4ABC44C8FEDD25354FC2EF
+Custom Assets\Adventure\Adventure_Revive Dragons.png: 851FB5E08C4A9E19EB7DFEC428217C0E
+Custom Assets\Adventure\Adventure_Right Difficulty Switch.png: C07428E608534DAEB39BEA352EA63AB6
+Custom Assets\Adventure\Adventure_Slow Grundle.png: 229C9FD38AF9F3F3B74FF4968A9455EC
+Custom Assets\Adventure\Adventure_Slow Rhindle.png: DF1FB7D8E1ADBABD1A0D60B6B7F2F478
+Custom Assets\Adventure\Adventure_Slow Yorgle.png: 980502832F6A0C881A7249331BBFC437
+Custom Assets\Adventure\Adventure_Sword.png: 52BB1D0EAAEA9123924082F76BEC72A6
+Custom Assets\Adventure\Adventure_White Key.png: DB8ADF341A0879BC9EE835BE2D73C4DA
+Custom Assets\Adventure\Adventure_Yellow Key.png: 334392032C3E73491335D49165615FBC
+Custom Assets\Adventure\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\Animal Well\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\Animal Well\Animal Well.png: B04BB1F4F50D31756497D238F6FE6B06
+Custom Assets\Balatro\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\Balatro\Balatro.png: 9B646292CB1557BCAF54291FE8A000DC
+Custom Assets\Balatro\Balatro_j_8_ball.png: 2E461B05772A16D73AF31C6D27946BA2
+Custom Assets\Balatro\Balatro_j_abstract.png: 2AD79CC3C0326851689980793A9D4CEA
+Custom Assets\Balatro\Balatro_j_acrobat.png: 848C1771D9F9345FC4ED523EB92C8E9F
+Custom Assets\Balatro\Balatro_j_banner.png: CB0EBA16D64E5948E0FC38971EBDA48F
+Custom Assets\Balatro\Balatro_j_blueprint.png: 124BA60495B6AF73384F602D232B6300
+Custom Assets\Balatro\Balatro_j_buisness_card.png: 2B1524E064DE69FDF57BD3A75953A2F8
+Custom Assets\Balatro\Balatro_j_cartomancer.png: 7CBE56E78033020912D04B54A0FF9C53
+Custom Assets\Balatro\Balatro_j_crazy.png: 437039CFCC48CFB7A39ABB007FBF71E1
+Custom Assets\Balatro\Balatro_j_credit_card.png: 01606671665ECC569FFC252245FD5603
+Custom Assets\Balatro\Balatro_j_delayed_grat.png: 986B66F3A9D00757F68D677849FB4FBA
+Custom Assets\Balatro\Balatro_j_droll.png: 94C5AF6CC83266E63E5D4701508C756B
+Custom Assets\Balatro\Balatro_j_duo.png: D7CAB88F68511BE0B50E5C6D541F631F
+Custom Assets\Balatro\Balatro_j_even_steven.png: E5992CAB6F7116D5A9BD112B43B402E3
+Custom Assets\Balatro\Balatro_j_family.png: D07AB1D2F9A17174BC9391D1D71D7C3E
+Custom Assets\Balatro\Balatro_j_fibonacci.png: C2D4F90EC627FCF32F35483C691E33F7
+Custom Assets\Balatro\Balatro_j_glass.png: CBB79695E56E3BC334127306E8BBD59E
+Custom Assets\Balatro\Balatro_j_gluttonous_joker.png: D8D135DCEE7761FB80B0ED2EA356D329
+Custom Assets\Balatro\Balatro_j_golden.png: B3710A8BE8811C7102E32C26F2B47DF3
+Custom Assets\Balatro\Balatro_j_greedy_joker.png: DC0F4AC78897B65E7D1AF5CC7DAE17D6
+Custom Assets\Balatro\Balatro_j_hack.png: C9F8F103025A22F5FEF289014A5AB87F
+Custom Assets\Balatro\Balatro_j_half.png: 88B0E08E471D86F0F7CE0B386DE4EC5A
+Custom Assets\Balatro\Balatro_j_jolly.png: 7CC462AEC264872054BD10490D2B5802
+Custom Assets\Balatro\Balatro_j_loyalty_card.png: B3387DD2ADBAE05009E0951AE6EA87E2
+Custom Assets\Balatro\Balatro_j_lusty_joker.png: 21DB9EC2BE5E1C0609D57C43E5D7EA76
+Custom Assets\Balatro\Balatro_j_mad.png: CBEDB2315CA648CA8933D6EF713CE39E
+Custom Assets\Balatro\Balatro_j_marble.png: 62CAB69A744B95D869B45898AC0127AB
+Custom Assets\Balatro\Balatro_j_matador.png: C21CDB5C16F16E3D4FA83E7AA82B246B
+Custom Assets\Balatro\Balatro_j_merry_andy.png: 6D1E91C884B9E115AD50A33174353B9E
+Custom Assets\Balatro\Balatro_j_mime.png: 185FC4D236AAC9E82F36F9E930A9EF25
+Custom Assets\Balatro\Balatro_j_misprint.png: B1E403FC31C02468E75AD5EAC32CB280
+Custom Assets\Balatro\Balatro_j_mr_bones.png: 6927FAF565A70E9B28098B0103BC8ACB
+Custom Assets\Balatro\Balatro_j_mystic_summit.png: 97FC509BC6DD8D96DD92F7723826F5F8
+Custom Assets\Balatro\Balatro_j_odd_todd.png: 61D8A2F9AA4FFAE1F036BA172158D48B
+Custom Assets\Balatro\Balatro_j_order.png: D4F2301D458F1659E73A8EAF23C9718F
+Custom Assets\Balatro\Balatro_j_pareidolia.png: D84BF488ED27357620B08D688FC12EFC
+Custom Assets\Balatro\Balatro_j_raised_fist.png: 238D5FB244A2993764ED5828D2A2D276
+Custom Assets\Balatro\Balatro_j_scary_face.png: A45C12866191104591A583037D8E5021
+Custom Assets\Balatro\Balatro_j_scholar.png: E025DB8C9A5FCD9C7A9B01CBC429F85E
+Custom Assets\Balatro\Balatro_j_seeing_double.png: CAE1F55695F9D7E19E9DE54A86230D12
+Custom Assets\Balatro\Balatro_j_sock_and_buskin.png: A98F3C3ED213611F46102DA7C181ED41
+Custom Assets\Balatro\Balatro_j_space.png: 2C89F3404DEDBEBBEBCB20044E926FAB
+Custom Assets\Balatro\Balatro_j_steel_joker.png: C43B5A4A723E1276734162E08E964673
+Custom Assets\Balatro\Balatro_j_stencil.png: 7DD7EDB9F940D2A4C404D3C7C9600E09
+Custom Assets\Balatro\Balatro_j_stone.png: 75413F74FE3FACD3CA681C4140020E00
+Custom Assets\Balatro\Balatro_j_supernova.png: C23CD90562AF43E53995361F6EBB6794
+Custom Assets\Balatro\Balatro_j_ticket.png: 29045838F935DE20E36E4A7351AB52A1
+Custom Assets\Balatro\Balatro_j_tribe.png: DC0E5FA0700CFF4B209DBC60BCA9F30F
+Custom Assets\Balatro\Balatro_j_trio.png: EC79100C5B53E10415A65EEB3EE26580
+Custom Assets\Balatro\Balatro_j_wrathful_joker.png: 83000A94F6EEB57B5F598285E22BF731
+Custom Assets\Balatro\Balatro_j_zany.png: 816F0A15130289A18004A56F62EA87B0
+Custom Assets\Banjo-Tooie\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\Banjo-Tooie\Banjo-Tooie.png: A94A7775BC89B40C311D7F17B177B833
+Custom Assets\Bloons TD6\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\Bloons TD6\Bloons TD6.png: 7DE20318D4B25094B279D93C3E7241AD
+Custom Assets\Brotato\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\Brotato\Brotato.png: AC32F10948C1692E71C4BA3538A3ED93
+Custom Assets\Candy Box 2\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\Candy Box 2\Candy Box 2.png: AFB2A3A4C1E4C30B78146BA05557B5E1
+Custom Assets\Celeste\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\Celeste\Celeste.png: 7908771CBC730CE2E42CB5C5019F799A
+Custom Assets\Celeste 64\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\Celeste 64\Celeste 64.png: 11F70412DAC18B187F17C61564BF958E
+Custom Assets\Civilization V\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\Civilization V\Civilization V.png: 20455C0C45CB6C39BE94DF392498DC6C
+Custom Assets\Civilization VI\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\Civilization VI\Civilization VI.png: 286C102966ED9A6CD3B94B11F61532DC
+Custom Assets\Clique\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\Clique\Clique.png: 2CDFD9C99AB358FEB460C3E395C1D611
+Custom Assets\Clique\Clique_Button Activation.png: 2B2CBE1006767C88CC06705441D1D8E7
+Custom Assets\Clique\Clique_Feeling of Satisfaction.png: C82D7380FBD5A175817F03EE501A527F
+Custom Assets\Cookie Clicker\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\Cookie Clicker\Cookie Clicker.png: C5C46405F0C8D433E8F13D8062122DF4
+Custom Assets\CrossCode\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\CrossCode\CrossCode.png: B63F82B8DFE29527E620C7F74EEB4C62
+Custom Assets\CrossCode\CrossCode_Azure Drop Shade.png: 2E47E5A9980C399BC9F30E8031E2E9B9
+Custom Assets\CrossCode\CrossCode_Blue Ice Shade.png: 2E47E5A9980C399BC9F30E8031E2E9B9
+Custom Assets\CrossCode\CrossCode_Broken Chakrams.png: FA7419CE082EBB4528358704D1370B1D
+Custom Assets\CrossCode\CrossCode_Broken Deck.png: FA7419CE082EBB4528358704D1370B1D
+Custom Assets\CrossCode\CrossCode_Broken Gauntlet.png: FA7419CE082EBB4528358704D1370B1D
+Custom Assets\CrossCode\CrossCode_Broken Shield.png: FA7419CE082EBB4528358704D1370B1D
+Custom Assets\CrossCode\CrossCode_Broken Sword.png: FA7419CE082EBB4528358704D1370B1D
+Custom Assets\CrossCode\CrossCode_Cold.png: C84AFCB1A799EB1D51E2D402BD9A080D
+Custom Assets\CrossCode\CrossCode_Cursed Coin.png: C4039E42B6E1C6A512B2ED99C341B109
+Custom Assets\CrossCode\CrossCode_Disc of Flora.png: D69A53A0CBFD3EDDF6228F5D45403DBE
+Custom Assets\CrossCode\CrossCode_Disc of Insight.png: D69A53A0CBFD3EDDF6228F5D45403DBE
+Custom Assets\CrossCode\CrossCode_Dream Globe.png: 917C3195762ADAB9CE4C748335C83037
+Custom Assets\CrossCode\CrossCode_Everlasting Amber.png: 917C3195762ADAB9CE4C748335C83037
+Custom Assets\CrossCode\CrossCode_Fajro Key.png: C4039E42B6E1C6A512B2ED99C341B109
+Custom Assets\CrossCode\CrossCode_Fajro Master Key.png: C4039E42B6E1C6A512B2ED99C341B109
+Custom Assets\CrossCode\CrossCode_Galaxy Berry.png: 917C3195762ADAB9CE4C748335C83037
+Custom Assets\CrossCode\CrossCode_Geta Glue.png: 809BFFE9598FC35407B21A199EFD9229
+Custom Assets\CrossCode\CrossCode_Geta Wood.png: 809BFFE9598FC35407B21A199EFD9229
+Custom Assets\CrossCode\CrossCode_Golden Triangle.png: 809BFFE9598FC35407B21A199EFD9229
+Custom Assets\CrossCode\CrossCode_Green Leaf Shade.png: 2E47E5A9980C399BC9F30E8031E2E9B9
+Custom Assets\CrossCode\CrossCode_Green Seed Shade.png: 2E47E5A9980C399BC9F30E8031E2E9B9
+Custom Assets\CrossCode\CrossCode_Guild Pass.png: E31BEE064C9780D623167325865E24ED
+Custom Assets\CrossCode\CrossCode_Halcyon Droplet.png: 917C3195762ADAB9CE4C748335C83037
+Custom Assets\CrossCode\CrossCode_Heat.png: 0561E86E4570C0DCAAEAEBC2563CBF7A
+Custom Assets\CrossCode\CrossCode_Heavens Seed.png: 917C3195762ADAB9CE4C748335C83037
+Custom Assets\CrossCode\CrossCode_Hungry Salmon.png: 809BFFE9598FC35407B21A199EFD9229
+Custom Assets\CrossCode\CrossCode_Kajo Master Key.png: C4039E42B6E1C6A512B2ED99C341B109
+Custom Assets\CrossCode\CrossCode_Kings Ring.png: 809BFFE9598FC35407B21A199EFD9229
+Custom Assets\CrossCode\CrossCode_Kryskajo Key.png: C4039E42B6E1C6A512B2ED99C341B109
+Custom Assets\CrossCode\CrossCode_Maroon Cave Pass.png: C4039E42B6E1C6A512B2ED99C341B109
+Custom Assets\CrossCode\CrossCode_Meteor Shade.png: 2E47E5A9980C399BC9F30E8031E2E9B9
+Custom Assets\CrossCode\CrossCode_Mine Key.png: C4039E42B6E1C6A512B2ED99C341B109
+Custom Assets\CrossCode\CrossCode_Mine Master Key.png: C4039E42B6E1C6A512B2ED99C341B109
+Custom Assets\CrossCode\CrossCode_Mysterious Box.png: 809BFFE9598FC35407B21A199EFD9229
+Custom Assets\CrossCode\CrossCode_Old Blueprint.png: C4039E42B6E1C6A512B2ED99C341B109
+Custom Assets\CrossCode\CrossCode_Old Dojo Key.png: C4039E42B6E1C6A512B2ED99C341B109
+Custom Assets\CrossCode\CrossCode_Omni Lock.png: 809BFFE9598FC35407B21A199EFD9229
+Custom Assets\CrossCode\CrossCode_Pond Slums Pass.png: C4039E42B6E1C6A512B2ED99C341B109
+Custom Assets\CrossCode\CrossCode_Portrait of Ruin.png: 917C3195762ADAB9CE4C748335C83037
+Custom Assets\CrossCode\CrossCode_Progressive All-Purpose Arms.png: 129D947B9E74E4D5631198FCF8B9DDD3
+Custom Assets\CrossCode\CrossCode_Progressive All-Purpose Heads.png: 0C012B98011C0ED566C96DD8F26F946C
+Custom Assets\CrossCode\CrossCode_Progressive Area Unlock.png: E31BEE064C9780D623167325865E24ED
+Custom Assets\CrossCode\CrossCode_Progressive Arms.png: 129D947B9E74E4D5631198FCF8B9DDD3
+Custom Assets\CrossCode\CrossCode_Progressive Class-Based Arms.png: 129D947B9E74E4D5631198FCF8B9DDD3
+Custom Assets\CrossCode\CrossCode_Progressive Defensive Heads.png: 0C012B98011C0ED566C96DD8F26F946C
+Custom Assets\CrossCode\CrossCode_Progressive Dungeon Unlock.png: E31BEE064C9780D623167325865E24ED
+Custom Assets\CrossCode\CrossCode_Progressive Heads.png: 0C012B98011C0ED566C96DD8F26F946C
+Custom Assets\CrossCode\CrossCode_Progressive Legs.png: A75E73A36E3A15A31EB518E84A09BBBD
+Custom Assets\CrossCode\CrossCode_Progressive Overworld Area Unlock.png: E31BEE064C9780D623167325865E24ED
+Custom Assets\CrossCode\CrossCode_Progressive Special Arms.png: 129D947B9E74E4D5631198FCF8B9DDD3
+Custom Assets\CrossCode\CrossCode_Progressive Torsos.png: 75FB39199FF1ADE4B5ADDDC6ECB0DEAA
+Custom Assets\CrossCode\CrossCode_Purple Bolt Shade.png: 2E47E5A9980C399BC9F30E8031E2E9B9
+Custom Assets\CrossCode\CrossCode_Radiant Key.png: 584CF93BF0D0F2E52C6AE5ACDE0EAB35
+Custom Assets\CrossCode\CrossCode_Red Flame Shade.png: 2E47E5A9980C399BC9F30E8031E2E9B9
+Custom Assets\CrossCode\CrossCode_Shock.png: 3A76A0768D36DEB3079FD874F6541D62
+Custom Assets\CrossCode\CrossCode_Sonajiz Key.png: C4039E42B6E1C6A512B2ED99C341B109
+Custom Assets\CrossCode\CrossCode_SP Upgrade.png: E9D9137F29B298ED90C6797CCA77CDE1
+Custom Assets\CrossCode\CrossCode_Star Shade.png: 2E47E5A9980C399BC9F30E8031E2E9B9
+Custom Assets\CrossCode\CrossCode_Thiefs Key.png: EBBB041C39A4374C2BCABCE5C48A540F
+Custom Assets\CrossCode\CrossCode_Tremor Engine.png: 809BFFE9598FC35407B21A199EFD9229
+Custom Assets\CrossCode\CrossCode_Very Large Ember.png: C4039E42B6E1C6A512B2ED99C341B109
+Custom Assets\CrossCode\CrossCode_Wave.png: 75E970DC4D183C487741E2474FA02026
+Custom Assets\CrossCode\CrossCode_White Key.png: C840D997B4E477C2C6E9C3ADBFED7F9D
+Custom Assets\CrossCode\CrossCode_Yellow Sand Shade.png: 2E47E5A9980C399BC9F30E8031E2E9B9
+Custom Assets\CrossCode\CrossCode_Zirvitar Key.png: C4039E42B6E1C6A512B2ED99C341B109
+Custom Assets\Cuphead\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\Cuphead\Cuphead.png: D501010698EFF368514B2863B668AF95
+Custom Assets\Dark Souls\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\Dark Souls\Dark Souls.png: F2015DED72F1C560A12A692C5D73EA6B
+Custom Assets\Dark Souls II\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\Dark Souls II\Dark Souls II.png: 79FCDB693647CC6B548DC21DFB28C064
+Custom Assets\Dark Souls III\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\Dark Souls III\Dark Souls III.png: A45F80193AEEA5F9800EF231617EB16C
+Custom Assets\Deltarune\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\Deltarune\Deltarune.png: 11F2366960676A3378F573F2F30C034B
+Custom Assets\Diddy Kong Racing\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\Diddy Kong Racing\Diddy Kong Racing.png: 0A5441F9230C99615988920368DCDDFB
+Custom Assets\DLCQuest\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\DLCQuest\DLCQuest.png: 40724CEA5727B547FBC17391E976361A
+Custom Assets\DLCQuest\DLCQuest_Animation Pack.png: BF7BBD8D12B58358E1C2216DA407FD34
+Custom Assets\DLCQuest\DLCQuest_Armor for your Horse Pack.png: 4CF1323B82A52A953495E6849C6BC728
+Custom Assets\DLCQuest\DLCQuest_Audio Pack.png: 968BDDAF6173F990A43BC9DF5BDCE180
+Custom Assets\DLCQuest\DLCQuest_Big Sword Pack.png: 5151C97081E5FAAD4DD4E5176350077A
+Custom Assets\DLCQuest\DLCQuest_Box of Various Supplies.png: 8DF20A65A188A05604244680AAFCA349
+Custom Assets\DLCQuest\DLCQuest_Canadian Dialog Pack.png: C74BDEC185CD924C58BB6306A2DFCBCE
+Custom Assets\DLCQuest\DLCQuest_Checkpoint Pack.png: 87AD6B398486039839701BAC9C4C782B
+Custom Assets\DLCQuest\DLCQuest_Cut Content Pack.png: 9834E16AECDC63E34E0FD79EEEF616C9
+Custom Assets\DLCQuest\DLCQuest_Day One Patch Pack.png: B5F7BAB6C21D42031E7C773CE74F456F
+Custom Assets\DLCQuest\DLCQuest_Death of Comedy Pack.png: EA21B7250B7BB31E29B8CAB66DCC8E39
+Custom Assets\DLCQuest\DLCQuest_DLC NPC Pack.png: D0907B2415886610756A5F1FC8B65391
+Custom Assets\DLCQuest\DLCQuest_DLC Quest Coin Bundle.png: EA16111A78C717509ADE97D6DBA3BD28
+Custom Assets\DLCQuest\DLCQuest_DLC Quest Coin Piece.png: EA16111A78C717509ADE97D6DBA3BD28
+Custom Assets\DLCQuest\DLCQuest_DLC Quest Progressive Weapon.png: 1AAC7AA3B8600CE7E60F029376EC0FF0
+Custom Assets\DLCQuest\DLCQuest_Double Jump Pack.png: 9D35ECBB2735CEB3877A4E871CE84E25
+Custom Assets\DLCQuest\DLCQuest_Finish the Fight Pack.png: B67E7BC7A90B555FF5D157CE76238029
+Custom Assets\DLCQuest\DLCQuest_Gun Pack.png: 1608553C07D81B1747337276252E4DFF
+Custom Assets\DLCQuest\DLCQuest_Gun.png: E0D94DE06CDBC45D549432623AEB1E29
+Custom Assets\DLCQuest\DLCQuest_Harmless Plants Pack.png: D2FB50E469562A17092130CFC7A7C7FD
+Custom Assets\DLCQuest\DLCQuest_Health Bar Pack.png: C40F6D5592BFF70166921BB4DFEABD17
+Custom Assets\DLCQuest\DLCQuest_High Definition Next Gen Pack.png: C166D7A8282A52146F6176C14580707C
+Custom Assets\DLCQuest\DLCQuest_Humble Indie Bindle.png: 81513B368316EFCEA833CBA2D9E585BC
+Custom Assets\DLCQuest\DLCQuest_Increased HP Pack.png: 00CA3CC205BBDD62AC4D26D90CAD0950
+Custom Assets\DLCQuest\DLCQuest_Incredibly Important Pack.png: B2FD65F79B78096CEA23DF18110BC3EF
+Custom Assets\DLCQuest\DLCQuest_Live Freemium or Die Coin Bundle.png: EA16111A78C717509ADE97D6DBA3BD28
+Custom Assets\DLCQuest\DLCQuest_Live Freemium or Die Coin Piece.png: 059713152F46815386BC4A4932066F11
+Custom Assets\DLCQuest\DLCQuest_Live Freemium or Die Progressive Weapon.png: 1AAC7AA3B8600CE7E60F029376EC0FF0
+Custom Assets\DLCQuest\DLCQuest_Loading Screen.png: 255069609D74E26754BA39EA7D046049
+Custom Assets\DLCQuest\DLCQuest_Map Pack.png: 36279E4BBE352C7F96581D8F226A3905
+Custom Assets\DLCQuest\DLCQuest_Movement Pack.png: BB71ACD003FB7A852D084B26E69795CA
+Custom Assets\DLCQuest\DLCQuest_Name Change Pack.png: 985593AE1B711EC746D1B80550C28E22
+Custom Assets\DLCQuest\DLCQuest_Night Map Pack.png: 36279E4BBE352C7F96581D8F226A3905
+Custom Assets\DLCQuest\DLCQuest_Parallax Pack.png: AB0939A34C9F9A6A086680F6C9766AB2
+Custom Assets\DLCQuest\DLCQuest_Particles Pack.png: 54CED9921B39334540693EC916D97B1E
+Custom Assets\DLCQuest\DLCQuest_Pause Menu Pack.png: D4F8C024C929C65472222B320E0E0857
+Custom Assets\DLCQuest\DLCQuest_Pet Pack.png: 7E50D685B5C544D3BA43CB75985FF96F
+Custom Assets\DLCQuest\DLCQuest_Pickaxe.png: 5F863794FCACC09D4367753D0E6F9000
+Custom Assets\DLCQuest\DLCQuest_Psychological Warfare Pack.png: 782797058B9542C750CE16736C7C27FD
+Custom Assets\DLCQuest\DLCQuest_Really Big Sword Pack.png: A5FDBE684C389194E68E9D84A33B3534
+Custom Assets\DLCQuest\DLCQuest_Removed Ads Pack.png: CFF58EC2925E721344BD3345429E6438
+Custom Assets\DLCQuest\DLCQuest_Season Pass.png: C67B14F3A836853C88DCCAF1D0DD770F
+Custom Assets\DLCQuest\DLCQuest_Sexy Outfits Pack.png: BF3E5EA1222094DA65EA309744B37482
+Custom Assets\DLCQuest\DLCQuest_Sword.png: A335CAA56D3BD332DA36DF379F98F47B
+Custom Assets\DLCQuest\DLCQuest_Temporary Spike.png: 42DAC672C2CD8A33A30CC98317BB43BE
+Custom Assets\DLCQuest\DLCQuest_The Zombie Pack.png: 9F04CA39DA713737B90C110AF8E2BE28
+Custom Assets\DLCQuest\DLCQuest_Time is Money Pack.png: F58402B03F8B4EA65917DECAD902BAB4
+Custom Assets\DLCQuest\DLCQuest_Top Hat Pack.png: 41DACF60E0B489526652187FED5BA3AE
+Custom Assets\DLCQuest\DLCQuest_Unfathomable Sword Pack.png: 58C0A11E324170AA24665E3074864C06
+Custom Assets\DLCQuest\DLCQuest_Wall Jump Pack.png: 4854C66497708C462C6BFD3595F96092
+Custom Assets\DLCQuest\DLCQuest_Wooden Sword.png: A335CAA56D3BD332DA36DF379F98F47B
+Custom Assets\DLCQuest\DLCQuest_Zombie Sheep.png: C8C20CEBDB8C90B7A0C7DD5DCA56FCD1
+Custom Assets\Dome Keeper\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\Dome Keeper\Dome Keeper.png: 9DBE8E4E916048BC666830BCE278FD92
+Custom Assets\Donkey Kong 64\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\Donkey Kong 64\Donkey Kong 64.png: E9D40F2E8485A7E72FF3A34A9AA50600
+Custom Assets\Donkey Kong Country\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\Donkey Kong Country\Donkey Kong Country.png: AAF6AC2EEDA351B87E2C61B816FE15B5
+Custom Assets\Donkey Kong Country 2\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\Donkey Kong Country 2\Donkey Kong Country 2.png: B78CC6F2522C282988454F42F0170FC4
+Custom Assets\Donkey Kong Country 3\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\Donkey Kong Country 3\Donkey Kong Country 3.png: 8C8351CA7243B880FD354B029B748385
+Custom Assets\Dont Starve Together\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\Dont Starve Together\Dont Starve Together.png: EAB6CEDD8A50A035406815F564014070
+Custom Assets\Doom 1993\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\Doom 1993\Doom 1993.png: 3F4225225F4FA2BE3D12A243EE3EF2D7
+Custom Assets\Doom 2\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\Doom 2\Doom 2.png: BEB6721E4667F57A8143E4D3A71E922D
+Custom Assets\Dredge\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\Dredge\Dredge.png: 05B4A98A7DF428C5BEC3A60F4F4118F5
+Custom Assets\Earthbound\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\Earthbound\Earthbound.png: A8253CB8300238A97713D4806EA8F486
+Custom Assets\Enter The Breach\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\Enter The Breach\Enter The Breach.png: EE341133EBF0F1BDA6991A540A74E98C
+Custom Assets\Enter The Gungeon\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\Enter The Gungeon\Enter The Gungeon.png: FB6B2334D9E0741E245886C9CA3B6B1D
+Custom Assets\Factorio\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\Factorio\Factorio.png: E12A0ED60C9E975E2BDF9B9B4899C8F5
+Custom Assets\Final Fantasy\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\Final Fantasy\Final Fantasy.png: 53C0302A1C5EAC2942910E672758307C
+Custom Assets\Frogmonster\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\Frogmonster\Frogmonster.png: DEDE499A192DE531098F9FCD201F22E6
+Custom Assets\Getting Over It\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\Getting Over It\Getting Over It.png: 71EA323BEFAF2741B45F5899671CE1D3
+Custom Assets\Hades\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\Hades\Hades.png: 5DB663EFFCAD2179CC6702EB035F884A
+Custom Assets\Hollow Knight\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\Hollow Knight\Hollow Knight.png: 83902492A032C43B6F9DEB7F7E39AE24
+Custom Assets\Hollow Knight\Hollow Knight_Abyss_Shriek.png: 2F65C561818ACB2A84E7111BE3CA8FA3
+Custom Assets\Hollow Knight\Hollow Knight_Arcane_Egg.png: 8AE3D2D66D552307D6934CAC021285D8
+Custom Assets\Hollow Knight\Hollow Knight_Awoken_Dream_Nail.png: DACD45369C4900CB9BC16C69BDC8AB19
+Custom Assets\Hollow Knight\Hollow Knight_BossGeo.png: EB6AB24061E4E3D24BCD077CCB435419
+Custom Assets\Hollow Knight\Hollow Knight_Crystal_Heart.png: B7AD93A589E0C4CD59AE834DA908273B
+Custom Assets\Hollow Knight\Hollow Knight_Descending_Dark.png: 9A0473840431F82F7CAA46F0CD1E40C3
+Custom Assets\Hollow Knight\Hollow Knight_Desolate_Dive.png: 0C6069996A053B54C185FF06CF49CC6A
+Custom Assets\Hollow Knight\Hollow Knight_Dreamgate.png: 5C3E681CECF81068216DE9B399F8107F
+Custom Assets\Hollow Knight\Hollow Knight_Dream_Nail.png: E5210303DE6BBD20FA57B99213ADC911
+Custom Assets\Hollow Knight\Hollow Knight_Elegant_Key.png: DB2F33C8CCAA7C87AE032DC78AA67A64
+Custom Assets\Hollow Knight\Hollow Knight_Focus.png: 71126C9EE9AC0556C32F0B3DAD6CD9AD
+Custom Assets\Hollow Knight\Hollow Knight_GeoChests.png: 0A7971A4B2F770B154A8B3752A4AC18A
+Custom Assets\Hollow Knight\Hollow Knight_GeoRocks.png: 58837C4A2775AACEE618DBD4774957ED
+Custom Assets\Hollow Knight\Hollow Knight_Grub.png: 3F94FB4C715D3CA7879B5DC6FF43CDF0
+Custom Assets\Hollow Knight\Hollow Knight_Hallownest_Seal.png: 381855BC7580C1C55964A76E68437E17
+Custom Assets\Hollow Knight\Hollow Knight_Howling_Wraiths.png: 6A0BCF0A77E42EFAE6AA6E086A869CDE
+Custom Assets\Hollow Knight\Hollow Knight_Ismas_Tear.png: 1C9667B6D7367D21E062C340A4B26AA2
+Custom Assets\Hollow Knight\Hollow Knight_Kings_Idol.png: C085729EB616CC6BB9E88FDBC45C451C
+Custom Assets\Hollow Knight\Hollow Knight_Love_Key.png: B7AAFF22A2E4D9E080F742D4E486E66B
+Custom Assets\Hollow Knight\Hollow Knight_Lumafly_Lantern.png: EA03C51EA557571AB55B7A46A8539278
+Custom Assets\Hollow Knight\Hollow Knight_Mantis_Claw.png: 55F23194085316FE4F8047173DC4BC73
+Custom Assets\Hollow Knight\Hollow Knight_Maps.png: A2B5EE953B3BF47E0C85E0D3C74783E7
+Custom Assets\Hollow Knight\Hollow Knight_Mask_Shard.png: 0520DB3C7E2DC8920A277DF87DBEC51E
+Custom Assets\Hollow Knight\Hollow Knight_Monarch_Wings.png: 7F315417C621A632E94FE9C459E55FDC
+Custom Assets\Hollow Knight\Hollow Knight_Mothwing_Cloak.png: ECDC7F6992119802E2180CE6C12B5006
+Custom Assets\Hollow Knight\Hollow Knight_Nail.png: 15F4BE985CFAFF221CFA9F77FD060F88
+Custom Assets\Hollow Knight\Hollow Knight_One_Geo.png: 0A7971A4B2F770B154A8B3752A4AC18A
+Custom Assets\Hollow Knight\Hollow Knight_Pale_Ore.png: DCC93ED96F202D34413D3F989F532141
+Custom Assets\Hollow Knight\Hollow Knight_Quill.png: A2B5EE953B3BF47E0C85E0D3C74783E7
+Custom Assets\Hollow Knight\Hollow Knight_Rancid_Egg.png: 8FCBC3540A84B7EFE2DF221A59F08A2C
+Custom Assets\Hollow Knight\Hollow Knight_Salubras_Blessing.png: 6493BC35D326145B5D00B3890ADC8934
+Custom Assets\Hollow Knight\Hollow Knight_Shade_Cloak.png: B043274D4552D3BFC94321D9174B663D
+Custom Assets\Hollow Knight\Hollow Knight_Shade_Soul.png: 514EB91B79878047A07B570AF92FDCC3
+Custom Assets\Hollow Knight\Hollow Knight_Simple_Key.png: 52F83F82724A8D7F0CF849E43D0205F8
+Custom Assets\Hollow Knight\Hollow Knight_Tram_Pass.png: BC0474DED7FEC0ED3A938C5178808B47
+Custom Assets\Hollow Knight\Hollow Knight_Vengeful_Spirit.png: 0A8FCA8A2F52FE3CB4E297BCCC871357
+Custom Assets\Hollow Knight\Hollow Knight_Vessel_Fragment.png: 20C062D93037093A77C80FEDF5633453
+Custom Assets\Hollow Knight\Hollow Knight_Wanderers_Journal.png: 24738E0DBDFEA6964B3E4A281F8DA50D
+Custom Assets\Hollow Knight\Hollow Knight_World_Sense.png: 65F98CDDF6132AFDDF44AB152F3619AE
+Custom Assets\Huniepop 2 Double Date\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\Huniepop 2 Double Date\Huniepop 2 Double Date.png: B2759BD72740D1129F53FC1F8D861359
+Custom Assets\Hylics 2\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\Hylics 2\Hylics 2.png: D9C20C71358166E9ACBF7A803E5350E4
+Custom Assets\Increlution\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\Increlution\Increlution.png: 96E12E435C28A2B8B80F1972BE298C6B
+Custom Assets\Inscryption\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\Inscryption\Inscryption.png: 3BD7316DB2DCC43D71A61CCDF7FFBD4A
+Custom Assets\Isles Of Sea And Sky\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\Isles Of Sea And Sky\Isles Of Sea And Sky.png: 890AF4B77B5D4571478B537ED711BC0A
+Custom Assets\Jak and Daxter The Precursor Legacy\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\Jak and Daxter The Precursor Legacy\Jak and Daxter The Precursor Legacy.png: F14A045DD6EECE9D0BB1B3D8E6C99416
+Custom Assets\Jigsaw\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\Jigsaw\Jigsaw.png: 5D9339FAD2B2E0307DDD295A20A074EA
+Custom Assets\Keep Talking and Nobody Explodes\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\Keep Talking and Nobody Explodes\Keep Talking and Nobody Explodes.png: 7EB0972D2BE8C2B68B68465E21FB6867
+Custom Assets\Kingdom Hearts\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\Kingdom Hearts\Kingdom Hearts.png: EE15C3E5F48FD060927C3CEE1291F9E0
+Custom Assets\Kingdom Hearts 2\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\Kingdom Hearts 2\Kingdom Hearts 2.png: 1C1B352716A6E7DF6C1FDAA61E0AD0A1
+Custom Assets\Kirby 64 - The Crystal Shards\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\Kirby 64 - The Crystal Shards\Kirby 64 - The Crystal Shards.png: 42E9C3B3EFAE174D14FCAD024852C6C7
+Custom Assets\Kirby 64 - The Crystal Shards\Kirby 64 - The Crystal Shards_crystal_shard.png: 57EB2B3E13B9E397C5CB95F7AED7D227
+Custom Assets\Kirby Air Ride\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\Kirby Air Ride\Kirby Air Ride.png: AA8B8F04357622E279753F008C78C935
+Custom Assets\Kirby Super Star\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\Kirby Super Star\Kirby Super Star.png: 6B574BD35A797514F58F1966E39AE277
+Custom Assets\Kirbys Dream Land 3\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\Kirbys Dream Land 3\Kirbys Dream Land 3.png: 48AC90671ED15DDDFF0942CFB2F965CA
+Custom Assets\League Of Legends\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\League Of Legends\League Of Legends.png: 2969DC837710E729A5401AFFD059FEB2
+Custom Assets\Lego Star Wars The Complete Saga\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\Lego Star Wars The Complete Saga\Lego Star Wars The Complete Saga.png: A206607F7260293C3E1E2E947D17B5F8
+Custom Assets\Lethal Company\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\Lethal Company\Lethal Company.png: BCAD2487584707FA62224D73309B65DF
+Custom Assets\Lil Gator Game\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\Lil Gator Game\Lil Gator Game.png: C050F212957FC0CF1563B7539D650667
+Custom Assets\Lingo\aliases.json: 69F5B68F4D7A108ED7CC8B31711A1AE1
+Custom Assets\Lingo\Lingo.png: 8A5F327BBCB24D66460CD84B444BB3E5
+Custom Assets\Lingo\Lingo_Black.png: 41F33E585CBB097281FC541435BD17BE
+Custom Assets\Lingo\Lingo_Blue.png: 8C45EC2DEB4AAFE1BD29DF80FD0889A5
+Custom Assets\Lingo\Lingo_Brown.png: 983CED97B7C0C87E1323A1BD99B51C22
+Custom Assets\Lingo\Lingo_Color Hunt.png: AAD7B5A68EFCDA86B62DAB2FE7316624
+Custom Assets\Lingo\Lingo_Colorful.png: 01D04175343CF71927E0309E2C5C1B1F
+Custom Assets\Lingo\Lingo_Gray.png: E48CE11327B9248DECDB760F31B3EECB
+Custom Assets\Lingo\Lingo_Green.png: C79056312388083915DA8EFE4B75009B
+Custom Assets\Lingo\Lingo_Number Hunt.png: 84FD132AAD167CE5420528A482A5AB96
+Custom Assets\Lingo\Lingo_Orange Tower.png: 01D8F8BD1910CA4B2EA48A7A10E54F6C
+Custom Assets\Lingo\Lingo_Orange.png: DE5B7DA082480C0170A62A19F9C42CDE
+Custom Assets\Lingo\Lingo_Pilgrimage.png: 85C6D1E57912F705BFBF34EA43EC65B5
+Custom Assets\Lingo\Lingo_Progressive Art Gallery.png: 0B1C04330AE4542F45935E6AD51E723E
+Custom Assets\Lingo\Lingo_Purple.png: 9E7CB6932B61EF69D2F0259E50B3BF43
+Custom Assets\Lingo\Lingo_Red.png: DB81D5C584EA762BE9E59313A7AF34E1
+Custom Assets\Lingo\Lingo_Yellow.png: 4D549DE00DAFFBFFF008CE728D188F25
+Custom Assets\Links Awakening DX\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\Links Awakening DX\Links Awakening DX.png: 53AEC9C218EDB6664FBBFD2EC439D6C0
+Custom Assets\Luigis Mansion\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\Luigis Mansion\Luigis Mansion.png: 1A7D409E6692E30D594EB3570E771501
+Custom Assets\Lunacid\aliases.json: 476C6F1A850F109BB5E3634640AA8668
+Custom Assets\Lunacid\Lunacid.png: 3FC3EB919B386F8020D5F91ADDCFBB51
+Custom Assets\Lunacid\Lunacid_Angel Feather.png: 7FBD4A481DD7265A0387257DE34C182B
+Custom Assets\Lunacid\Lunacid_Antidote.png: B995545273DBB36F5873DF4D912BDD8A
+Custom Assets\Lunacid\Lunacid_Axe of Harming.png: 23E0D9CF89B8F3438B5BD75056ABE147
+Custom Assets\Lunacid\Lunacid_Battle Axe.png: C233A5C55A36921D07052F3CFE756443
+Custom Assets\Lunacid\Lunacid_Black Book.png: 41B70AFA4EDB97A68C334D324E147F9C
+Custom Assets\Lunacid\Lunacid_Blade of Jusztina.png: D645B3002603AEF62E91A3B37E7E895D
+Custom Assets\Lunacid\Lunacid_Blade of Ophelia.png: E16D3FF15321760C502B03F918D604C5
+Custom Assets\Lunacid\Lunacid_Blessed Wind.png: 6FD1DDC07A1A2FFF978C6C0B3A2D0051
+Custom Assets\Lunacid\Lunacid_Blood Spell.png: 35B4A28903E033B7DB2896EC160BB4D4
+Custom Assets\Lunacid\Lunacid_Blood Wine.png: 4A2A5ED14374D38AA8F8E73DB0B65AED
+Custom Assets\Lunacid\Lunacid_Bomb.png: 63D2168853435019BDFEDE864B4A5155
+Custom Assets\Lunacid\Lunacid_Brittle Arming Sword.png: 00F6A830E037A3B0AC8081DF5B3BB4BC
+Custom Assets\Lunacid\Lunacid_Broken Hilt.png: B9EFD6ABAF7C573D30F57FBCC63CB83A
+Custom Assets\Lunacid\Lunacid_Broken Lance.png: 37635DEBB93036B5186BD561581331F7
+Custom Assets\Lunacid\Lunacid_Cloth Bandage.png: 56511C082C3C0336B83E009D086563B0
+Custom Assets\Lunacid\Lunacid_Coal.png: F1596AEE73319A022B5AB3741D36C202
+Custom Assets\Lunacid\Lunacid_Corrupt Key.png: ACFADFFBC5E14B196DC011F517E24ACD
+Custom Assets\Lunacid\Lunacid_Corrupted Dagger.png: 8065729E5BA99EE66ED2E126D42CA01A
+Custom Assets\Lunacid\Lunacid_Crossbow.png: CD4DF1DD8EC3E0B1828E78C118070C21
+Custom Assets\Lunacid\Lunacid_Crystal Lantern.png: E0DD4DECCC3476E4F916FB337055338D
+Custom Assets\Lunacid\Lunacid_Crystal Shard.png: 13A9814342487CAEA171B4CB4F071499
+Custom Assets\Lunacid\Lunacid_Cursed Blade.png: 62DF8D69A9015957C505C50AA1D6F920
+Custom Assets\Lunacid\Lunacid_Dark Greatsword.png: DD55921E4467074FD2BB43B344234021
+Custom Assets\Lunacid\Lunacid_Dark Rapier.png: CAFCAA612F057EB2C589C48458E1F962
+Custom Assets\Lunacid\Lunacid_Dark Spell.png: D27E1569230DF60E52B8BD90E7751AFC
+Custom Assets\Lunacid\Lunacid_Dark Urn.png: 3FF129162EE82993FD97DA909EAEB825
+Custom Assets\Lunacid\Lunacid_Deep Knowledge.png: 05EFD2099F76AA8D4D8A9C6ABC9B6771
+Custom Assets\Lunacid\Lunacid_Double Crossbow.png: 3A31AFEF2FA9558235FC810936C99B8A
+Custom Assets\Lunacid\Lunacid_Dried Rat.png: DD3923F1AC1C1DD1AE14DF2FA04C1B2A
+Custom Assets\Lunacid\Lunacid_Dusty Crystal Orb.png: BA37B0A42B427C47B56D75A063D6BD0F
+Custom Assets\Lunacid\Lunacid_Earth Elixir.png: 5B4774392BB6CEC4ED7EAF5515945F51
+Custom Assets\Lunacid\Lunacid_Earth Talisman.png: 45AF31A41FD23B05D9727704592B6E46
+Custom Assets\Lunacid\Lunacid_Eggnog.png: 4C0359210E31B7708554601D1694756E
+Custom Assets\Lunacid\Lunacid_Elfen Bow.png: F23044D6CE093BD14E02B0E6EA5D85E0
+Custom Assets\Lunacid\Lunacid_Elfen Longsword.png: 80F350F9112D82788E3BC09A65E1B47F
+Custom Assets\Lunacid\Lunacid_Elfen Sword.png: 58509285C49E6E118B2DCAE09CEFB23F
+Custom Assets\Lunacid\Lunacid_Enchanted Key.png: 92D21B9859C5D355C6B458106F636DC6
+Custom Assets\Lunacid\Lunacid_Fairy Moss.png: DA5C5EE28D13600AF24A59700DE9FFF7
+Custom Assets\Lunacid\Lunacid_Fire Spell.png: C9016C0FE1FA359D4480AE59BB712707
+Custom Assets\Lunacid\Lunacid_Fire Sword.png: FD334FDF43E4552DCDD25A4C10E50FDF
+Custom Assets\Lunacid\Lunacid_Fishing Spear.png: A9DED44B802E1245EEF5908578358878
+Custom Assets\Lunacid\Lunacid_Ghost Sword.png: 178B7E387C3E1E46B008832837BF2EA6
+Custom Assets\Lunacid\Lunacid_Golden Khopesh.png: EEB37FF10BF1A17DCD1EB35C06813E5E
+Custom Assets\Lunacid\Lunacid_Golden Sickle.png: A3A871F4072F22E48C0CA90FE7D406B4
+Custom Assets\Lunacid\Lunacid_Halberd.png: A223320ABD9129576066A5B6C9087CDC
+Custom Assets\Lunacid\Lunacid_Hammer of Cruelty.png: C6C1DD1E461CA657B5F82A2F8D6A577C
+Custom Assets\Lunacid\Lunacid_Health ViaI.png: A47BEEC1B7F098A0D60535EF085EE4AD
+Custom Assets\Lunacid\Lunacid_Health Vial.png: 74C8A7A9C886C0242DF3F06CBC3BD554
+Custom Assets\Lunacid\Lunacid_Heritage Sword.png: 08097B98B7833231ED3BF5F854B1838E
+Custom Assets\Lunacid\Lunacid_Holy Water.png: 767659C5B0A150F63D886EF066BB398C
+Custom Assets\Lunacid\Lunacid_Ice Sickle.png: 5FE204F6E74F0980D177D57889C5E943
+Custom Assets\Lunacid\Lunacid_Ice Spell.png: 221D7D9B0E85DB74A7AD520BB45F5FF3
+Custom Assets\Lunacid\Lunacid_Iron Claw.png: 805C42F2E9FB0B30D53F49E9DDC2618B
+Custom Assets\Lunacid\Lunacid_Iron Club.png: 50ABF01BC3355126EB73E96776106A0A
+Custom Assets\Lunacid\Lunacid_Iron Torch.png: E012DB24627C280E1F9A48F14951FAB8
+Custom Assets\Lunacid\Lunacid_Jailors Candle.png: F49D6B3BA61E317F8931992CD680995C
+Custom Assets\Lunacid\Lunacid_Key.png: F7B32B72E8477263740517AD0188006C
+Custom Assets\Lunacid\Lunacid_Light Spell.png: DD0219E918A49D0AACC26EEEE73D099B
+Custom Assets\Lunacid\Lunacid_Light Urn.png: B16AE8ADE649B1F3D4E8112452F76321
+Custom Assets\Lunacid\Lunacid_Limbo.png: 67B29AECD48738999293E88D06858BB5
+Custom Assets\Lunacid\Lunacid_Lucid Blade.png: AC88766BA4E78980C950FD04B4891DDB
+Custom Assets\Lunacid\Lunacid_Lucky Bangle.png: 9C6170F8A7A60CF31D7438FA6ED8E78C
+Custom Assets\Lunacid\Lunacid_Lyrian Greatsword.png: D28336AC6AA9337A006A74F8E4B1674C
+Custom Assets\Lunacid\Lunacid_Lyrian Longsword.png: 5621694581ED1C41FE249DB2A55D0ABC
+Custom Assets\Lunacid\Lunacid_Mana Vial.png: 25AF063E48EAB3B6BB4BDA9B43525F1B
+Custom Assets\Lunacid\Lunacid_Marauder Black Flail.png: 2CC5CAEB61E5F226E3FE7E0B5CD36CFB
+Custom Assets\Lunacid\Lunacid_Material.png: E47A534BAF6B774BAEC38C23C67FA720
+Custom Assets\Lunacid\Lunacid_Moonlight Vial.png: 689FFAA4EF3DCFE8F662C43FF62A81E4
+Custom Assets\Lunacid\Lunacid_Moonlight.png: 45C2BBB48AA90B60073B3071E30CAEA7
+Custom Assets\Lunacid\Lunacid_Normal Spell.png: 3030B223589AA98ECF3E59C6F73F41F1
+Custom Assets\Lunacid\Lunacid_Obsidian Cursebrand.png: 07B0AB1498FA7EB9E6308A2DEBF8B3FB
+Custom Assets\Lunacid\Lunacid_Obsidian Poisonguard.png: CA216C4FE2E516770D3D5FBAFC6BA677
+Custom Assets\Lunacid\Lunacid_Obsidian Seal.png: 406BFEC727F38FE77F3636AFAC394FDF
+Custom Assets\Lunacid\Lunacid_Ocean Elixir.png: 8DAE5758F312311360797905DF7DE5A2
+Custom Assets\Lunacid\Lunacid_Oil Lantern.png: D97CA01DA830EC00B71FD9E43C758E00
+Custom Assets\Lunacid\Lunacid_Patchouli.png: 4B3183F9D2A3277932F1BC05F291FC11
+Custom Assets\Lunacid\Lunacid_Pink Shrimp.png: 454B3BE27ACEA6DA97C573683084EFC7
+Custom Assets\Lunacid\Lunacid_Poison Claw.png: 6BB76B045A32DF3AD5F92BF296B18FD0
+Custom Assets\Lunacid\Lunacid_Poison Spell.png: BF2EA038898700FE091526FAAECFC69B
+Custom Assets\Lunacid\Lunacid_Poison Throwing Knife.png: C7FC7F0C186B232F62E4ECE490964096
+Custom Assets\Lunacid\Lunacid_Poison Urn.png: A530B990FC6FBB379ECA0024778A84A8
+Custom Assets\Lunacid\Lunacid_Privateer Musket.png: A3D745EF8952B0A41207999ED94A3A84
+Custom Assets\Lunacid\Lunacid_Progressive Vampiric Symbol.png: F9AD357A38C1737CDE7105D0F6961ED7
+Custom Assets\Lunacid\Lunacid_Rapier.png: 5D253BF4385C9DDE09415099CB9129B0
+Custom Assets\Lunacid\Lunacid_Replica Sword.png: F87024EAE3B13E057248D6B2078C98D4
+Custom Assets\Lunacid\Lunacid_Ritual Dagger.png: 19D7596E2E387F3ADA590E65868AF3C6
+Custom Assets\Lunacid\Lunacid_Saint Ishii.png: 6FC527CD51E22350564BD025A8268D77
+Custom Assets\Lunacid\Lunacid_Serpent Fang.png: AD96ED9F1C02972AD51A54DD2D35E7CC
+Custom Assets\Lunacid\Lunacid_Shadow Blade.png: 67F6D591A3811993D004099DC02A51B6
+Custom Assets\Lunacid\Lunacid_Shining Blade.png: F44CF5BDC941B4E70AE38AFB81510CF9
+Custom Assets\Lunacid\Lunacid_Silver Rapier.png: 7C7F5A2AE4EE047711EFA5409DD823F8
+Custom Assets\Lunacid\Lunacid_Silver.png: 8938694099777D58218A87D10EB23205
+Custom Assets\Lunacid\Lunacid_Skeletal Rattle.png: 771F1708AC1DFF6C80B335781A15D841
+Custom Assets\Lunacid\Lunacid_Skeleton Axe.png: 67627FFA15BCCC0E21D5DAED8F09C65B
+Custom Assets\Lunacid\Lunacid_Skeleton Egg.png: 517ACCE67D10D2C55EEEF25848FF919B
+Custom Assets\Lunacid\Lunacid_Skull of Josiah.png: D4CF00B6954EC6EF04AC14241830B9E3
+Custom Assets\Lunacid\Lunacid_Soul Candy.png: 05134316A1694C9BE577AC8D9D14BD0E
+Custom Assets\Lunacid\Lunacid_Spectral Candle.png: B6FF3EB6B09260A5C7D926F129B600FD
+Custom Assets\Lunacid\Lunacid_Staff of Osiris.png: 264F2B6C0B87D8EF46A9E81C1FCE200F
+Custom Assets\Lunacid\Lunacid_Steel Claw.png: F435D4F011416EFA47F03372FE082B39
+Custom Assets\Lunacid\Lunacid_Steel Lance.png: 6B23B6AB07332940159540F1BB119D12
+Custom Assets\Lunacid\Lunacid_Steel Needle.png: 320E71670A4196BAB2D491AB78B571A9
+Custom Assets\Lunacid\Lunacid_Steel Spear.png: 8125D0AFD2005AFFB7C2AA698655D931
+Custom Assets\Lunacid\Lunacid_Stone Club.png: 1B511E2EDED46AD34A5D5483236E1C6B
+Custom Assets\Lunacid\Lunacid_Sucsarian Spear.png: 7F8BD1C46CA4BB84AE9A92D0A68F3837
+Custom Assets\Lunacid\Lunacid_Survery Banner.png: EAAC0FEED91560E61011C85CC06EAB16
+Custom Assets\Lunacid\Lunacid_Thorn.png: 2534AB0D627DDBCD2B159360A9F49017
+Custom Assets\Lunacid\Lunacid_Throwing Knife.png: 62247B4420523D8B039DE99852713161
+Custom Assets\Lunacid\Lunacid_Torch.png: CDA1FE3CAE0C6916B9038C53419FE7DC
+Custom Assets\Lunacid\Lunacid_Twisted Staff.png: F634F51AB9A3C749DC1672B946347A52
+Custom Assets\Lunacid\Lunacid_Vampire Hunter Sword.png: B974E162E6C40E667494B092D2EFC0CD
+Custom Assets\Lunacid\Lunacid_VHS Tape.png: E0CDDE868C6C9AF39C714FCA9FC24F0B
+Custom Assets\Lunacid\Lunacid_Wand of Power.png: C5D25A9CFDB89D282A90E1B2BF724588
+Custom Assets\Lunacid\Lunacid_Water Talisman.png: 62A0115CE6D0E66ECDCCB6E669ECEA9C
+Custom Assets\Lunacid\Lunacid_White VHS Tape.png: 4D30B939C9B190E8EC7BB00DD256F457
+Custom Assets\Lunacid\Lunacid_Wisp Heart.png: 18402AAF7A53D70550B5768624AB8EA0
+Custom Assets\Lunacid\Lunacid_Wolfram Greatsword.png: 94EC9B5B6241B16E85E24E9AD42BFE66
+Custom Assets\Lunacid\Lunacid_Wooden Shield.png: 13D73771AA72622FE3AC4003D569C6CF
+Custom Assets\Majora's Mask Recompiled\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\Majora's Mask Recompiled\Majora's Mask Recompiled.png: 5AB7B6219864AA41FDB3DF24E44BFEF5
+Custom Assets\Mario & Luigi Superstar Saga\aliases.json: 9712AE5FDB94CF98230B777F4A54BC27
+Custom Assets\Mario & Luigi Superstar Saga\Mario & Luigi Superstar Saga.png: 79C47B0B13087D9D528D8C264901171E
+Custom Assets\Mario & Luigi Superstar Saga\Mario & Luigi Superstar Saga_1-UP Mushroom.png: CBA68057CB81F327F9F9C2FAB4750532
+Custom Assets\Mario & Luigi Superstar Saga\Mario & Luigi Superstar Saga_5 Coins.png: 8C22E999D6C723E1183BCFC5078BA373
+Custom Assets\Mario & Luigi Superstar Saga\Mario & Luigi Superstar Saga_Azure Neon Egg.png: 5034F3EB707A3C651E82D638D4892EBD
+Custom Assets\Mario & Luigi Superstar Saga\Mario & Luigi Superstar Saga_Badge.png: D4D9039F3BC80CBCBC82D7257E2BE05A
+Custom Assets\Mario & Luigi Superstar Saga\Mario & Luigi Superstar Saga_Beanfruit.png: FC960C338E4B1FC23200A0927E5FAF67
+Custom Assets\Mario & Luigi Superstar Saga\Mario & Luigi Superstar Saga_Beanstar Piece.png: 9C0ECEC77D7EFC7766147E2437476170
+Custom Assets\Mario & Luigi Superstar Saga\Mario & Luigi Superstar Saga_Blue Neon Egg.png: CE66E2CA1489C4557D5B7F1F3AC08207
+Custom Assets\Mario & Luigi Superstar Saga\Mario & Luigi Superstar Saga_Fake Beanfruit.png: 9628171C7C05C9EB4330F9CC0EE58602
+Custom Assets\Mario & Luigi Superstar Saga\Mario & Luigi Superstar Saga_Golden Mushroom.png: 0C6AD9864B5A6B310651E4DCEED7900B
+Custom Assets\Mario & Luigi Superstar Saga\Mario & Luigi Superstar Saga_Green Neon Egg.png: C45596A7498EF39FDA8AC5D53E2A78C2
+Custom Assets\Mario & Luigi Superstar Saga\Mario & Luigi Superstar Saga_Green Pepper.png: 2C458ACB8D444A096807623EF8D014AD
+Custom Assets\Mario & Luigi Superstar Saga\Mario & Luigi Superstar Saga_Hammers.png: 89922C017A4D04CAB4C1F9C3E30FEF83
+Custom Assets\Mario & Luigi Superstar Saga\Mario & Luigi Superstar Saga_Mushroom.png: 290C2CDDFE3F7CB03D05F1C490DE9AD8
+Custom Assets\Mario & Luigi Superstar Saga\Mario & Luigi Superstar Saga_Nuts.png: 5D48C7EF23C978CB7B8F88382BB14797
+Custom Assets\Mario & Luigi Superstar Saga\Mario & Luigi Superstar Saga_Orange Neon Egg.png: 1E8D3B4B5386D4D3DEF8FC1C3C674364
+Custom Assets\Mario & Luigi Superstar Saga\Mario & Luigi Superstar Saga_Pants L.png: EBA9E75F209D7E94B23FC42B861B6547
+Custom Assets\Mario & Luigi Superstar Saga\Mario & Luigi Superstar Saga_Pants M.png: 3A5365F9A519881EEC6F670C1FD896F2
+Custom Assets\Mario & Luigi Superstar Saga\Mario & Luigi Superstar Saga_Pants.png: 997253BFBBCC5A0FF2BBBACDACDBE102
+Custom Assets\Mario & Luigi Superstar Saga\Mario & Luigi Superstar Saga_Purple Chuckola Fruit.png: AAC6DEE9E2572C0D5955966058ECF585
+Custom Assets\Mario & Luigi Superstar Saga\Mario & Luigi Superstar Saga_Purple Neon Egg.png: 0EC5038D47553571DA53D3BF4131E613
+Custom Assets\Mario & Luigi Superstar Saga\Mario & Luigi Superstar Saga_Red Chuckola Fruit.png: CB7291A827922B41AC90261EC1B369A8
+Custom Assets\Mario & Luigi Superstar Saga\Mario & Luigi Superstar Saga_Red Neon Egg.png: EAFECC8357F3B7161CFF33DF65B1335E
+Custom Assets\Mario & Luigi Superstar Saga\Mario & Luigi Superstar Saga_Red Pepper.png: 665E675A6CB9DF54654E6E3DA9607809
+Custom Assets\Mario & Luigi Superstar Saga\Mario & Luigi Superstar Saga_Refreshing Herb.png: E788366410E0DDAFE5BF722A5CD35A5D
+Custom Assets\Mario & Luigi Superstar Saga\Mario & Luigi Superstar Saga_Syrup.png: 67C589A6FCC757E06D48C0252213ED5D
+Custom Assets\Mario & Luigi Superstar Saga\Mario & Luigi Superstar Saga_White Chuckola Fruit.png: 651A8BA47C54813525F90637CD86A0FB
+Custom Assets\Mario & Luigi Superstar Saga\Mario & Luigi Superstar Saga_Yellow Neon Egg.png: 5EE3A56B9E8624FC3950D815F12BF87E
+Custom Assets\Mario Kart 64\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\Mario Kart 64\Mario Kart 64.png: BAF699BC2342EFFD3CF69FD1777EF3C5
+Custom Assets\Mario Kart Double Dash\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\Mario Kart Double Dash\Mario Kart Double Dash.png: 11C869C7A1DB5112C0910FA626E2C23D
+Custom Assets\Mega Man\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\Mega Man\Mega Man.png: 83C58345C0DF576717EDB003C5F1156C
+Custom Assets\Mega Man 2\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\Mega Man 2\Mega Man 2.png: 0A644F66F15349D762DA5F0BFF7E7A10
+Custom Assets\Mega Man 2\Mega Man 2_1-Up.png: 0A644F66F15349D762DA5F0BFF7E7A10
+Custom Assets\Mega Man 2\Mega Man 2_Air Man Access Codes.png: BED65CBD7C621914DC7531EC9C702AE5
+Custom Assets\Mega Man 2\Mega Man 2_Air Shooter.png: ABA4CE79BD28AFFA2E2BC8B9A510654B
+Custom Assets\Mega Man 2\Mega Man 2_Atomic Fire.png: 5D3814675DF2A09F42556B901B3A2968
+Custom Assets\Mega Man 2\Mega Man 2_Bubble Lead.png: D3B7B08E8E9A2894FD237493C8296065
+Custom Assets\Mega Man 2\Mega Man 2_Bubble Man Access Codes.png: 1B7E61A108B590124E250C5722CDAD4B
+Custom Assets\Mega Man 2\Mega Man 2_Crash Bomber.png: B86615D5B62C511A90BD316716DDB715
+Custom Assets\Mega Man 2\Mega Man 2_Crash Man Access Codes.png: 432135D009E99F0EB0888513C5862857
+Custom Assets\Mega Man 2\Mega Man 2_E-Tank.png: 58449ABDB70C2E97B9BC1D8C6090C816
+Custom Assets\Mega Man 2\Mega Man 2_Flash Man Access Codes.png: 5C63127D9876761E10F9DB8E9DE192C1
+Custom Assets\Mega Man 2\Mega Man 2_Health Energy (L).png: DED26E80EE4E5CCF54FD016B8DEB8F66
+Custom Assets\Mega Man 2\Mega Man 2_Heat Man Access Codes.png: 92A8355C405863A5AA8629A219770F19
+Custom Assets\Mega Man 2\Mega Man 2_Item 1 - Propeller.png: B9BEB0D22B8E21FD30B8F15B9C06FEFD
+Custom Assets\Mega Man 2\Mega Man 2_Item 2 - Rocket.png: 7F86FD2294887168916AFE7A1B600D65
+Custom Assets\Mega Man 2\Mega Man 2_Item 3 - Bouncy.png: 1AC43FA8E91AE7A871AA79F67EC153D5
+Custom Assets\Mega Man 2\Mega Man 2_Leaf Shield.png: 8465D940109FAA63DC002C0DFA4814A5
+Custom Assets\Mega Man 2\Mega Man 2_Metal Blade.png: CEEEEEA370B45DFCBDA865E6054D64AD
+Custom Assets\Mega Man 2\Mega Man 2_Metal Man Access Codes.png: 84C57572084A9B9DC07670876D6ABDA3
+Custom Assets\Mega Man 2\Mega Man 2_Quick Boomerang.png: 49DC5241118F2278F7A8B4A961E03B6B
+Custom Assets\Mega Man 2\Mega Man 2_Quick Man Access Codes.png: 3FE78B2D433E4E103A29A624F4029175
+Custom Assets\Mega Man 2\Mega Man 2_Time Stopper.png: C1AE8B5D6324BAC704C67B4FD991CCB0
+Custom Assets\Mega Man 2\Mega Man 2_Weapon Energy (L).png: 2DE1E425C71FBC4C5D1552DCDF70F923
+Custom Assets\Mega Man 2\Mega Man 2_Wood Man Access Codes.png: 54D8FFE06FAC4D0F5898F21B9D4ADA4D
+Custom Assets\Mindustry\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\Mindustry\Mindustry.png: 9A342B50CA9A92743CF70B80D377CCA0
+Custom Assets\Minecraft\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\Minecraft\Minecraft.png: 6C06FB812AAB6956136CE0AA59043B08
+Custom Assets\Minit\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\Minit\Minit.png: AA9782C34D583C2F744B4BC1319ADF63
+Custom Assets\Muse Dash\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\Muse Dash\Muse Dash.png: 968E0120A45907B8CC5D6B4F44411F4A
+Custom Assets\Nodebuster\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\Nodebuster\Nodebuster.png: 3F5208EB7E380E59F826D3C6F56EA471
+Custom Assets\Noita\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\Noita\Noita.png: 250144F64290FFB8534DD09FB04CF905
+Custom Assets\Ocarina Of Time\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\Ocarina Of Time\Ocarina Of Time.png: 6FE03B0837938ED7016DB2F509FB27AE
+Custom Assets\Old School Runescape\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\Old School Runescape\Old School Runescape.png: 067B43832551AC51C870349561A60E1F
+Custom Assets\OpenRCT2\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\OpenRCT2\OpenRCT2.png: F54F8969B0102773A651146BDF0F4E7F
+Custom Assets\Outer Wilds\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\Outer Wilds\Outer Wilds.png: 65C5482795F5CBE059241AC06917BE4C
+Custom Assets\Overcooked 2\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\Overcooked 2\Overcooked 2.png: D6295021118306C126472B6826020AC5
+Custom Assets\Oxygen Not Included\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\Oxygen Not Included\Oxygen Not Included.png: F4290DEF23BAF7AA10E14A39BAA376FE
+Custom Assets\Paint\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\Paint\Paint.png: 3506FD6E9471AD8732682056F41A37B4
+Custom Assets\Paper Mario\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\Paper Mario\Paper Mario.png: 7854E696EA9895E1D96C494C5C09DB96
+Custom Assets\Paper Mario The Thousand Year Door\aliases.json: BD0BC437A7CB4A69BE96E84A9B61ECDF
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door.png: 88193F944D2AABE67CB8664008E374F9
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_10 Coins.png: 76B454619E6EE8E6F23772264C04B2BD
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_All or Nothing P.png: F61CD6CE9378E243F6917F6602549486
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_All or Nothing.png: B16965E5241A11140A550B85B3FCED7B
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Attack FX B.png: DE602204BCBC1F8DF22F734971016789
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Attack FX G.png: E4EBD1EAC8CA341D6D318EB730B8DCC8
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Attack FX P.png: C94D921AA3564EBCD06E48222B445590
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Attack FX R.png: F7D5D5DBC840E58C8A5E8D61B48825F6
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Attack FX Y.png: 1AA045F552B55E26FD291C7EA321BD0D
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Black Key.png: DAA7BA633BC2D2C74DAAB0AA8F66CCF5
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Blimp Ticket.png: 29931BECC4D06915499C248D5921B394
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Boat Curse.png: 24B070234754ABC9387B7B5E6ED97096
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Bobbery.png: 339CABAC8CE3F79CEEF3F12495C6F3FD
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Bump Attack.png: D604B522813D3BC352CCCD7E511EE6BE
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Cake Mix.png: D4FAA12F1B61A7998C3584B737E503A2
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Charge P.png: 15D96E868717DFBDCBA82246BA1DF15D
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Charge.png: A3CF3E0F64AC7EE327A4C27EB3DE4DBD
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Chill Out.png: E52AC21D4F3B84DC8EED4E240F1FC135
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Close Call P.png: B9F31CE5710105E28AF86727570AF3D8
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Close Call.png: F7AC7316BED90952E5870B59D8BF352D
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Coin.png: 4DE64053274CCB565F11F7C7B55A2C0D
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Contact Lens.png: FA50CA346A86CC9E55958804C656B842
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Crystal Star.png: CCDC3909B9EE268912F646CF15FDEB0F
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Damage Dodge P.png: 970C3202986154A719F8BF2DE0CD2527
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Damage Dodge.png: 561C3AFB2770561EC5DFFC9610931C8C
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Debug.png: 5D7AD69CB78923D918E8118496F5F5A4
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Defend P.png: 3AF06EB5855435919400847F5366FD26
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Defend Plus P.png: 5015148D4D8EA75A6271C4D13717C053
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Defend Plus.png: 3156297A48D69C3EA9F8887C0AC20B31
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Defend.png: 5EEA5616431F7D1B31FAABFFD1B42E76
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Diamond Star.png: D89A3FDE232774B0DEA43553922A43B3
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Double Dip P.png: AE4A9CD8906F7F57D6194E01AF24CCDF
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Double Dip.png: B591E556762D68370C8244F3D216368E
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Double Pain.png: 7721D13BDA146CF02740B14BF0B34A3C
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Emerald Star.png: 91AFA6527D7CCFFE672D50102D0D780E
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Feeling Fine P.png: 4C11E83A81893CB8CC5286814EFC203F
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Feeling Fine.png: B850BD7E17CA8C1DAC45F9598C5CCB1C
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Fire Drive.png: AEEDDC47D69AA4783A0BB9C8E2114962
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_First Attack.png: D40717AE003148FE458113A0ECF408AF
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Flower Finder.png: B1344561E8EF2137B8325EB7CD615B77
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Flower Saver P.png: B4B1C4445BE91ADE74A4D6BCC0E148D5
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Flower Saver.png: BCA5FF094B5055A9F0ACED4420445FC1
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Flurrie.png: DFBC568BD0FB77102880C718C26FB899
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_FP Drain P.png: 9CC19F1163D450F3F8FC555CAA4BF00E
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_FP Drain.png: 85B7D794DC8A26967C2C221C9DEC2CA9
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_FP Plus.png: 68EC627B45C680FC7E01E290813B911C
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Garnet Star.png: 3EB6223DE671009EEA7935ADDFEF8790
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Gold Star.png: AE533D9493673817CCFBA0CCCC6CBABE
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Hammer Throw.png: 3A28F0D84865C9D5A9A8DF962DAA2985
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Hammerman.png: CF7EFC61073DA178A684C10EF2EFDE3E
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Happy Flower.png: BEF143071F4DDF96AC370416BDD746EB
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Happy Heart P.png: A52B8D387D021D0880F31A4FCF4ECA42
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Happy Heart.png: B98EEB22E838FCCAB568E5C71DDE72B2
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Head Rattle.png: 8ADF813FE442C8E75552B3EE71AF5E84
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Heart Finder.png: B954582AF9FBEB8B3C017C443B59EF0E
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_HP Drain P.png: 25FC3E42C57B1E474DE81512379B91A2
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_HP Drain.png: B431A686E5A227730FBA89ABD28C698D
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_HP Plus P.png: 6642B308E71C5AABF404DDA979D6F8A1
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_HP Plus.png: 5B4F17E3B77F2693FE4A86F529F06604
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Ice Power.png: 74BE09FD87E59F38226998A751E42F7E
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Ice Smash.png: 7197A251AC3D8D546334D5B16F9D91FD
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Item Hog.png: DACB041591A41E9FEC5D955B173A5576
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Jumpman.png: 32D0D5D86FBF32E7315013DA23B38ED9
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Koops.png: F6F2A91D9ECF2B2069F574AD4835DD87
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_L Emblem.png: FD1295733C06E1DC5D280EA228E0C3DB
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Last Stand P.png: 96AC4C4892099308AC69AB29707E7867
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Last Stand.png: C71A5A6BC8504DF587FCE10C650EBF25
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Life Shroom.png: 79C86E10F55058502BFB27BDB226E48C
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Lucky Day P.png: 358DDA318EFDD791032D4AD8D81FF332
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Lucky Day.png: 877D55620B87D028E6B9600F86ABF9D3
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Lucky Start P.png: C67A1D33136BAA493CCC3734080D2236
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Lucky Start.png: EF6E5E46BCEAF3BC6A3BA1AD06B5E8EF
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Mailbox SP.png: 0467DC45377D95D04B565F37F163DB98
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Mega Jump.png: 2D3EEEFE5C1CB262334639FCFC82D769
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Mega Quake.png: A9B1A347DD316C07D47F85CD646E6BE2
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Mega Rush P.png: B0799C71F6DCF1724C606127A9A0A87C
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Mega Rush.png: F6AC3B34185068873A03E876F6700CD1
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Mega Smash.png: 8D38B9D9C2AE17D989F38C7D903977CF
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Mini Mr.Mini.png: 032D856D06B536F0A526C8DF19FBF1C4
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Money Money.png: E649C8DA0DD39FF5413F6CED25246B00
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Moon Stone.png: F517522C093EB0C316401E7E24EED290
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Mr. Softener.png: 957E881B01D1CD96890A6CC56BD186F2
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Ms. Mowz.png: 9909336018A22FAAAC07A5898EF49E8E
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Multibounce.png: 7D5A48714C94481EF0F4C80E4D88D41D
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Mushroom.png: B582F9B9A1FBB7514DF7225CF99EB0F9
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Old Letter.png: B5DA05C861262943982A660AA47217C2
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_P-Down, D-Up P.png: F72268151BACA6C37ED46E01D8DB5A99
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_P-Down, D-Up.png: 310AEF29024E48FA99D0C013312773E3
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_P-Up, D-Down P.png: 9D4C1717F06D0B5C465F1AD58CB3C935
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_P-Up, D-Down.png: 857299D09847798167CD2ECCAFCD6048
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Paper Curse.png: 71AEEECC3E45F4D26123F0DE448E1C46
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Peekaboo.png: 8F5FFE043DA37B1E3F12888B0283AF89
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Piercing Blow.png: CF2ADA9CAE0CE18DD90972F9B0B29DD6
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Pity Flower P.png: 76B95DE9DA560637D98426B4760E3FA0
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Pity Flower.png: F276BF20BBFA8F8033F7B1787FD3D6B5
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Plane Curse.png: 990121EA4F4D968D9FA81D47FE8B14B7
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Power Bounce.png: AACE39E7C085E3A6C477B2E3FE9A07CF
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Power Jump.png: F95A54D9EB515DD5B76746D1FFF34094
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Power Plus P.png: A5AEBC3100D6E2737A6F8F1584C37A08
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Power Plus.png: 47AADDE43A8BDCF6B463EA53D82F1DCB
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Power Rush P.png: BE421E474CAE3FFCF2FEF95FD07EB286
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Power Rush.png: 243A814391D8A3BE52527BEA50AB50E2
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Power Smash.png: 66390A60CCD626DE93EC0C0672FD5D78
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Pretty Lucky P.png: 510BA506476435E41DA7B7B7C28C69B0
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Pretty Lucky.png: B2A10CF1549C0988AE6FFE6F9DCD899F
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Progressive Boots.png: 850C0B39BA8669BD50DE4CA8AA706519
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Progressive Hammer.png: 633CDED4589C83AD82EC345D45488D01
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Quake Hammer.png: DAA2AF260BCDC45C0B570124DB368C4B
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Quick Change.png: 223216E68974E2E1D6532868136F7D2A
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Refund.png: EC22716320E55D79E936F4F73C2076E9
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Return Postage.png: EB6B65E716A2B9D049EAB54AEE01CDBA
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Ruby Star.png: FD038C9E4041534892ACAE2D9EA5451B
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Sapphire Star.png: B6C5694C94CDB5001CB56B08135CF172
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Shine Sprite.png: D9B07FA44D75FD005C9C6307D3E4C81E
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Shrink Stomp.png: 2DEC0174640407ACFE5985E9F76D4109
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Simplifier.png: 2784D62049A3BCC9F4CF1D8B14213740
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Sleepy Stomp.png: 64CA2F69C655683FF1679A47E99DC1A9
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Slow Go.png: 6A18829AC6801B230B2E2A7F05E34367
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Slow Shroom.png: 2C796E6B7EC4ACDF9FDE59089A26D745
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Soft Stomp.png: 52CE6DABAEE7EE1A6EF7E526FCF94D2F
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Spike Shield.png: 84A86802FC8466ECD338262EE109FD81
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Star Piece.png: FF70C98A4700505F4D3A6A1E3ABC1A86
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Sun Stone.png: DF574FDC65B3A507EDDA64D8B26E9892
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Super Appeal P.png: DD8C57948A9B3745D89CFCEEAD9E86D2
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Super Appeal.png: 21AEB67486FE283B652961764AA9C963
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Super Charge P.png: E352E171D4B306A325BB159D108031EF
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Super Charge.png: 1F4F5E463CEE41EDFEA7ACBC7D31A15B
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Super Shroom.png: BD15F6DFF4891CB7ADC7CD8AF9F02172
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_The Letter P.png: E5C1E8E5E3CB9F9A36E7683C9C43C46B
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Timing Tutor.png: CA7B1477E7EC3A331A1FD67609EE3CCA
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Tornado Jump.png: 2A85C567667C3E972C90CF47543E0050
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Train Ticket.png: C15229274273731516C886786E6394DF
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Triple Dip P.png: 405DBD08CC142BBDD0848745AF8B7C49
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Triple Dip.png: 2CCBDEFDE8C89ECE9A2EDA1EEC085F46
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Tube Curse.png: 859520EFEDB2038D9BF8C9C2F7D739B9
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Ultra Shroom.png: 6E4B570500236D4C6BDA8E5A4308D93F
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Unsimplifier.png: 08C53100958B30271AD1E91156185AE9
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Vivian.png: 0CA53492E8DF1EA94FBCD455CBBA3B88
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Volt Shroom.png: 5F0602ED4040AC6F07A00C012810739E
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_W Emblem.png: C03736D1718BB70E0D46F812B0C949A3
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Whacka Bump.png: 6CB17B4D401AB7DA54C5EF6571ECD2F2
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Yoshi.png: 3F5C44A1C5F4C85771337571E684CAFD
+Custom Assets\Paper Mario The Thousand Year Door\Paper Mario The Thousand Year Door_Zap Tap.png: 5C3AABAEB94C036EA6B03AFBEC920231
+Custom Assets\Persona 5 Royal\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\Persona 5 Royal\Persona 5 Royal.png: 48F57733B0BCADB1AF17A424F17F9F10
+Custom Assets\Pikmin 2\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\Pikmin 2\Pikmin 2.png: 0E6F346FA0769F1BB1FC9413390948EC
+Custom Assets\Pizza Tower\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\Pizza Tower\Pizza Tower.png: FD88295C8AF86BD96B2AEA189598E67B
+Custom Assets\Pokemon Emerald\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\Pokemon Emerald\Pokemon Emerald.png: C7C5040391FC1E177158B2D645B6C28B
+Custom Assets\Pokemon Red and Blue\aliases.json: 1B4CF9C3B4F868D03A6D438A6E7B3E41
+Custom Assets\Pokemon Red and Blue\Pokemon Red and Blue.png: 5E499491B9E5E0101B6A81E618A4C274
+Custom Assets\Pokemon Red and Blue\Pokemon Red and Blue_Boulder Badge.png: 60441DE69810DDA91F7AD9652BA36F90
+Custom Assets\Pokemon Red and Blue\Pokemon Red and Blue_Cascade Badge.png: E5784E446F2E903C473FFC5408BD4368
+Custom Assets\Pokemon Red and Blue\Pokemon Red and Blue_Dome Fossil.png: 90739569BA8422622E4A3E83700FE1E2
+Custom Assets\Pokemon Red and Blue\Pokemon Red and Blue_Earth Badge.png: E81D95959D9E33AF5A4842A327CD8024
+Custom Assets\Pokemon Red and Blue\Pokemon Red and Blue_Great Ball.png: B378079AF63737666C96F3FF5BB20547
+Custom Assets\Pokemon Red and Blue\Pokemon Red and Blue_Helix Fossil.png: EA497901B11AF8260803ADE34FB004D6
+Custom Assets\Pokemon Red and Blue\Pokemon Red and Blue_Marsh Badge.png: E986B9423DFB1BC0F6AD40B9E51EA387
+Custom Assets\Pokemon Red and Blue\Pokemon Red and Blue_Master Ball.png: 3E0D1B3D03F839B2E21551FA4A6D3224
+Custom Assets\Pokemon Red and Blue\Pokemon Red and Blue_Old Amber.png: DD5894F0E3783B831A11E742D21A7EB5
+Custom Assets\Pokemon Red and Blue\Pokemon Red and Blue_Rainbow Badge.png: 8C6732ED5AEF0FFF8723F646EAAC0FBA
+Custom Assets\Pokemon Red and Blue\Pokemon Red and Blue_Rare Candy.png: C09D2493B7CE9279ED17E07B8FEB568B
+Custom Assets\Pokemon Red and Blue\Pokemon Red and Blue_Soul Badge.png: 5B8546D5E255580F6F18C60694B37D46
+Custom Assets\Pokemon Red and Blue\Pokemon Red and Blue_Thunder Badge.png: 6901682E01502D84BD4832D790751B0A
+Custom Assets\Pokemon Red and Blue\Pokemon Red and Blue_TMs.png: AB39C98DA71E9985F2845E1D330228A4
+Custom Assets\Pokemon Red and Blue\Pokemon Red and Blue_Ultra Ball.png: C99297F2A3FF886A5F513E9F835D9582
+Custom Assets\Pokemon Red and Blue\Pokemon Red and Blue_Volcano Badge.png: 16C6BD27FB61A602BA9BCD37CABA59F0
+Custom Assets\Powerwash Simulator\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\Powerwash Simulator\Powerwash Simulator.png: DD23664AA085ADFD3B13B1AB9DFB8D2E
+Custom Assets\Psychonauts\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\Psychonauts\Psychonauts.png: 543E8A3B14BBEF592982AFA9335AA565
+Custom Assets\Quake\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\Quake\Quake.png: 27E0BAF0815D190101585A1FBD0A9B63
+Custom Assets\R.E.P.O\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\R.E.P.O\R.E.P.O.png: 9D3C2CB86B60EBA600D324C318DA0B08
+Custom Assets\Rain World\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\Rain World\Rainworld.png: 4EBE85389A7712E143A0766F18F2EE7A
+Custom Assets\Return Of The Obra Din\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\Return Of The Obra Din\Return Of The Obra Din.png: F6B9B043F2679570685B4325D60BF9EE
+Custom Assets\Reventure\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\Reventure\Reventure.png: 016D394390C20A0B83B0D7AD9638C0BA
+Custom Assets\Rimworld\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\Rimworld\Rimworld.png: DCB6AA7EAD861CFEC41A56F0203A216A
+Custom Assets\Risk Of Rain\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\Risk Of Rain\Risk Of Rain.png: C151D26890A172DA227F0B2550B1112E
+Custom Assets\Risk Of Rain 2\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\Risk Of Rain 2\Risk Of Rain 2.png: E4EE219A6182DC44C8A22C748355AD2C
+Custom Assets\Rogue Legacy\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\Rogue Legacy\Rogue Legacy.png: E5C40E15C65F59E5B5A8D08154E73B40
+Custom Assets\Satisfactory\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\Satisfactory\Satisfactory.png: A1FE16716B0EF4F91CB5FEFBC5EB2039
+Custom Assets\Shadow The Hedgehog\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\Shadow The Hedgehog\Shadow The Hedgehog.png: 461298052183230CFD226B629CAA75D3
+Custom Assets\Shapez\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\Shapez\Shapez.png: 718E80BCFDC5F47E57E07B1FC299C2DA
+Custom Assets\Shapez 2\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\Shapez 2\Shapez 2.png: 81F3E3F58C415A68A4FAEC1B4139C242
+Custom Assets\Simon Tathams Portable Puzzle Collection\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\Simon Tathams Portable Puzzle Collection\Simon Tathams Portable Puzzle Collection.png: 3A7A34C214D5E91AAE272EB390FB579E
+Custom Assets\Skyward Sword\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\Skyward Sword\Skyward Sword.png: 767ED4CE8C83E8AD975E9E34E9270598
+Custom Assets\Slay The Spire\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\Slay The Spire\Slay The Spire.png: 147D2576C45056AE6607063B3C7CBB4E
+Custom Assets\Sly 2 Band of Thieves\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\Sly 2 Band of Thieves\Sly 2 Band of Thieves.png: CA1762A9192895AF483CC8CF734A21CA
+Custom Assets\Sly Cooper and the Thievius Raccoonus\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\Sly Cooper and the Thievius Raccoonus\Sly Cooper and the Thievius Raccoonus.png: D7C04D28B819537298E2C7E0F9D6CCA0
+Custom Assets\Sonic Adventure 2 Battle\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\Sonic Adventure 2 Battle\Sonic Adventure 2 Battle.png: 0CF43AF7636FB49B30A1B3C0B6CF4FE9
+Custom Assets\Sonic Adventure 2 Battle\Sonic Adventure 2 Battle_Blue Chaos Emerald.png: D93988BC539E4920B1218C5DF695F057
+Custom Assets\Sonic Adventure 2 Battle\Sonic Adventure 2 Battle_Cyan Chaos Emerald.png: D69A47469317BF7D8CB80717A0161528
+Custom Assets\Sonic Adventure 2 Battle\Sonic Adventure 2 Battle_Eggman - Mystic Melody.png: 11DE32EACB5069CF19F100E7B2F8A870
+Custom Assets\Sonic Adventure 2 Battle\Sonic Adventure 2 Battle_Emblem.png: 0CF43AF7636FB49B30A1B3C0B6CF4FE9
+Custom Assets\Sonic Adventure 2 Battle\Sonic Adventure 2 Battle_Five Rings.png: 69A65E34D996B906F1CB81AEF86CF52E
+Custom Assets\Sonic Adventure 2 Battle\Sonic Adventure 2 Battle_Green Chaos Emerald.png: 455E7E2072FEB6B69942767FE0911128
+Custom Assets\Sonic Adventure 2 Battle\Sonic Adventure 2 Battle_Purple Chaos Emerald.png: 2B569704733B6F5247136DBCE1A7A565
+Custom Assets\Sonic Adventure 2 Battle\Sonic Adventure 2 Battle_Red Chaos Emerald.png: A0F2A55BC3B55B57D41FEEEF962DF4BF
+Custom Assets\Sonic Adventure 2 Battle\Sonic Adventure 2 Battle_Rouge - Iron Boots.png: 6B285A5ED56C190FCC95D0969697F2A9
+Custom Assets\Sonic Adventure 2 Battle\Sonic Adventure 2 Battle_Tails - Mystic Melody.png: 11DE32EACB5069CF19F100E7B2F8A870
+Custom Assets\Sonic Adventure 2 Battle\Sonic Adventure 2 Battle_Ten Rings.png: 69A65E34D996B906F1CB81AEF86CF52E
+Custom Assets\Sonic Adventure 2 Battle\Sonic Adventure 2 Battle_Twenty Rings.png: 69A65E34D996B906F1CB81AEF86CF52E
+Custom Assets\Sonic Adventure 2 Battle\Sonic Adventure 2 Battle_What Maria Wanted.png: C786B958F3CACD215CE478064307D2A6
+Custom Assets\Sonic Adventure 2 Battle\Sonic Adventure 2 Battle_White Chaos Emerald.png: E5B11FF8C652F5A16AF481DE4796DE86
+Custom Assets\Sonic Adventure 2 Battle\Sonic Adventure 2 Battle_Yellow Chaos Emerald.png: AE9C6607743E96B19CE96CE47AF94BCD
+Custom Assets\Spelunky 2\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\Spelunky 2\Spelunky 2.png: E0AC5E3B119B89FC7336E3CBB299FE61
+Custom Assets\Spongebob Squarepants Battle for Bikini Bottom\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\Spongebob Squarepants Battle for Bikini Bottom\Spongebob Squarepants Battle for Bikini Bottom.png: B8E36345C9FDB51A9FCC0E4629FAC69E
+Custom Assets\Spyro 3 Year of the Dragon\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\Spyro 3 Year of the Dragon\Spyro 3 Year of the Dragon.png: D0C132E0CD2DAA84CE955F596541B99E
+Custom Assets\Stacklands\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\Stacklands\Stacklands.png: C7493F0F743653A0946E6C00391B50FA
+Custom Assets\Starcraft 2\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\Starcraft 2\Starcraft 2.png: 7845E2CFCC23260646383CCDC1A1A067
+Custom Assets\Stardew Valley\aliases.json: 00B525111D3805E034C264366D494317
+Custom Assets\Stardew Valley\Stardew Valley.png: 31602F260D0A496F71CD611FC87EF8D1
+Custom Assets\Stardew Valley\Stardew Valley_Abigail 3.png: 9796F862A81DD84602EDA3CCCC88AB41
+Custom Assets\Stardew Valley\Stardew Valley_Adventurers Guild.png: E6630ABD928FABA6B3B34073293FE85C
+Custom Assets\Stardew Valley\Stardew Valley_Alex 3.png: 043492BE02EA257048576635336EC1B6
+Custom Assets\Stardew Valley\Stardew Valley_Amaranth Seeds.png: E9A31E2DAA330F2F48D296CC3768A5A2
+Custom Assets\Stardew Valley\Stardew Valley_Ancient Seeds.png: 995659D4EBC9FAEAA41A245FC0F25A63
+Custom Assets\Stardew Valley\Stardew Valley_Apple Sapling.png: 8E7F866AD17B485BF6A5165A68BF594D
+Custom Assets\Stardew Valley\Stardew Valley_Apricot Sapling.png: 47124909A34C4C86374DF3FB50EAD568
+Custom Assets\Stardew Valley\Stardew Valley_Artichoke Seeds.png: 14D52D8DEAECA6FDF2E7096549C81A77
+Custom Assets\Stardew Valley\Stardew Valley_Baby.png: 14580BBDB3B0D56C116442531D53F3EB
+Custom Assets\Stardew Valley\Stardew Valley_Banana Sapling.png: D98A23DA42A9C113DD96C195D62B3547
+Custom Assets\Stardew Valley\Stardew Valley_Beach Bridge.png: 54B31C8006A5DF34394FD1C49D4C5F6B
+Custom Assets\Stardew Valley\Stardew Valley_Bean Starter.png: 0509F37572EAD9028941CD3EA117A9B3
+Custom Assets\Stardew Valley\Stardew Valley_Bears Knowledge.png: E58D50A711C82CA61C528EBD3545E209
+Custom Assets\Stardew Valley\Stardew Valley_Beet Seeds.png: 4F7E36EEC773939A85B60E7F43DC5668
+Custom Assets\Stardew Valley\Stardew Valley_Blueberry Seeds.png: 6ABA3582AA3B343F11AC9118A8BB97AF
+Custom Assets\Stardew Valley\Stardew Valley_Boat Repair.png: 3090F19A20933C3204301B41DAFB8FB7
+Custom Assets\Stardew Valley\Stardew Valley_Bok Choy Seeds.png: 8F0B6B54754B5B36CB3467CFA7033564
+Custom Assets\Stardew Valley\Stardew Valley_Book Power.png: EBCDDD539F4D4501984C9B5319C085B7
+Custom Assets\Stardew Valley\Stardew Valley_Bridge Repair.png: E2BCED39B831C33CF94837434CEC2F75
+Custom Assets\Stardew Valley\Stardew Valley_Broccoli Seeds.png: 9A8D0D98DC41632B6574AFF536ACF040
+Custom Assets\Stardew Valley\Stardew Valley_Bus Repair.png: E24C032A6205FD8D002E601087AEB8E7
+Custom Assets\Stardew Valley\Stardew Valley_Cactus Seeds.png: 57D23F61074199A2A85C931D449725BB
+Custom Assets\Stardew Valley\Stardew Valley_Caroline 3.png: D25FCD349C8B6137CB02B5C887E4D1D1
+Custom Assets\Stardew Valley\Stardew Valley_Carrot Seeds.png: 0C0F1F8F4C89923F1899B3A2EC02ED04
+Custom Assets\Stardew Valley\Stardew Valley_Cauliflower Seeds.png: 8E78F074D2B082AE605F46A5D77B39A7
+Custom Assets\Stardew Valley\Stardew Valley_Cherry Sapling.png: 14F4BA6857B57D6F4FC67A23DFE0F5D8
+Custom Assets\Stardew Valley\Stardew Valley_Clint 3.png: 7DB4FC86A7C4758EAD709AD199C7EC6C
+Custom Assets\Stardew Valley\Stardew Valley_Club Card.png: 4F768ECEDA2FAE329416587B3E1561A7
+Custom Assets\Stardew Valley\Stardew Valley_Coffee Bean.png: A0E3AD2924B8C887B77594A771F8CAB5
+Custom Assets\Stardew Valley\Stardew Valley_Combat Level.png: 6CE0E49E3F9B70675B96168CE68A2CAA
+Custom Assets\Stardew Valley\Stardew Valley_Combat Mastery.png: 45BF7B78D40BFF7BDFE7DB644CB67569
+Custom Assets\Stardew Valley\Stardew Valley_Corn Seeds.png: A25318A1D59359FFA57188C6673959C6
+Custom Assets\Stardew Valley\Stardew Valley_Craftsanity.png: 077054295375F89C40D9A6779F8BFB2A
+Custom Assets\Stardew Valley\Stardew Valley_Cranberry Seeds.png: AC34C1F5FD38117609F62B2F64164160
+Custom Assets\Stardew Valley\Stardew Valley_Dark Talisman.png: 17EFC505E82438E7FB7C476174CC3C03
+Custom Assets\Stardew Valley\Stardew Valley_Demetrius 3.png: CB3E8A32A32C0FF681C45B7BE2F7D6C0
+Custom Assets\Stardew Valley\Stardew Valley_Desert Obelisk.png: E56F91D0C6FD79BBE98922CECBEF6AB5
+Custom Assets\Stardew Valley\Stardew Valley_Dwarf 3.png: A6AE5BD737AAE7D621E7AED326A9A9C1
+Custom Assets\Stardew Valley\Stardew Valley_Dwarvish Translation Guide.png: 2A7190A2CDD4420AD60ADC1BB0FE59E6
+Custom Assets\Stardew Valley\Stardew Valley_Earth Obelisk.png: 5B237025138B49A7DB0D52B2DA6FF851
+Custom Assets\Stardew Valley\Stardew Valley_Eggplant Seeds.png: ED66E5B1F3C7284B1D87CB1E48A3FB0A
+Custom Assets\Stardew Valley\Stardew Valley_Elliott 3.png: BB987610CF6A6D1023806869F0CB8FD6
+Custom Assets\Stardew Valley\Stardew Valley_Emily 3.png: 670BE8E0D13B8F04D26E56C4F3D1234E
+Custom Assets\Stardew Valley\Stardew Valley_Evelyn 3.png: 68EA743E31A2948731D17B12661FA37B
+Custom Assets\Stardew Valley\Stardew Valley_Fairy Seeds.png: 999AD1EB958B2A4DC9EAB9A1C0C55354
+Custom Assets\Stardew Valley\Stardew Valley_Fall.png: 4906FC877D40DFFCF6A75CB7FE8C479C
+Custom Assets\Stardew Valley\Stardew Valley_Farm Obelisk.png: 6E4C65A825C64BAE0FC35E9C0668AC1F
+Custom Assets\Stardew Valley\Stardew Valley_Farming Level.png: 46412D92C032A993A7FEDAF066FE14F4
+Custom Assets\Stardew Valley\Stardew Valley_Farming Mastery.png: C4A0F136468548FD22D69F9700CFFFCF
+Custom Assets\Stardew Valley\Stardew Valley_Festival.png: 6F17224C92BEAFAAE7807A4AFC116413
+Custom Assets\Stardew Valley\Stardew Valley_Fiber Seeds.png: E8DB2DBE3AC0BE6543B480C9B84189F8
+Custom Assets\Stardew Valley\Stardew Valley_Fish Pond.png: D1F4A7A506EBE94160F862ED79F5589C
+Custom Assets\Stardew Valley\Stardew Valley_Fishing Information Broadcasting Service.png: C127CBA83E5B3C0B99F2D1DC4CFD0D27
+Custom Assets\Stardew Valley\Stardew Valley_Fishing Level.png: BCC0676107FA89B2E2FA7E39EFD30DC9
+Custom Assets\Stardew Valley\Stardew Valley_Fishing Mastery.png: 2E8E47227118EBC76A5F00112E3BA835
+Custom Assets\Stardew Valley\Stardew Valley_Foraging Level.png: C458036EE88F41AD7148011A38BD8291
+Custom Assets\Stardew Valley\Stardew Valley_Foraging Mastery.png: C452DC9212BE6F36D1843A3D03A09BEA
+Custom Assets\Stardew Valley\Stardew Valley_Fortune Teller.png: E92C21271BD3FB396AC7F9A77AFE41AA
+Custom Assets\Stardew Valley\Stardew Valley_Free Cactis.png: 03330CD162AFDBE41D78583B786EBAAD
+Custom Assets\Stardew Valley\Stardew Valley_Fruit Bats.png: 42C5A2B75D7452E83E226EBC9F5491CF
+Custom Assets\Stardew Valley\Stardew Valley_Garlic Seeds.png: A42B9ACBFCEC9DB584DA5606D728B7EB
+Custom Assets\Stardew Valley\Stardew Valley_George 3.png: F102E6AABD109F3D360F57015B1BDDAA
+Custom Assets\Stardew Valley\Stardew Valley_Glittering Boulder Removed.png: 27741767AD689E850034EA26EC23A972
+Custom Assets\Stardew Valley\Stardew Valley_Gold Clock.png: FD4C0F1B6D88880576F138326657A9A9
+Custom Assets\Stardew Valley\Stardew Valley_Golden Egg.png: E03DC5AC2DE13167780D6FD9A2BB106E
+Custom Assets\Stardew Valley\Stardew Valley_Golden Pumpkin.png: 17DE9B6D3C9D10F4C982704C83646AB0
+Custom Assets\Stardew Valley\Stardew Valley_Golden Walnut.png: 47EBB677A91FA32485FF7B7CCCC6DE71
+Custom Assets\Stardew Valley\Stardew Valley_Grape Starter.png: EC858F8A1BA8993B62A3DD97D53644FD
+Custom Assets\Stardew Valley\Stardew Valley_Greenhouse.png: F40E23957396F10A6AD6FDCFA7A15B71
+Custom Assets\Stardew Valley\Stardew Valley_Gunther 3.png: 914CDBBA284A31BB1F6A41A03EDABF84
+Custom Assets\Stardew Valley\Stardew Valley_Gus 3.png: 83A5B1E6AA62CD728CE12CC9F42C1D9A
+Custom Assets\Stardew Valley\Stardew Valley_Haley 3.png: CEBFE83AE2DFFEE4A8750E0A46488C7F
+Custom Assets\Stardew Valley\Stardew Valley_Harvey 3.png: FD8210CEB10B589012F655DA6D187F06
+Custom Assets\Stardew Valley\Stardew Valley_Hops Starter.png: A1F11FA261BB5E5D283A51DB0BF0DFA8
+Custom Assets\Stardew Valley\Stardew Valley_Horse Flute.png: 29EE43F9E564A0A3471D27C3025E1655
+Custom Assets\Stardew Valley\Stardew Valley_Iridium Snake Milk.png: 8DBDECF00FED57BF8FCD1CFAF60E3F97
+Custom Assets\Stardew Valley\Stardew Valley_Island Farmhouse.png: 676D569774CB899E4BF542982D519215
+Custom Assets\Stardew Valley\Stardew Valley_Island Mailbox.png: 52D51AC32BCE76B28749CD22A7A8A34C
+Custom Assets\Stardew Valley\Stardew Valley_Island North Turtle.png: 7AD929B59A5174BC8C89452E30326DD0
+Custom Assets\Stardew Valley\Stardew Valley_Island Obelisk.png: E1053993083D0FD2C8CD0079FC6091AB
+Custom Assets\Stardew Valley\Stardew Valley_Island Resort.png: D94B459D8A7C4C7E8635183A37A08D02
+Custom Assets\Stardew Valley\Stardew Valley_Island Trader.png: 6F1D2240C45453514090E46D1CDB159A
+Custom Assets\Stardew Valley\Stardew Valley_Island West Turtle.png: B6DCCA52A28E896263A4D296C7D65312
+Custom Assets\Stardew Valley\Stardew Valley_Jas 3.png: 4D6976C4F8FFE5562BC15EDD52A89FFB
+Custom Assets\Stardew Valley\Stardew Valley_Jazz Seeds.png: 7114986331953EE20844A1AD85891F5A
+Custom Assets\Stardew Valley\Stardew Valley_Jodi 3.png: B98E02B12DF930CAD8C17921E2B3B47C
+Custom Assets\Stardew Valley\Stardew Valley_Junimo Hut.png: EA92729D30FA9C3EF9BEFC5F866FA5E6
+Custom Assets\Stardew Valley\Stardew Valley_Kale Seeds.png: 3E3508F22C200337C07236909E39579C
+Custom Assets\Stardew Valley\Stardew Valley_Kent 3.png: 4DFE293CC3473AAB47839F0C97A44C5F
+Custom Assets\Stardew Valley\Stardew Valley_Key To The Town.png: 82ECB29C80A09E1427350F3BC94D669C
+Custom Assets\Stardew Valley\Stardew Valley_Krobus 3.png: A244F05E790C7EA7523FC241439C1931
+Custom Assets\Stardew Valley\Stardew Valley_Leah 3.png: 0D453A213553E9D334D3D77F4CF36AE2
+Custom Assets\Stardew Valley\Stardew Valley_Leo 3.png: 2C4BFADA3F5CAAD30E3FFC999F92D275
+Custom Assets\Stardew Valley\Stardew Valley_Lewis 3.png: D697AD0CF8F1C9656ED3DE0037521F34
+Custom Assets\Stardew Valley\Stardew Valley_Linus 3.png: CBCC6B0870D1D49275F0561D772E00E9
+Custom Assets\Stardew Valley\Stardew Valley_Livin Off The Land.png: 1524067A31C8096456071EACF898609D
+Custom Assets\Stardew Valley\Stardew Valley_Lost Book.png: 630B7035E750C55AF58854CB30C63DEF
+Custom Assets\Stardew Valley\Stardew Valley_Lupini.png: 135E715BA80706DE83F587BC5A0887B0
+Custom Assets\Stardew Valley\Stardew Valley_Magic Ink.png: ED0E7565683FD029131E71960B9AB474
+Custom Assets\Stardew Valley\Stardew Valley_Magic Rock Candy.png: 3F19467BE6302EAE29BCA62D57EC196B
+Custom Assets\Stardew Valley\Stardew Valley_Magnifying Glass.png: 272A7FF0221412D6DCB6786E6C1F1484
+Custom Assets\Stardew Valley\Stardew Valley_Mango Sapling.png: 154B304F20BC91526165E28E38E909EF
+Custom Assets\Stardew Valley\Stardew Valley_Marnie 3.png: 0528653B8BEA317B9AD036BA7EB205F0
+Custom Assets\Stardew Valley\Stardew Valley_Maru 3.png: B2119DC72C677BE49CB975B294957BA1
+Custom Assets\Stardew Valley\Stardew Valley_Mastery Of The Five Ways.png: 09E95A3C925088729678AA15A5090DD4
+Custom Assets\Stardew Valley\Stardew Valley_Melon Seeds.png: FD88E48CBDA60EDF8D5A1440BE0478EB
+Custom Assets\Stardew Valley\Stardew Valley_Mill.png: CBB850A3242DA2B93F1661C1159C9E8B
+Custom Assets\Stardew Valley\Stardew Valley_Minecarts Repair.png: D9ADE00CB004EE73380F9041C253261B
+Custom Assets\Stardew Valley\Stardew Valley_Mining Level.png: F9B050C9412B7B71E7B772F94672F309
+Custom Assets\Stardew Valley\Stardew Valley_Mining Mastery.png: 81166D4637DEDE137C9893CD45DF56E4
+Custom Assets\Stardew Valley\Stardew Valley_Morris 3.png: 5D62FF5587EFF903ED7CACC3A6E1C93E
+Custom Assets\Stardew Valley\Stardew Valley_Mushroom Boxes.png: F2BAF029E3D433A7E47629D85A7A32D5
+Custom Assets\Stardew Valley\Stardew Valley_Orange Sapling.png: 61F000213DDD6824698D155957FF1BFB
+Custom Assets\Stardew Valley\Stardew Valley_Pam 3.png: AA833F0AF7BD3C16FC1959934B2DDBC5
+Custom Assets\Stardew Valley\Stardew Valley_Parsnip Seeds.png: 737D00651B74171B5270B6794941A3B6
+Custom Assets\Stardew Valley\Stardew Valley_Peach Sapling.png: 70892FC78770A09F3626630F895F87E7
+Custom Assets\Stardew Valley\Stardew Valley_Pearl.png: B6B0A8A1CF89631942D97DA60232E845
+Custom Assets\Stardew Valley\Stardew Valley_Penny 3.png: 8C1D07A02C05E23483957ADF5659A0E9
+Custom Assets\Stardew Valley\Stardew Valley_Pepper Seeds.png: DC7C3000D010317DE8F70302D2D6F8F7
+Custom Assets\Stardew Valley\Stardew Valley_Pierre 3.png: DBC4133A474C97A110ABE2DAA28A256E
+Custom Assets\Stardew Valley\Stardew Valley_Pierres Missing Stocklist.png: B810CC3B52793364B4B5BF6E10F29707
+Custom Assets\Stardew Valley\Stardew Valley_Pineapple Seeds.png: B02D8E9E23F541296AD5155DEB54546E
+Custom Assets\Stardew Valley\Stardew Valley_Pomegranate Sapling.png: 70823E93A3EFA79E539EBB6371123E9E
+Custom Assets\Stardew Valley\Stardew Valley_Poppy Seeds.png: 813BCF8097C5738FE661BA73C79FEE42
+Custom Assets\Stardew Valley\Stardew Valley_Potato Seeds.png: B49B5214EA02AB5104129EB70F1BB406
+Custom Assets\Stardew Valley\Stardew Valley_Powdermelon Seeds.png: E5E8CF63B02FD8EC03225D83B2924AAC
+Custom Assets\Stardew Valley\Stardew Valley_Power Animal Catalogue.png: 90DAF3D9CBD6E9285E4D88B7FF6407CD
+Custom Assets\Stardew Valley\Stardew Valley_Power Book of Mysteries.png: F9D774F18D320FCE5C8866CD443B97C9
+Custom Assets\Stardew Valley\Stardew Valley_Power Dwarvish Safety Manual.png: DDB94E82DA045B2AAE3F6DB5B1EDF906
+Custom Assets\Stardew Valley\Stardew Valley_Power Friendship 101.png: 7E77541E86F3EFB97C9AC0C516B19982
+Custom Assets\Stardew Valley\Stardew Valley_Power Horse The Book.png: 4CD0C3F3AB9CEB25F33C7958707548A6
+Custom Assets\Stardew Valley\Stardew Valley_Power Jack Be Nimble, Jack Be Thick.png: EBD6FB0361DBE3B7B8F67E3D75F04EB8
+Custom Assets\Stardew Valley\Stardew Valley_Power Jewels Of The Sea.png: CD2B53D058EB1982D53277604E5F6870
+Custom Assets\Stardew Valley\Stardew Valley_Power Mapping Cave Systems.png: B998E778362F7CF8E22F8D087BC75038
+Custom Assets\Stardew Valley\Stardew Valley_Power Monster Compendium.png: 460D49133E953C8D864E95EB3D6030B8
+Custom Assets\Stardew Valley\Stardew Valley_Power Price Catalogue.png: E907E0F06DDAD58584A968AEF4BBE58F
+Custom Assets\Stardew Valley\Stardew Valley_Power Raccoon Journal.png: 5681B3DBA15CFCA1922BE81328FB0BF6
+Custom Assets\Stardew Valley\Stardew Valley_Power The Alleyway Buffet.png: E99D21D785762795037235EDE0E0EBFC
+Custom Assets\Stardew Valley\Stardew Valley_Power The Art O Crabbing.png: CD181C443E914ED91FA4C33F714034F0
+Custom Assets\Stardew Valley\Stardew Valley_Power The Diamond Hunter.png: 6AE2C00ACFE437525686BC1A584527FC
+Custom Assets\Stardew Valley\Stardew Valley_Power Treasure Appraisal Guide.png: 245BAE7FCDE99E7D70E16C0B44043751
+Custom Assets\Stardew Valley\Stardew Valley_Power Way Of The Wind pt. 1.png: 85D5EBA191E20F16E26E7ED9668CF5B4
+Custom Assets\Stardew Valley\Stardew Valley_Power Way Of The Wind pt. 2.png: 9FFE3333695F068195972F23C6240CC1
+Custom Assets\Stardew Valley\Stardew Valley_Power Woodys Secret.png: 545F1DB5A41A0D8632B51F958654D438
+Custom Assets\Stardew Valley\Stardew Valley_Prismatic Shard.png: 4B266921D3DFF3978BF97B360DE2D150
+Custom Assets\Stardew Valley\Stardew Valley_Prize Ticket.png: BE8EE882EF6C9FA5766B7C82D11C079A
+Custom Assets\Stardew Valley\Stardew Valley_Progressive Axe.png: F4EF2FE119B663C9AB94C14508974026
+Custom Assets\Stardew Valley\Stardew Valley_Progressive Barn.png: D75EF23CF1393151BA04E368B07E076A
+Custom Assets\Stardew Valley\Stardew Valley_Progressive Club.png: D3A2790229D70B28F35E2DA78A0A632E
+Custom Assets\Stardew Valley\Stardew Valley_Progressive Coop.png: 6AB8D493275213FCAE7735DA2391AE76
+Custom Assets\Stardew Valley\Stardew Valley_Progressive Dagger.png: C8F250CD0B0463734B30AE1CDD56394A
+Custom Assets\Stardew Valley\Stardew Valley_Progressive Fishing Rod.png: 19440F88D98C8E0E40704AC5536A2ED7
+Custom Assets\Stardew Valley\Stardew Valley_Progressive Footwear.png: 102FCBAA68C2E9F52BEACFFFCE840CA7
+Custom Assets\Stardew Valley\Stardew Valley_Progressive Hoe.png: 05A88F21CE7EE259532CE5CEF54F8898
+Custom Assets\Stardew Valley\Stardew Valley_Progressive House.png: 8F0BA9C79475E087D1AA596C9B1E67D4
+Custom Assets\Stardew Valley\Stardew Valley_Progressive Lost Book.png: 630B7035E750C55AF58854CB30C63DEF
+Custom Assets\Stardew Valley\Stardew Valley_Progressive Movie Theater.png: BAEA36D0A0048835E338C24C0BB2AAFA
+Custom Assets\Stardew Valley\Stardew Valley_Progressive Pan.png: 66BEB222EB4E319864D2541A732E392E
+Custom Assets\Stardew Valley\Stardew Valley_Progressive Pickaxe.png: BF76E827E01C4256538720FB27A793AC
+Custom Assets\Stardew Valley\Stardew Valley_Progressive Raccoon.png: DCFF7A855C638A606E7326B0F43F7CAD
+Custom Assets\Stardew Valley\Stardew Valley_Progressive Scythe.png: 47A72BD10BBBDE17D9102CA461D19342
+Custom Assets\Stardew Valley\Stardew Valley_Progressive Season.png: 4BB4BCA5F9821E347E52B3205A83D173
+Custom Assets\Stardew Valley\Stardew Valley_Progressive Slingshot.png: 273C73897F4EC8D662041B1BC4D14448
+Custom Assets\Stardew Valley\Stardew Valley_Progressive Sword.png: 90DF0DF8B880A299A36017A355D9A737
+Custom Assets\Stardew Valley\Stardew Valley_Progressive Trash Can.png: 6FE6621CE3C20AB5DCA4CF89E2565365
+Custom Assets\Stardew Valley\Stardew Valley_Progressive Watering Can.png: D30D3902EF7B6EE469ABAAB85E5253DB
+Custom Assets\Stardew Valley\Stardew Valley_Pumpkin Seeds.png: 5D566B85614B87BAA48D9854CA06901B
+Custom Assets\Stardew Valley\Stardew Valley_Qi Gem.png: 336EAB2AB6581F7608CA299E98987303
+Custom Assets\Stardew Valley\Stardew Valley_Qi Walnut Room.png: 4301A9D417CA65C0C6EA452A1CAAC5AB
+Custom Assets\Stardew Valley\Stardew Valley_Queen Recipe.png: A4A85808660641A94676A946FADF29D5
+Custom Assets\Stardew Valley\Stardew Valley_Radish Seeds.png: FEFA1C8FB1FFAC9D89A3855240518BE6
+Custom Assets\Stardew Valley\Stardew Valley_Railroad Boulder Removed.png: BD2C4734DFA5F4998DFC05935FCB759D
+Custom Assets\Stardew Valley\Stardew Valley_Rare Seed.png: 77224EF72B86471509B636AA17763166
+Custom Assets\Stardew Valley\Stardew Valley_Rarecrow #1.png: 9F14C77AF77C28C46F3BA8C45CC2624A
+Custom Assets\Stardew Valley\Stardew Valley_Rarecrow #2.png: D5D738922ED26283EAF44C7EE8D848D3
+Custom Assets\Stardew Valley\Stardew Valley_Rarecrow #3.png: 593AE390E7967101AC36255D1CF3405C
+Custom Assets\Stardew Valley\Stardew Valley_Rarecrow #4.png: CF64F1D3FEB274A1CE6C015A885E43ED
+Custom Assets\Stardew Valley\Stardew Valley_Rarecrow #5.png: 977CEBA870C4BF46A94E45E21ABC0CB1
+Custom Assets\Stardew Valley\Stardew Valley_Rarecrow #6.png: 748D03CA2EC849E21A49D01C2FB6D2C4
+Custom Assets\Stardew Valley\Stardew Valley_Rarecrow #7.png: 862E799A8963A203B08CC10FC142486B
+Custom Assets\Stardew Valley\Stardew Valley_Rarecrow #8.png: 058F6B2E75A7726EEA84B27199D9AC01
+Custom Assets\Stardew Valley\Stardew Valley_Red Cabbage Seeds.png: FDFBDBBEF4B3AA50D975716C8726167F
+Custom Assets\Stardew Valley\Stardew Valley_Resource Pack 2 Qi Gem.png: 336EAB2AB6581F7608CA299E98987303
+Custom Assets\Stardew Valley\Stardew Valley_Resource Pack Calico.png: 7C94B76AD35606F45769D4B26542F652
+Custom Assets\Stardew Valley\Stardew Valley_Resource Pack Useful.png: 01A820B5B0E96164814A276EEF2A9DEE
+Custom Assets\Stardew Valley\Stardew Valley_Resource Pack.png: 2DA8A6E85D1E894E5A3A17A9788CCE41
+Custom Assets\Stardew Valley\Stardew Valley_Return Scepter.png: 40718577C588EB2118FACB62A0759722
+Custom Assets\Stardew Valley\Stardew Valley_Rhubarb Seeds.png: 02587EBB4B04E74F2C2D0C386A26A58D
+Custom Assets\Stardew Valley\Stardew Valley_Rice Shoot.png: 15010649C618960EE733E0BA224EB6C9
+Custom Assets\Stardew Valley\Stardew Valley_Ring.png: 5CF18E1554DAA09BBC71AC5A4E42D6BF
+Custom Assets\Stardew Valley\Stardew Valley_Robin 3.png: 540ECA83B1C1714BFBFC2A362605D684
+Custom Assets\Stardew Valley\Stardew Valley_Rusty Key.png: AD88B7B19C300972F58452E2A230A019
+Custom Assets\Stardew Valley\Stardew Valley_Sam 3.png: 764C472F8314A36E50C3B4A1A64EB563
+Custom Assets\Stardew Valley\Stardew Valley_Sandy 3.png: 63BECFFED86160C7DCD580BA94AB9457
+Custom Assets\Stardew Valley\Stardew Valley_Sebastian 3.png: 41D6740D24964C6E8DDCA2D2C6D53F59
+Custom Assets\Stardew Valley\Stardew Valley_Shane 3.png: CBCE3EBA177AE5366DFD81988146C767
+Custom Assets\Stardew Valley\Stardew Valley_Shipping Bin.png: B5AB75EBE9A821EE401A47A3A43AC787
+Custom Assets\Stardew Valley\Stardew Valley_Silo.png: 34A0A4EC8D5E50C32FC0D36FF4C79E73
+Custom Assets\Stardew Valley\Stardew Valley_Skull Key.png: F5BF6AD8F581F8DF4D912B62CB9D66C2
+Custom Assets\Stardew Valley\Stardew Valley_Slime Hutch.png: 637271ED10F5BBBFC0CFE40217DA4859
+Custom Assets\Stardew Valley\Stardew Valley_Spangle Seeds.png: 9B539571BC71BA3C1B2A64F27F392A5D
+Custom Assets\Stardew Valley\Stardew Valley_Special Charm.png: C855218BF32F665D4CA398B639FA9183
+Custom Assets\Stardew Valley\Stardew Valley_Spring Onion Mastery.png: 68702B7171729259AE5100F8A76CE6FC
+Custom Assets\Stardew Valley\Stardew Valley_Spring.png: 4FF121C0CA055FEEA7BB4EB5982409CA
+Custom Assets\Stardew Valley\Stardew Valley_Stable.png: 600D580CD4998DD246FF02F339F0AAAD
+Custom Assets\Stardew Valley\Stardew Valley_Stardrop Tea.png: 0BE201A96183C7D4A7B00F1EDEC28BFD
+Custom Assets\Stardew Valley\Stardew Valley_Stardrop.png: A8142A44B0A8912E28F8330A38332C42
+Custom Assets\Stardew Valley\Stardew Valley_Starfruit Seeds.png: 4D3B9431DF957AD0CAF954DA438D604A
+Custom Assets\Stardew Valley\Stardew Valley_Strawberry Seeds.png: A2795129B966F41656E8D38BEC8F8A06
+Custom Assets\Stardew Valley\Stardew Valley_Summer Squash Seeds.png: B9B1E4EF9435E87F0337EBD5E6952429
+Custom Assets\Stardew Valley\Stardew Valley_Summer.png: E302A44A41273DA15E087F4CDCDBFDFC
+Custom Assets\Stardew Valley\Stardew Valley_Sunflower Seeds.png: 9DD6539123088739ED97A5746427FE48
+Custom Assets\Stardew Valley\Stardew Valley_Taro Tuber.png: 93C86D439EFCE1CEFA0728FB99074774
+Custom Assets\Stardew Valley\Stardew Valley_The Queen of Sauce.png: 2351A243AA68FBFEE48474BE11B6D758
+Custom Assets\Stardew Valley\Stardew Valley_Tomato Seeds.png: 2DEB8DC761E3A7E28822BCFE2640242A
+Custom Assets\Stardew Valley\Stardew Valley_Traveling Merchant Discount.png: 41D7E345DB0181F54CC024F7263FDB3B
+Custom Assets\Stardew Valley\Stardew Valley_Traveling Merchant Stock Size.png: F0BB7246710B62891C97AC418E8BCCA6
+Custom Assets\Stardew Valley\Stardew Valley_Traveling Merchant.png: 8DDF62F52C22E8BFB3687A0CE596566D
+Custom Assets\Stardew Valley\Stardew Valley_Treasure Chest.png: 2029E6CD67ECE142D313A6E40EB60D04
+Custom Assets\Stardew Valley\Stardew Valley_Tulip Bulb.png: DCD83B3BABDBA4A56A4126B89445D89E
+Custom Assets\Stardew Valley\Stardew Valley_Vincent 3.png: C2EE9DE2D8C31050D6E5E05FA996936D
+Custom Assets\Stardew Valley\Stardew Valley_Volcano Bridge.png: 792D8E5BBC01C3FDCFD0500D827578C0
+Custom Assets\Stardew Valley\Stardew Valley_Volcano Exit Shortcut.png: F1788E0199F611FF3956D0E645C30271
+Custom Assets\Stardew Valley\Stardew Valley_Water Obelisk.png: 794F9F8DACC344B67D68250271298255
+Custom Assets\Stardew Valley\Stardew Valley_Weather Report.png: 3F1BF1C434525EDD51DFCE50DBDAE999
+Custom Assets\Stardew Valley\Stardew Valley_Well.png: FC75E77D2C4CD4F7B01F90E335DD752A
+Custom Assets\Stardew Valley\Stardew Valley_Wheat Seeds.png: 03A3C4FD87AD9F348E41AD4487BEFA16
+Custom Assets\Stardew Valley\Stardew Valley_Willy 3.png: E86EB3824092250FE4547BCCAB4D4BB1
+Custom Assets\Stardew Valley\Stardew Valley_Winter.png: A2BDD7708A2BD5E1A498CEE9801AEB94
+Custom Assets\Stardew Valley\Stardew Valley_Wizard 3.png: 43E7A6557ECA64E849AA6A52D3F72DA6
+Custom Assets\Stardew Valley\Stardew Valley_Yam Seeds.png: 68FBFA0BA9F59FEEC3498F01E8626E72
+Custom Assets\Subnautica\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\Subnautica\Subnautica.png: CD09CD20522DADA347647580A191B05B
+Custom Assets\Sudoku\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\Sudoku\Sudoku.png: 3C8E332FE38CFE306B654D803EBD8412
+Custom Assets\Super Mario 64\aliases.json: 50D8D053DD056B0E81EEFEF9FAF22B1C
+Custom Assets\Super Mario 64\Super Mario 64.png: 3D0786BDE06F7EC4A5F897894C927FF3
+Custom Assets\Super Mario 64\Super Mario 64_1Up Mushroom.png: 73247B88314CC71F9F78F0CD34E60247
+Custom Assets\Super Mario 64\Super Mario 64_Cannon Unlock BoB.png: 4558C5A0123B2F07E43D4F8FE8FBBE6F
+Custom Assets\Super Mario 64\Super Mario 64_Metal Cap.png: 65DC48E7D575C10248B40C418882DC23
+Custom Assets\Super Mario 64\Super Mario 64_Power Star.png: E2D45551E2DE935DAC16EC76A83B951B
+Custom Assets\Super Mario 64\Super Mario 64_Progressive Key.png: 6D3F9393F57A6C16309396C0460A3892
+Custom Assets\Super Mario 64\Super Mario 64_Vanish Cap.png: 9D0558CAA914609FE9453F698F3A1E6E
+Custom Assets\Super Mario 64\Super Mario 64_Wing Cap.png: 915ABCBF95B8BF2C25C51504A7DC072E
+Custom Assets\Super Mario RPG Legend of the Seven Stars\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\Super Mario RPG Legend of the Seven Stars\Super Mario RPG Legend of the Seven Stars.png: 5E9F3CB4BD28402563146BCEF23878E3
+Custom Assets\Super Mario Sunshine\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\Super Mario Sunshine\Super Mario Sunshine.png: DF15B6CA6D535F80003A06F9B9789FD7
+Custom Assets\Super Mario World\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\Super Mario World\Super Mario World.png: 1158F5CFBFC3AF09FC00EE6C5647AEC3
+Custom Assets\Super Metroid\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\Super Metroid\Super Metroid.png: 1E20F53AD768533652EB9C77AD113B00
+Custom Assets\Terraria\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\Terraria\Terraria.png: 64EAD465C866A6FAE2A3C1D130A0A4FF
+Custom Assets\Tetris Attack\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\Tetris Attack\Tetris Attack.png: D05E7846CC01E09D08888B664B5B6C63
+Custom Assets\The Binding of Isaac Repentance\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\The Binding of Isaac Repentance\The Binding of Isaac Repentance.png: 1F7006A99523097EE614F83F0715889D
+Custom Assets\The Legend of Zelda\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\The Legend of Zelda\The Legend of Zelda.png: 9070168246E46E512A6BC11DAD2DA31A
+Custom Assets\The Legend of Zelda\The Legend of Zelda_Blue Ring.png: FDFDB975975A474C2E23D9FC1280000A
+Custom Assets\The Legend of Zelda\The Legend of Zelda_Bomb.png: 9F0B0D88A55478DFD07F87FD3ED481F5
+Custom Assets\The Legend of Zelda\The Legend of Zelda_Book of Magic.png: 920258C13FC32E0F446AF2EF91B43CC8
+Custom Assets\The Legend of Zelda\The Legend of Zelda_Boomerang.png: FB3C9E303DBC95185F17FFBF2F149363
+Custom Assets\The Legend of Zelda\The Legend of Zelda_Bow.png: 2E1EC35CC83618FABBB53FB1F194E367
+Custom Assets\The Legend of Zelda\The Legend of Zelda_Five Rupees.png: 6152AADA0D5FEAEFAF3343D51FE18FDE
+Custom Assets\The Legend of Zelda\The Legend of Zelda_Food.png: B6EBB7606DD5D2216996C2D4834AFDF8
+Custom Assets\The Legend of Zelda\The Legend of Zelda_Magical Boomerang.png: BCF038F41E38B03E1DB9C13D4320A2EE
+Custom Assets\The Legend of Zelda\The Legend of Zelda_Magical Key.png: A4414CF44871FCEC8164FD9E4889D066
+Custom Assets\The Legend of Zelda\The Legend of Zelda_Magical Sword.png: 0A338EDBD26ADC6DFE76F98F4A8E9230
+Custom Assets\The Legend of Zelda\The Legend of Zelda_Raft.png: A7014A28FF359F88F4CD6CEE02821A83
+Custom Assets\The Legend of Zelda\The Legend of Zelda_Red Ring.png: E2EB833EE0CF229F653480920D028D00
+Custom Assets\The Legend of Zelda\The Legend of Zelda_Rupee.png: B45F1F230FBFB33CB470E49CDDADB514
+Custom Assets\The Legend of Zelda\The Legend of Zelda_Small Key.png: 1CE076378069D8536DB2723CA4BC2C03
+Custom Assets\The Legend of Zelda\The Legend of Zelda_Sword.png: 7D68C41359F3987A4781603CF27E19CE
+Custom Assets\The Legend of Zelda\The Legend of Zelda_Triforce Fragment.png: E605397051FD5D80815B7EE422244521
+Custom Assets\The Legend of Zelda\The Legend of Zelda_White Sword.png: 5614D8DFF8DF5D650ECBD6B3C44937ED
+Custom Assets\The Legend of Zelda - Oracle of Ages\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\The Legend of Zelda - Oracle of Ages\The Legend of Zelda - Oracle of Ages.png: D027E80B966305D9741BA5C84349E242
+Custom Assets\The Legend of Zelda - Oracle of Seasons\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\The Legend of Zelda - Oracle of Seasons\The Legend of Zelda - Oracle of Seasons.png: D5949CBEC6C328CD93C2DA2FD99BC89F
+Custom Assets\The Legend of Zelda - Phantom Hourglass\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\The Legend of Zelda - Phantom Hourglass\The Legend of Zelda - Phantom Hourglass.png: D0553FDFCDC54AD4AF860595EB5E49C5
+Custom Assets\The Messenger\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\The Messenger\The Messenger.png: 1E47572B8A9144F06B28697EB512CF93
+Custom Assets\The Minish Cap\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\The Minish Cap\The Minish Cap.png: 942363BC60B38475A00714C8AF1E4206
+Custom Assets\The Sims 4\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\The Sims 4\The Sims 4.png: 03C862A61B534D38E0EA0423079C4E6E
+Custom Assets\The Wind Waker\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\The Wind Waker\The Wind Waker.png: C405A3D05A2D12D243AA2C338667D355
+Custom Assets\The Witness\aliases.json: E1973B70B1D8FCF25ADCFAEB2A0E8029
+Custom Assets\The Witness\The Witness.png: 01CA8C24A4B893E34CE2EC82DC8C17D9
+Custom Assets\The Witness\The Witness_Boat.png: 0DE3A2EE5D83B7E3C8427DE7690364BD
+Custom Assets\The Witness\The Witness_Doors.png: 705D07EC3041C3553951EB836BC0BB15
+Custom Assets\The Witness\The Witness_Lasers.png: 21B9DC0DF2DD29D420553D5D98996736
+Custom Assets\The Witness\The Witness_Obelisk Keys.png: 64977A9B180F8B1D1015E6AC2D027FEC
+Custom Assets\The Witness\The Witness_Panel Keys.png: 8C3DF66A950A65938A2C792E1AEBB67E
+Custom Assets\The Witness\The Witness_Symbols.png: 9280435A4E65268029ED90E49F30FA30
+Custom Assets\TUNIC\aliases.json: 5E61131068C02E50993CAE56DA6C4A47
+Custom Assets\TUNIC\TUNIC.png: C2975974C417B72B165D7BB38EE3FF85
+Custom Assets\TUNIC\TUNIC_Bells.png: 24EF76678DD55825ADFDA2681AEAB9D0
+Custom Assets\TUNIC\TUNIC_Blue Questagon.png: C282818F1A0E587269B0784D9FC6246F
+Custom Assets\TUNIC\TUNIC_Card Slot.png: 16E8FFB5A601DB4B6818D84CF07735E8
+Custom Assets\TUNIC\TUNIC_Cards.png: D405D81F9FEC899D36A949FDFCB4A121
+Custom Assets\TUNIC\TUNIC_Firecrackers.png: D3120787ED6BAC2EB71921172B6011FE
+Custom Assets\TUNIC\TUNIC_Fool Trap.png: E6E44220B399280B1C60144A5AF8FA14
+Custom Assets\TUNIC\TUNIC_Fuses.png: 3850ABC9D5A712E9D5E604EC1D7B68E2
+Custom Assets\TUNIC\TUNIC_Gold Questagon.png: CC20793D78DFF5787E93FBEB479FBF70
+Custom Assets\TUNIC\TUNIC_Grass.png: C4E8C9D7DE7DA2E1E0CE670CEBF3BE29
+Custom Assets\TUNIC\TUNIC_Green Questagon.png: 808A923F145E6B3354A8712844A20894
+Custom Assets\TUNIC\TUNIC_Gun.png: 59BCF98FD38DFD5F840D1BF0EDA53095
+Custom Assets\TUNIC\TUNIC_Heros Laurels.png: 0E3558B8A98913EDE71893F0857D8A96
+Custom Assets\TUNIC\TUNIC_Hourglass.png: 948A98CB1D7B564984999C2E7D74825D
+Custom Assets\TUNIC\TUNIC_Ladders.png: 5E08BD8425DDF6099A6161A66A00FB5C
+Custom Assets\TUNIC\TUNIC_Lantern.png: A0B54A1492EF4BB8FA760DF66C63CB62
+Custom Assets\TUNIC\TUNIC_Large Money.png: A1B693C053A85127721092FFB389CA7B
+Custom Assets\TUNIC\TUNIC_Magic Dagger.png: 870BE61987E65C6A509F85552A677447
+Custom Assets\TUNIC\TUNIC_Magic Orb.png: 003EA7602EE83F3DE81FEA89C8A74332
+Custom Assets\TUNIC\TUNIC_Magic Wand.png: 2B4A49FA4E9C9247EA8712EFA790DFE4
+Custom Assets\TUNIC\TUNIC_Medium Money.png: A597673A6C3F9D0DD098DFB0A58CFC95
+Custom Assets\TUNIC\TUNIC_Pages.png: 6BB478AD2AF7D5C89377E461BE79776A
+Custom Assets\TUNIC\TUNIC_Pepper x2.png: 0A2C882AF472D3E639F4C636DFCC062F
+Custom Assets\TUNIC\TUNIC_Red Questagon.png: 84AFDD8BCFD48E11AFAE112B332093C4
+Custom Assets\TUNIC\TUNIC_Shield.png: 325C81B12484986E8751BC95800A6632
+Custom Assets\TUNIC\TUNIC_Stick.png: 7AB13D921C89C0B41AFE7026BE8DEC0C
+Custom Assets\TUNIC\TUNIC_Sword Upgrade.png: 526BBBC3E1EEDBE21F9624C7F1CC30F8
+Custom Assets\TUNIC\TUNIC_Sword.png: 4B98D0303115E3F6A65C4E46BF97A996
+Custom Assets\Twilight Princess\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\Twilight Princess\Twilight Princess.png: 9679E13AF8E7591BFFA1A12554A64145
+Custom Assets\UFO 50\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\UFO 50\UFO 50.png: BF223C31AE8ADDD4344547EB2E4877D9
+Custom Assets\Undertale\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\Undertale\Undertale.png: 59B71BB1A6D1439C8C7C2CFE4A33E9F2
+Custom Assets\Undertale\Undertale_ACT.png: 0396D88A7206ED752FEDC9FC172B3ACD
+Custom Assets\Undertale\Undertale_Ballet Shoes.png: B2AB3593C92E9587409FD2748C72F0AE
+Custom Assets\Undertale\Undertale_Bandage.png: 73E644B3A55C6464427596CE1F46ED93
+Custom Assets\Undertale\Undertale_Burnt Pan.png: D544DCE19E5C66718DCB9D59E47E7DF6
+Custom Assets\Undertale\Undertale_Cloudy Glasses.png: D5ED842D6550ACD4FD2135B294D88ED4
+Custom Assets\Undertale\Undertale_Core Key.png: 70A02486AF550BDB49382EA784D4A1DF
+Custom Assets\Undertale\Undertale_Cowboy Hat.png: F299E2B8DED0C5D6557FE7071B4B11F4
+Custom Assets\Undertale\Undertale_Empty Gun.png: 7C968514E1A6F79624B6CBBB78F7E203
+Custom Assets\Undertale\Undertale_Faded Ribbon.png: 0CA0B71DB2D2A9B0A3F87021E6C7B30A
+Custom Assets\Undertale\Undertale_FIGHT.png: B8BE932715BAF72A49C2D503B049436B
+Custom Assets\Undertale\Undertale_Heart Locket.png: 9CACF1A43A5A52B701572968574A7749
+Custom Assets\Undertale\Undertale_Hotland Key.png: C0BBAF215BA056750B288514BFAE28A4
+Custom Assets\Undertale\Undertale_ITEM.png: 69683E6F4DA4ABB7EDA860B30F4F9FC4
+Custom Assets\Undertale\Undertale_Left Home Key.png: 992121B8EF63F5B55374DE5E12B8A453
+Custom Assets\Undertale\Undertale_LOVE.png: AC8EC79C2537CCC72D9745C003CE6415
+Custom Assets\Undertale\Undertale_Manly Bandanna.png: 26A897EFAEAA5AC206538E1F1F193CA1
+Custom Assets\Undertale\Undertale_MERCY.png: 53AA8B2D18FBE8CA8073F2E2825C8629
+Custom Assets\Undertale\Undertale_Mystery Key.png: B553D4E7BD43B5D8176670EE877EBB9D
+Custom Assets\Undertale\Undertale_Old Tutu.png: 292E069956438C028A9F04C5974A5A07
+Custom Assets\Undertale\Undertale_Progressive Armor.png: 171BF2811D9A44FDB0DFBA8D4AFF85CB
+Custom Assets\Undertale\Undertale_Progressive Weapons.png: 55546D9B5D6E601829D86594554138AB
+Custom Assets\Undertale\Undertale_Punch Card.png: 0DE797185CB1B85CFBC65B0B3BD137A3
+Custom Assets\Undertale\Undertale_Real Knife.png: 188DEDB086BE2BFFE09153A5D4BA7769
+Custom Assets\Undertale\Undertale_Right Home Key.png: 992121B8EF63F5B55374DE5E12B8A453
+Custom Assets\Undertale\Undertale_Ruins Key.png: CB14535572735D188EA284ED85F8F15E
+Custom Assets\Undertale\Undertale_Silver Key.png: 630631447AC0217ED6B483C5150E7C6E
+Custom Assets\Undertale\Undertale_Snowdin Key.png: DCF049F83C3F3B1764C2B52363D4D5F4
+Custom Assets\Undertale\Undertale_Stained Apron.png: 2C776AEDDA539FA6A1F7AB332D2AB578
+Custom Assets\Undertale\Undertale_Stick.png: 14209E7A4748D605DB594920BDEF84A9
+Custom Assets\Undertale\Undertale_temy armor.png: C01E6C36FDBAFEBBE58F89B09AE2496C
+Custom Assets\Undertale\Undertale_The Locket.png: 1B9185412016AA1C1165B50C49AD31C7
+Custom Assets\Undertale\Undertale_Torn Notebook.png: 1EB617D07B099C9A20D1D141DBF3B966
+Custom Assets\Undertale\Undertale_Tough Glove.png: 4CEC8A972182F15CA853D2A367E03C5F
+Custom Assets\Undertale\Undertale_Toy Knife.png: C72B6CFB0B968B9BD3E5D9754850192B
+Custom Assets\Undertale\Undertale_Waterfall Key.png: 52989ADDF75C0F23E3D389AF09E44645
+Custom Assets\Undertale\Undertale_Worn Dagger.png: C9AD5F92254630BD73D87779F5DFFB26
+Custom Assets\Void Stranger\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\Void Stranger\Void Stranger.png: 83B19BCE9FFE279FB11FDEFCE1F71E75
+Custom Assets\VVVVVV\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\VVVVVV\VVVVVV.png: 73FD6E83768179BFDA8F692A67B20EC7
+Custom Assets\West Of Loathing\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\West Of Loathing\West Of Loathing.png: 1374F643C8BBEB21540CF011BEF41224
+Custom Assets\Yacht Dice\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\Yacht Dice\Yacht Dice.png: AA208BF446CC805C57E92D72B6C16589
+Custom Assets\Yokus Island Express\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\Yokus Island Express\Yokus Island Express.png: D7D34CA1A3C051FD6F5CCCF4B920ED82
+Custom Assets\Yooka-Laylee\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\Yooka-Laylee\Yooka-Laylee.png: E20B1744C2D3A7F861E52F4CB41533DE
+Custom Assets\Yoshis Island\aliases.json: 98B0036C5603E73154874049BDCF18E7
+Custom Assets\Yoshis Island\Yoshis Island.png: A5BD4F07ED191CC06E595397146EDB67

@@ -24,15 +24,6 @@
           <Link>README.md</Link>
         </None>
         <None Include="..\.editorconfig" Link=".editorconfig" />
-        <Content Include="Custom Assets\**\*">
-            <Pack>true</Pack>
-            <PackageCopyToOutput>true</PackageCopyToOutput>
-        </Content>
-    </ItemGroup>
-    
-    <ItemGroup>
-        <Content Update="Custom Assets\*\*">
-            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-        </Content>
+        <Content Include="Custom Assets\**\*" CopyToOutputDirectory="PreserveNewest"/>
     </ItemGroup>
 </Project>
