@@ -17,6 +17,8 @@ namespace KaitoKid.ArchipelagoUtilities.Net.CustomAssets
         private const string WebDownloadUrl =
             "https://raw.githubusercontent.com/agilbert1412/ArchipelagoUtilities/main/KaitoKid.ArchipelagoUtilities.Net/KaitoKid.ArchipelagoUtilities.Net.CustomAssets";
 
+        private static bool Initialized = false;
+        
         public static void CheckDownload()
         {
             var zipPath = Path.Combine(DownloadDirectory, "Custom Assets.zip");
@@ -37,6 +39,7 @@ namespace KaitoKid.ArchipelagoUtilities.Net.CustomAssets
                 ZipFile.ExtractToDirectory(zipPath, CustomAssetsFolderPath);
                 File.Delete(zipPath);
 
+                Initialized = true;
                 return;
             }
 
@@ -47,7 +50,11 @@ namespace KaitoKid.ArchipelagoUtilities.Net.CustomAssets
                 var githubCustomAssetFolderHashData = client.DownloadData($"{WebDownloadUrl}/Custom Assets Hash.txt");
                 var githubCustomAssetFolderHash = string.Join("", githubCustomAssetFolderHashData.Select(b => (char)b));
 
-                if (githubCustomAssetFolderHash == File.ReadAllText(customAssetsHashFile)) return;
+                if (githubCustomAssetFolderHash == File.ReadAllText(customAssetsHashFile))
+                {
+                    Initialized = true;
+                    return;
+                }
 
                 var localCustomAssetHashDictionary = Hasher.HashDirectory(DownloadDirectory);
                 var githubCustomAssetHashesData = client.DownloadData($"{WebDownloadUrl}/Custom Assets/Hash Data.txt");
@@ -102,10 +109,14 @@ namespace KaitoKid.ArchipelagoUtilities.Net.CustomAssets
                     File.WriteAllText(customAssetsHashFile, githubCustomAssetFolderHash);
                 }
             }
+
+            Initialized = true;
         }
 
         public static string GetImageDirectory(string game, string item = "")
         {
+            if (!Initialized) CheckDownload();
+            
             var gameFolder = Path.Combine(CustomAssetsFolderPath, game);
             if (!Directory.Exists(gameFolder) || !File.Exists(Path.Combine(gameFolder, $"{game}.png")))
                 throw new ArgumentException($"Assets for the game [{game}] doesn't exist");
