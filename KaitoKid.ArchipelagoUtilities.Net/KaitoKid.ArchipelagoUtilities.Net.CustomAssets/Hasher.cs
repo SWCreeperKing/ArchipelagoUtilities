@@ -16,7 +16,11 @@ namespace KaitoKid.ArchipelagoUtilities.Net.CustomAssets
 
             HashAndWriteDirectory();
 
-            if (File.Exists("Custom Assets.zip")) File.Delete("Custom Assets.zip");
+            if (File.Exists("Custom Assets.zip"))
+            {
+                File.Delete("Custom Assets.zip");
+            }
+
             ZipFile.CreateFromDirectory("Custom Assets", "Custom Assets.zip");
 
             File.WriteAllText("Custom Assets Hash.txt", HashFile("Custom Assets.zip"));

@@ -12,34 +12,34 @@ namespace KaitoKid.ArchipelagoUtilities.Net.CustomAssets
             Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),
                 "ArchipelagoUtilities");
 
-        public static readonly string CustomAssetsFolderPath = Path.Combine(DownloadDirectory, "Custom Assets");
+        public static readonly string CustomAssetsDirectory = Path.Combine(DownloadDirectory, "Custom Assets");
 
-        private const string WebDownloadUrl =
+        private const string WEB_DOWNLOAD_URL =
             "https://raw.githubusercontent.com/agilbert1412/ArchipelagoUtilities/main/KaitoKid.ArchipelagoUtilities.Net/KaitoKid.ArchipelagoUtilities.Net.CustomAssets";
 
-        private static bool Initialized = false;
+        private static bool _initialized = false;
         
         public static void CheckDownload()
         {
             var zipPath = Path.Combine(DownloadDirectory, "Custom Assets.zip");
             var customAssetsHashFile = Path.Combine(DownloadDirectory, "Custom Assets Hash.txt");
 
-            if (!Directory.Exists(CustomAssetsFolderPath))
+            if (!Directory.Exists(CustomAssetsDirectory))
             {
                 Directory.CreateDirectory(DownloadDirectory);
-                Directory.CreateDirectory(CustomAssetsFolderPath);
+                Directory.CreateDirectory(CustomAssetsDirectory);
 
                 using (var client = new WebClient())
                 {
                     client.Credentials = CredentialCache.DefaultNetworkCredentials;
-                    client.DownloadFile($"{WebDownloadUrl}/Custom Assets.zip", zipPath);
+                    client.DownloadFile($"{WEB_DOWNLOAD_URL}/Custom Assets.zip", zipPath);
                 }
 
                 File.WriteAllText(customAssetsHashFile, Hasher.HashFile(zipPath));
-                ZipFile.ExtractToDirectory(zipPath, CustomAssetsFolderPath);
+                ZipFile.ExtractToDirectory(zipPath, CustomAssetsDirectory);
                 File.Delete(zipPath);
 
-                Initialized = true;
+                _initialized = true;
                 return;
             }
 
@@ -47,17 +47,17 @@ namespace KaitoKid.ArchipelagoUtilities.Net.CustomAssets
             {
                 client.Credentials = CredentialCache.DefaultNetworkCredentials;
 
-                var githubCustomAssetFolderHashData = client.DownloadData($"{WebDownloadUrl}/Custom Assets Hash.txt");
+                var githubCustomAssetFolderHashData = client.DownloadData($"{WEB_DOWNLOAD_URL}/Custom Assets Hash.txt");
                 var githubCustomAssetFolderHash = string.Join("", githubCustomAssetFolderHashData.Select(b => (char)b));
 
                 if (githubCustomAssetFolderHash == File.ReadAllText(customAssetsHashFile))
                 {
-                    Initialized = true;
+                    _initialized = true;
                     return;
                 }
 
                 var localCustomAssetHashDictionary = Hasher.HashDirectory(DownloadDirectory);
-                var githubCustomAssetHashesData = client.DownloadData($"{WebDownloadUrl}/Custom Assets/Hash Data.txt");
+                var githubCustomAssetHashesData = client.DownloadData($"{WEB_DOWNLOAD_URL}/Custom Assets/Hash Data.txt");
                 var githubCustomAssetHashes = string.Join("", githubCustomAssetHashesData.Select(b => (char)b));
                 var githubCustomAssetHashDictionary = githubCustomAssetHashes
                                                      .Split('\n')
@@ -78,13 +78,15 @@ namespace KaitoKid.ArchipelagoUtilities.Net.CustomAssets
                     }
 
                     if (onLocal && githubCustomAssetHashDictionary[file] == localCustomAssetHashDictionary[file])
+                    {
                         continue;
+                    }
 
                     try
                     {
                         var fileFullPath = Path.Combine(DownloadDirectory, file);
                         if (onLocal) File.Delete(fileFullPath);
-                        client.DownloadFile($"{WebDownloadUrl}/{file}", fileFullPath);
+                        client.DownloadFile($"{WEB_DOWNLOAD_URL}/{file}", fileFullPath);
                         localCustomAssetHashDictionary[file] = Hasher.HashFile(fileFullPath);
                     }
                     catch
@@ -95,7 +97,7 @@ namespace KaitoKid.ArchipelagoUtilities.Net.CustomAssets
                 }
 
 
-                File.WriteAllText(Path.Combine(CustomAssetsFolderPath, "Hash Data.txt"),
+                File.WriteAllText(Path.Combine(CustomAssetsDirectory, "Hash Data.txt"),
                     localCustomAssetHashDictionary.HashDictionaryToString());
 
                 if (failed)
@@ -110,19 +112,24 @@ namespace KaitoKid.ArchipelagoUtilities.Net.CustomAssets
                 }
             }
 
-            Initialized = true;
+            _initialized = true;
         }
 
-        public static string GetImageDirectory(string game, string item = "")
+        public static string GetItemImagePath(string game, string item = "")
         {
-            if (!Initialized) CheckDownload();
+            if (!_initialized) CheckDownload();
             
-            var gameFolder = Path.Combine(CustomAssetsFolderPath, game);
+            var gameFolder = Path.Combine(CustomAssetsDirectory, game);
             if (!Directory.Exists(gameFolder) || !File.Exists(Path.Combine(gameFolder, $"{game}.png")))
+            {
                 throw new ArgumentException($"Assets for the game [{game}] doesn't exist");
+            }
 
             var imageName = $"{(item == "" ? game : $"{game}_{item}")}.png";
-            if (!File.Exists(Path.Combine(gameFolder, imageName))) imageName = game;
+            if (!File.Exists(Path.Combine(gameFolder, imageName)))
+            {
+                imageName = game;
+            }
 
             return Path.Combine(gameFolder, imageName);
         }
