@@ -23,10 +23,6 @@
 			<PackagePath>\</PackagePath>
 		</None>
 		<None Include="..\.editorconfig" Link=".editorconfig" />
-		<Content Include="Custom Assets\**\*">
-			<Pack>true</Pack>
-			<PackageCopyToOutput>true</PackageCopyToOutput>
-		</Content>
 	</ItemGroup>
 	<ItemGroup Condition="$(TargetFramework.StartsWith('netcore'))">
 
@@ -43,10 +39,8 @@
 		</PackageReference>
 	</ItemGroup>
 
-	<ItemGroup>
-	  <Content Update="Custom Assets\*\*">
-	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-	  </Content>
+<!--    todo: Replace with nuget package-->
+	<ItemGroup> 
+	  <ProjectReference Include="..\KaitoKid.ArchipelagoUtilities.Net.CustomAssets\KaitoKid.ArchipelagoUtilities.Net.CustomAssets.csproj" />
 	</ItemGroup>
-
 </Project>
