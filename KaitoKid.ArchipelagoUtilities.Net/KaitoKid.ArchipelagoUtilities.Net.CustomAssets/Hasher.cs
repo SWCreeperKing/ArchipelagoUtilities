@@ -13,17 +13,7 @@ namespace KaitoKid.ArchipelagoUtilities.Net.CustomAssets
         public static void HashCustomAssets()
         {
             Directory.SetCurrentDirectory(Path.Combine(Directory.GetCurrentDirectory(), "../../../"));
-
             HashAndWriteDirectory();
-
-            if (File.Exists("Custom Assets.zip"))
-            {
-                File.Delete("Custom Assets.zip");
-            }
-
-            ZipFile.CreateFromDirectory("Custom Assets", "Custom Assets.zip");
-
-            File.WriteAllText("Custom Assets Hash.txt", HashFile("Custom Assets.zip"));
         }
 
         public static Dictionary<string, string> HashDirectory(string directory = "")

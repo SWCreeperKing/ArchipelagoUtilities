@@ -1,8 +1,10 @@
 using System;
+using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
-using System.IO.Compression;
 using System.Linq;
 using System.Net;
+using Newtonsoft.Json;
 
 namespace KaitoKid.ArchipelagoUtilities.Net.CustomAssets
 {
@@ -17,121 +19,95 @@ namespace KaitoKid.ArchipelagoUtilities.Net.CustomAssets
         private const string WEB_DOWNLOAD_URL =
             "https://raw.githubusercontent.com/agilbert1412/ArchipelagoUtilities/main/KaitoKid.ArchipelagoUtilities.Net/KaitoKid.ArchipelagoUtilities.Net.CustomAssets";
 
-        private static bool _initialized = false;
-        
-        public static void CheckDownload()
+        private static Dictionary<string, string> _hashDictionary;
+        private static Dictionary<string, Alias[]> _cachedAliases;
+
+        public static bool TryGetItemImagePath(out string imagePath, string game, string item = "")
         {
-            var zipPath = Path.Combine(DownloadDirectory, "Custom Assets.zip");
-            var customAssetsHashFile = Path.Combine(DownloadDirectory, "Custom Assets Hash.txt");
-
-            if (!Directory.Exists(CustomAssetsDirectory))
+            try
             {
-                Directory.CreateDirectory(DownloadDirectory);
-                Directory.CreateDirectory(CustomAssetsDirectory);
-
-                using (var client = new WebClient())
-                {
-                    client.Credentials = CredentialCache.DefaultNetworkCredentials;
-                    client.DownloadFile($"{WEB_DOWNLOAD_URL}/Custom Assets.zip", zipPath);
-                }
-
-                File.WriteAllText(customAssetsHashFile, Hasher.HashFile(zipPath));
-                ZipFile.ExtractToDirectory(zipPath, CustomAssetsDirectory);
-                File.Delete(zipPath);
-
-                _initialized = true;
-                return;
+                imagePath = GetItemImagePath(game, item);
+            }
+            catch
+            {
+                imagePath = "";
+                return false;
             }
 
-            using (var client = new WebClient())
-            {
-                client.Credentials = CredentialCache.DefaultNetworkCredentials;
-
-                var githubCustomAssetFolderHashData = client.DownloadData($"{WEB_DOWNLOAD_URL}/Custom Assets Hash.txt");
-                var githubCustomAssetFolderHash = string.Join("", githubCustomAssetFolderHashData.Select(b => (char)b));
-
-                if (githubCustomAssetFolderHash == File.ReadAllText(customAssetsHashFile))
-                {
-                    _initialized = true;
-                    return;
-                }
-
-                var localCustomAssetHashDictionary = Hasher.HashDirectory(DownloadDirectory);
-                var githubCustomAssetHashesData = client.DownloadData($"{WEB_DOWNLOAD_URL}/Custom Assets/Hash Data.txt");
-                var githubCustomAssetHashes = string.Join("", githubCustomAssetHashesData.Select(b => (char)b));
-                var githubCustomAssetHashDictionary = githubCustomAssetHashes
-                                                     .Split('\n')
-                                                     .Select(s => s.Split(':'))
-                                                     .ToDictionary(arr => arr[0], arr => arr[1]);
-
-                var failed = false;
-                foreach (var file in githubCustomAssetHashDictionary.Keys.Union(localCustomAssetHashDictionary.Keys))
-                {
-                    var onGithub = githubCustomAssetHashDictionary.ContainsKey(file);
-                    var onLocal = localCustomAssetHashDictionary.ContainsKey(file);
-
-                    if (onLocal && !onGithub)
-                    {
-                        File.Delete(Path.Combine(DownloadDirectory, file));
-                        localCustomAssetHashDictionary.Remove(file);
-                        continue;
-                    }
-
-                    if (onLocal && githubCustomAssetHashDictionary[file] == localCustomAssetHashDictionary[file])
-                    {
-                        continue;
-                    }
-
-                    try
-                    {
-                        var fileFullPath = Path.Combine(DownloadDirectory, file);
-                        if (onLocal) File.Delete(fileFullPath);
-                        client.DownloadFile($"{WEB_DOWNLOAD_URL}/{file}", fileFullPath);
-                        localCustomAssetHashDictionary[file] = Hasher.HashFile(fileFullPath);
-                    }
-                    catch
-                    {
-                        failed = true;
-                        break;
-                    }
-                }
-
-
-                File.WriteAllText(Path.Combine(CustomAssetsDirectory, "Hash Data.txt"),
-                    localCustomAssetHashDictionary.HashDictionaryToString());
-
-                if (failed)
-                {
-                    // potentially reached rate limit :(
-                    Console.WriteLine("Webclient failed to complete task, will try again later");
-                }
-                else
-                {
-                    // if there wasn't a problem then that means update succeeded :seeker_pog:
-                    File.WriteAllText(customAssetsHashFile, githubCustomAssetFolderHash);
-                }
-            }
-
-            _initialized = true;
+            return true;
         }
 
         public static string GetItemImagePath(string game, string item = "")
         {
-            if (!_initialized) CheckDownload();
-            
-            var gameFolder = Path.Combine(CustomAssetsDirectory, game);
-            if (!Directory.Exists(gameFolder) || !File.Exists(Path.Combine(gameFolder, $"{game}.png")))
+            if (_hashDictionary is null)
+            {
+                GetFolderHash();
+            }
+
+            Debug.Assert(_hashDictionary != null, nameof(_hashDictionary) + " != null");
+            if (!_hashDictionary.ContainsKey($"Custom Assets/{game}/{game}.png"))
             {
                 throw new ArgumentException($"Assets for the game [{game}] doesn't exist");
             }
 
-            var imageName = $"{(item == "" ? game : $"{game}_{item}")}.png";
-            if (!File.Exists(Path.Combine(gameFolder, imageName)))
+            if (!Directory.Exists(Path.Combine(CustomAssetsDirectory, game)))
             {
-                imageName = game;
+                Directory.CreateDirectory(Path.Combine(CustomAssetsDirectory, game));
+                DownloadFile($"Custom Assets/{game}/aliases.json");
             }
 
-            return Path.Combine(gameFolder, imageName);
+            item = CheckAliases(game, item);
+
+            var imageName =
+                $"{(!_hashDictionary.ContainsKey($"Custom Assets/{game}/{game}_{item}.png") ? game : $"{game}_{item}")}.png";
+            var imageFile = Path.Combine(CustomAssetsDirectory, game, imageName);
+
+            if (!File.Exists(imageFile))
+            {
+                DownloadFile($"Custom Assets/{game}/{imageName}");
+            }
+
+            return imageFile;
+        }
+
+        private static void GetFolderHash()
+        {
+            using (var client = new WebClient())
+            {
+                client.Credentials = CredentialCache.DefaultNetworkCredentials;
+                var githubCustomAssetHashesData =
+                    client.DownloadData($"{WEB_DOWNLOAD_URL}/Custom Assets/Hash Data.txt");
+                var githubCustomAssetHashes = string.Join("", githubCustomAssetHashesData.Select(b => (char)b));
+                _hashDictionary = githubCustomAssetHashes
+                                 .Split('\n')
+                                 .Select(s => s.Split(':'))
+                                 .ToDictionary(arr => arr[0], arr => arr[1]);
+            }
+        }
+
+        private static void DownloadFile(string path)
+        {
+            using (var client = new WebClient())
+            {
+                client.Credentials = CredentialCache.DefaultNetworkCredentials;
+
+                var fileFullPath = Path.Combine(DownloadDirectory, path);
+                client.DownloadFile($"{WEB_DOWNLOAD_URL}/{path}", fileFullPath);
+                _hashDictionary[path] = Hasher.HashFile(fileFullPath);
+            }
+        }
+
+        private static string CheckAliases(string game, string item)
+        {
+            if (!_cachedAliases.ContainsKey(game))
+            {
+                var aliasPath = Path.Combine(DownloadDirectory, game, "aliases.json");
+                _cachedAliases[game] = JsonConvert.DeserializeObject<Alias[]>(File.ReadAllText(aliasPath));
+            }
+
+            return _cachedAliases[game].Any(alias => alias[item])
+                ? _cachedAliases[game].First(alias => alias[item]).AliasName
+                : item;
         }
     }
 }
