@@ -4,7 +4,6 @@ using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Net;
-using Newtonsoft.Json;
 
 namespace KaitoKid.ArchipelagoUtilities.Net.CustomAssets
 {
@@ -20,13 +19,13 @@ namespace KaitoKid.ArchipelagoUtilities.Net.CustomAssets
             "https://raw.githubusercontent.com/agilbert1412/ArchipelagoUtilities/main/KaitoKid.ArchipelagoUtilities.Net/KaitoKid.ArchipelagoUtilities.Net.CustomAssets";
 
         private static Dictionary<string, string> _hashDictionary;
-        private static Dictionary<string, Alias[]> _cachedAliases;
+        private static Dictionary<string, ItemSpriteAlias[]> _cachedAliases;
 
-        public static bool TryGetItemImagePath(out string imagePath, string game, string item = "")
+        public static bool TryGetItemImagePath(out string imagePath, Func<string, ItemSpriteAlias[]> jsonToAliasConversion, string game, string item = "")
         {
             try
             {
-                imagePath = GetItemImagePath(game, item);
+                imagePath = GetItemImagePath(jsonToAliasConversion, game, item);
             }
             catch
             {
@@ -37,7 +36,7 @@ namespace KaitoKid.ArchipelagoUtilities.Net.CustomAssets
             return true;
         }
 
-        public static string GetItemImagePath(string game, string item = "")
+        public static string GetItemImagePath(Func<string, ItemSpriteAlias[]> jsonToAliasConversion, string game, string item = "")
         {
             if (_hashDictionary is null)
             {
@@ -56,7 +55,7 @@ namespace KaitoKid.ArchipelagoUtilities.Net.CustomAssets
                 DownloadFile($"Custom Assets/{game}/aliases.json");
             }
 
-            item = CheckAliases(game, item);
+            item = CheckAliases(game, item, jsonToAliasConversion);
 
             var imageName =
                 $"{(!_hashDictionary.ContainsKey($"Custom Assets/{game}/{game}_{item}.png") ? game : $"{game}_{item}")}.png";
@@ -97,16 +96,16 @@ namespace KaitoKid.ArchipelagoUtilities.Net.CustomAssets
             }
         }
 
-        private static string CheckAliases(string game, string item)
+        private static string CheckAliases(string game, string item, Func<string, ItemSpriteAlias[]> jsonToAliasConversion)
         {
             if (!_cachedAliases.ContainsKey(game))
             {
                 var aliasPath = Path.Combine(DownloadDirectory, game, "aliases.json");
-                _cachedAliases[game] = JsonConvert.DeserializeObject<Alias[]>(File.ReadAllText(aliasPath));
+                _cachedAliases[game] = jsonToAliasConversion(File.ReadAllText(aliasPath));
             }
-
-            return _cachedAliases[game].Any(alias => alias[item])
-                ? _cachedAliases[game].First(alias => alias[item]).AliasName
+            
+            return _cachedAliases[game].Any(alias => alias.ContainsAlias(item))
+                ? _cachedAliases[game].First(alias => alias.ContainsAlias(item)).AliasName
                 : item;
         }
     }

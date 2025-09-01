@@ -1,4 +1,5 @@
 ﻿using FluentAssertions;
+using KaitoKid.ArchipelagoUtilities.Net.CustomAssets;
 using KaitoKid.ArchipelagoUtilities.Net.ItemSprites;
 using Newtonsoft.Json.Linq;
 using Newtonsoft.Json;

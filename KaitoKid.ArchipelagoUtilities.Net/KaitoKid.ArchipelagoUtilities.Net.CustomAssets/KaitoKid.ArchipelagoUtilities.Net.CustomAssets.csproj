@@ -26,8 +26,4 @@
         <None Include="..\.editorconfig" Link=".editorconfig" />
         <Content Include="Custom Assets\**\*" CopyToOutputDirectory="PreserveNewest"/>
     </ItemGroup>
-
-    <ItemGroup>
-      <PackageReference Include="Newtonsoft.Json" Version="13.0.4-beta1" />
-    </ItemGroup>
 </Project>
