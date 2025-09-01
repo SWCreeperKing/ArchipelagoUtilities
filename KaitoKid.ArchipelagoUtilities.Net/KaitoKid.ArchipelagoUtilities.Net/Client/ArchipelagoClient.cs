@@ -957,7 +957,8 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Client
 
         private ConnectionResult IsMultiworldVersionSupported()
         {
-            var majorVersion = ModVersion.Split('.').First();
+            var modVersionComponents = ModVersion.Split('.');
+            var majorVersion = modVersionComponents[0];
             var multiworldVersionParts = _slotData.MultiworldVersion.Split('.');
             if (multiworldVersionParts.Length < 3)
             {
@@ -967,17 +968,33 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Client
             var multiworldMajor = multiworldVersionParts[0];
             var multiworldMinor = multiworldVersionParts[1];
             var multiworldFix = multiworldVersionParts[2];
-            if (majorVersion == multiworldMajor)
+            if (majorVersion != multiworldMajor)
+            {
+                if (int.Parse(majorVersion) > int.Parse(multiworldMajor))
+                {
+                    return new TooUpdatedClientConnectionResult(ModName, ModVersion, _slotData.MultiworldVersion);
+                }
+
+                return new OutdatedClientConnectionResult(ModName, ModVersion, _slotData.MultiworldVersion);
+            }
+
+            var anyMinor = multiworldMinor.Equals("x", StringComparison.InvariantCultureIgnoreCase) ||
+                           multiworldMinor == "0";
+
+            if (anyMinor)
             {
                 return new SuccessConnectionResult();
             }
 
-            if (int.Parse(majorVersion) > int.Parse(multiworldMajor))
+            var minimumMinor = int.Parse(multiworldMinor);
+            var minorVersion = int.Parse(modVersionComponents[1]);
+
+            if (minorVersion < minimumMinor)
             {
-                return new TooUpdatedClientConnectionResult(ModName, ModVersion, _slotData.MultiworldVersion);
+                return new OutdatedClientConnectionResult(ModName, ModVersion, _slotData.MultiworldVersion);
             }
 
-            return new OutdatedClientConnectionResult(ModName, ModVersion, _slotData.MultiworldVersion);
+            return new SuccessConnectionResult();
         }
 
         public IEnumerable<PlayerInfo> GetAllPlayers()
