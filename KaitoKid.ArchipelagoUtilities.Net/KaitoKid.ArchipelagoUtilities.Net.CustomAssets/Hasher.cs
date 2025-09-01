@@ -1,6 +1,5 @@
 using System.Collections.Generic;
 using System.IO;
-using System.IO.Compression;
 using System.Linq;
 using System.Security.Cryptography;
 
@@ -24,7 +23,13 @@ namespace KaitoKid.ArchipelagoUtilities.Net.CustomAssets
             {
                 foreach (var filePath in Directory.GetFiles(folder))
                 {
-                    hashDictionary[filePath.Replace(directory, "")] = HashFile(filePath);
+                    var realFilePath = filePath;
+                    if (directory != "" && realFilePath.Contains(directory))
+                    {
+                        realFilePath = realFilePath.Replace(directory, "");
+                    }
+                    
+                    hashDictionary[realFilePath] = HashFile(filePath);
                 }
             }
 
@@ -33,7 +38,7 @@ namespace KaitoKid.ArchipelagoUtilities.Net.CustomAssets
 
         public static void HashAndWriteDirectory(string directory = "")
         {
-            File.WriteAllText(Path.Combine(directory, "Hash Data.txt"),
+            File.WriteAllText(Path.Combine(directory, "Custom Assets", "Hash Data.txt"),
                 HashDirectory(directory).HashDictionaryToString());
         }
 
