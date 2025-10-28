@@ -1,7 +1,4 @@
-﻿using System.Collections.Generic;
-using Newtonsoft.Json.Linq;
-
-namespace KaitoKid.ArchipelagoUtilities.Net.Interfaces
+﻿namespace KaitoKid.Utilities.Interfaces
 {
     public interface IJsonLoader
     {
