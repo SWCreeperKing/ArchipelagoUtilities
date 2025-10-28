@@ -1,4 +1,6 @@
-﻿namespace KaitoKid.Utilities.Interfaces
+﻿using System;
+
+namespace KaitoKid.Utilities.Interfaces
 {
     public interface ILogger
     {
