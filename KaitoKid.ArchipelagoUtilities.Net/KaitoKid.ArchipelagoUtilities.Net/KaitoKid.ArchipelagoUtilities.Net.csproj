@@ -4,9 +4,9 @@
 		<TargetFrameworks>net452;netstandard2.0;net5.0;net6.0</TargetFrameworks>
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 		<Authors>KaitoKid</Authors>
-		<AssemblyVersion>2.1.5</AssemblyVersion>
-		<FileVersion>2.1.5</FileVersion>
-		<Version>2.1.5</Version>
+		<AssemblyVersion>2.2.0</AssemblyVersion>
+		<FileVersion>2.2.0</FileVersion>
+		<Version>2.2.0</Version>
 		<Description>.NET library for Archipelago Utilities</Description>
 		<PackageProjectUrl>https://github.com/agilbert1412/ArchipelagoUtilities/blob/main/README.md</PackageProjectUrl>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
@@ -43,6 +43,7 @@
 			<PrivateAssets>all</PrivateAssets>
 			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
 		</PackageReference>
+		<PackageReference Include="KaitoKid.Utilities.Interfaces" Version="1.0.1" />
 	</ItemGroup>
 
 	<ItemGroup>

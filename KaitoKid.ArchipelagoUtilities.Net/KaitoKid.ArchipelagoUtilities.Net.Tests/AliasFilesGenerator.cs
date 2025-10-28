@@ -1,6 +1,4 @@
-﻿using FluentAssertions;
-using KaitoKid.ArchipelagoUtilities.Net.ItemSprites;
-using Newtonsoft.Json.Linq;
+﻿using KaitoKid.ArchipelagoUtilities.Net.ItemSprites;
 using Newtonsoft.Json;
 
 namespace KaitoKid.ArchipelagoUtilities.Net.Tests

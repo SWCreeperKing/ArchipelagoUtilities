@@ -1,6 +1,4 @@
 ﻿
-using KaitoKid.ArchipelagoUtilities.Net.Interfaces;
-
 namespace KaitoKid.ArchipelagoUtilities.Net.Tests
 {
     internal class TestLogger : ILogger
