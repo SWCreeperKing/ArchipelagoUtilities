@@ -1,5 +1,5 @@
 ﻿
-using KaitoKid.ArchipelagoUtilities.Net.Interfaces;
+using KaitoKid.Utilities.Interfaces;
 
 namespace KaitoKid.ArchipelagoUtilities.Net.Tests
 {

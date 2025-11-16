@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace KaitoKid.ArchipelagoUtilities.Net.Interfaces
+namespace KaitoKid.Utilities.Interfaces
 {
     public interface ILogger
     {

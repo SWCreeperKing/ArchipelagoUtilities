@@ -1,8 +1,8 @@
 ﻿using Archipelago.MultiClient.Net.Enums;
 using FluentAssertions;
 using KaitoKid.ArchipelagoUtilities.Net.Client;
-using KaitoKid.ArchipelagoUtilities.Net.Interfaces;
 using KaitoKid.ArchipelagoUtilities.Net.ItemSprites;
+using KaitoKid.Utilities.Interfaces;
 
 namespace KaitoKid.ArchipelagoUtilities.Net.Tests
 {

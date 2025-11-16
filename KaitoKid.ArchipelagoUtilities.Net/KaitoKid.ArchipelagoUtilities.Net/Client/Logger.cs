@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Linq;
-using KaitoKid.ArchipelagoUtilities.Net.Interfaces;
+using KaitoKid.Utilities.Interfaces;
 
 namespace KaitoKid.ArchipelagoUtilities.Net.Client
 {
