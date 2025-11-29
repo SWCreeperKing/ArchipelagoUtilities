@@ -35,6 +35,11 @@ namespace KaitoKid.ArchipelagoUtilities.AssetDownloader
             {
                 var zipName = $"{game}.zip";
                 var zipFile = Path.Combine(Paths.CustomAssetsDirectory, zipName);
+                var path = Path.Combine(Paths.CustomAssetsDirectory, game);
+                if (Directory.Exists(path))
+                {
+                    Directory.Delete(path, true);
+                }
                 ZipFile.ExtractToDirectory(zipFile, Paths.CustomAssetsDirectory);
                 return true;
             }

@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Threading.Tasks;
 using KaitoKid.ArchipelagoUtilities.AssetDownloader.Extensions;
@@ -8,15 +9,19 @@ namespace KaitoKid.ArchipelagoUtilities.AssetDownloader
 {
     public class AssetService
     {
+        private static readonly TimeSpan NEVER_REDOWNLOAD = TimeSpan.MaxValue;
+
         private Downloader _downloader;
         private HashSet<string> _downloadedGameZips;
         private HashSet<string> _downloadedSpecificAssets;
+        private TimeSpan _timeUntilRedownloadAssets;
 
-        public AssetService()
+        public AssetService(TimeSpan? timeUntilRedownloadAssets)
         {
             _downloader = new Downloader();
             _downloadedGameZips = new HashSet<string>();
             _downloadedSpecificAssets = new HashSet<string>();
+            _timeUntilRedownloadAssets = timeUntilRedownloadAssets ?? NEVER_REDOWNLOAD;
         }
 
         public void TryDownloadGameAssets(string gameName, ArchipelagoItemSprites itemSprites, bool async)
@@ -46,15 +51,17 @@ namespace KaitoKid.ArchipelagoUtilities.AssetDownloader
         private void TryDownloadGameAssetsSync(string gameName, ArchipelagoItemSprites itemSprites)
         {
             var zipPath = Path.Combine(Paths.CustomAssetsDirectory, $"{gameName}.zip");
-            var hasZip = File.Exists(zipPath);
+            var hasZip = File.Exists(zipPath) && (DateTime.Now - new FileInfo(zipPath).LastWriteTime) < _timeUntilRedownloadAssets;
+            var downloadedNewZip = false;
             if (!hasZip)
             {
                 hasZip = _downloader.DownloadGameZip(gameName);
+                downloadedNewZip = true;
             }
 
             var gamePath = Path.Combine(Paths.CustomAssetsDirectory, $"{gameName}");
             var hasSprites = Directory.Exists(gamePath);
-            if (hasZip)
+            if (downloadedNewZip || (hasZip && !hasSprites))
             {
                 hasSprites = _downloader.UnzipGameZip(gameName);
             }

@@ -19,13 +19,13 @@ namespace KaitoKid.ArchipelagoUtilities.AssetDownloader.ItemSprites
         private Dictionary<string, List<ItemSprite>> _spritesByItemName;
         private Dictionary<string, Dictionary<string, ItemSprite>> _spritesByGameByItemName;
 
-        public ArchipelagoItemSprites(ILogger logger)
+        public ArchipelagoItemSprites(ILogger logger, TimeSpan? timeUntilRedownloadAssets = null)
         {
             _logger = logger;
             _nameCleaner = new NameCleaner();
-            _assetService = new AssetService();
+            _assetService = new AssetService(timeUntilRedownloadAssets);
             _spritesFolder = Paths.CustomAssetsDirectory;
-
+            
             LoadCustomSprites();
         }
 
@@ -108,7 +108,7 @@ namespace KaitoKid.ArchipelagoUtilities.AssetDownloader.ItemSprites
                         _spritesByGameByItemName[cleanGame].ContainsKey(cleanAliasName))
                     {
                         var aliasSprite = _spritesByGameByItemName[cleanGame][cleanAliasName];
-                        RegisterSprite(gameName, aliasItemName, aliasSprite);
+                        RegisterSprite(gameName, aliasItemName, aliasSprite, false);
                     }
                 }
             }
@@ -117,11 +117,11 @@ namespace KaitoKid.ArchipelagoUtilities.AssetDownloader.ItemSprites
         internal void RegisterSprite(string file, out string game)
         {
             var sprite = new ItemSprite(_logger, file);
-            RegisterSprite(sprite.Game, sprite.Item, sprite);
+            RegisterSprite(sprite.Game, sprite.Item, sprite, true);
             game = sprite.Game;
         }
 
-        private void RegisterSprite(string game, string item, ItemSprite sprite)
+        private void RegisterSprite(string game, string item, ItemSprite sprite, bool overrideIfExists)
         {
             var cleanGame = _nameCleaner.CleanName(game);
             var cleanItem = _nameCleaner.CleanName(item);
@@ -143,6 +143,10 @@ namespace KaitoKid.ArchipelagoUtilities.AssetDownloader.ItemSprites
             if (!_spritesByGameByItemName[cleanGame].ContainsKey(cleanItem))
             {
                 _spritesByGameByItemName[cleanGame].Add(cleanItem, sprite);
+            }
+            else if (overrideIfExists)
+            {
+                _spritesByGameByItemName[cleanGame][cleanItem] = sprite;
             }
         }
 
@@ -173,7 +177,7 @@ namespace KaitoKid.ArchipelagoUtilities.AssetDownloader.ItemSprites
                 }
             }
 
-            _assetService.TryDownloadAsset(scoutedLocation.GameName, scoutedLocation.ItemName, this);
+            // _assetService.TryDownloadAsset(scoutedLocation.GameName, scoutedLocation.ItemName, this);
 
             if (fallbackOnDifferentGameAsset && _spritesByGameByItemName.TryGetValue(myGame, out var itemsInMyGame))
             {
