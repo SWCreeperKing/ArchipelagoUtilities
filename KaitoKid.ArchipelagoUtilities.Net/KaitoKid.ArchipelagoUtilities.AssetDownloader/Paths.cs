@@ -14,7 +14,7 @@ namespace KaitoKid.ArchipelagoUtilities.AssetDownloader
         public static readonly string CustomAssetsDirectory = Path.Combine(DownloadDirectory, "Custom Assets");
 
         public const string REPOSITORY_URL = "https://raw.githubusercontent.com/agilbert1412/ArchipelagoUtilities/";
-        public const string GIT_BRANCH = "AssetDownloader"; // "main";
+        public const string GIT_BRANCH = "main"; // "AssetDownloader";
 
         public const string PROJECT_PATH = "/KaitoKid.ArchipelagoUtilities.Net/KaitoKid.ArchipelagoUtilities.AssetDownloader/";
 
