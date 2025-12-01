@@ -20,9 +20,11 @@
 		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
 	</PropertyGroup>
 
-	<Target Name="PostBuild" AfterTargets="Build">
+	<Target Name="PostBuild"
+	        AfterTargets="Build"
+	        Condition="'$(Configuration)' == 'Release' And '$(TargetFramework)' == 'net6.0'">
 		<Message Text="Zipping all the assets" Importance="High" />
-		<Exec Command="if $(Configuration) == Release (powershell -ExecutionPolicy Bypass -File &quot;$(ProjectDir)ZipAssets.ps1&quot; -projectDir &quot;$(ProjectDir)&quot;)" />
+		<Exec Command='powershell -ExecutionPolicy Bypass -File "$(ProjectDir)ZipAssets.ps1" -projectDir "$(ProjectDir)"' />
 	</Target>
 
 	<ItemGroup>

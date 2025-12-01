@@ -2,14 +2,21 @@ param(
     [string]$projectDir
 )
 
+Write-Host "projectDir = |$projectDir|"
+
 # Normalize trailing slash
 $projectDir = $projectDir.TrimEnd('\')
+$projectDir = $projectDir.TrimEnd('"')
 
 # Path to the Assets folder, relative or absolute
 $assetsPath = Join-Path $projectDir "Assets"
 
 # Path where the ZIP files should be written
 $outputPath = Join-Path $projectDir "ZippedAssets"
+
+Write-Host "projectDir = |$projectDir|"
+Write-Host "assetsPath = |$assetsPath|"
+Write-Host "outputPath = |$outputPath|"
 
 # Ensure the output folder exists
 if (!(Test-Path $outputPath)) {
