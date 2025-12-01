@@ -1,13 +1,6 @@
 {
   "Aliases": [
     {
-      "AliasName": "Doors",
-      "ItemNames": [
-        "PlaceholderItem1",
-        "PlaceholderItem2"
-      ]
-    },
-    {
       "AliasName": "Lasers",
       "ItemNames": [
         "Bunker Laser",
@@ -21,20 +14,6 @@
         "Symmetry Laser",
         "Town Laser",
         "Treehouse Laser"
-      ]
-    },
-    {
-      "AliasName": "Obelisk Keys",
-      "ItemNames": [
-        "PlaceholderItem1",
-        "PlaceholderItem2"
-      ]
-    },
-    {
-      "AliasName": "Panel Keys",
-      "ItemNames": [
-        "PlaceholderItem1",
-        "PlaceholderItem2"
       ]
     },
     {

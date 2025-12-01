@@ -109,13 +109,6 @@
         "TM49 Tri Attack",
         "TM50 Substitute"
       ]
-    },
-    {
-      "AliasName": "PlaceholderAliasB",
-      "ItemNames": [
-        "PlaceholderItem3",
-        "PlaceholderItem4"
-      ]
     }
   ]
 }
