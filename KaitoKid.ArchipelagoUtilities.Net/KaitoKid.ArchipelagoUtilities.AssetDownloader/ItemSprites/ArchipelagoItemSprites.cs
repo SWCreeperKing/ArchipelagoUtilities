@@ -1,9 +1,9 @@
 ﻿using System;
 using KaitoKid.Utilities.Interfaces;
-using Newtonsoft.Json;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Text.Json;
 
 namespace KaitoKid.ArchipelagoUtilities.AssetDownloader.ItemSprites
 {
@@ -69,7 +69,7 @@ namespace KaitoKid.ArchipelagoUtilities.AssetDownloader.ItemSprites
                 if (File.Exists(aliasesFile))
                 {
                     var jsonAliases = File.ReadAllText(aliasesFile);
-                    var aliases = JsonConvert.DeserializeObject<ItemSpriteAliases>(jsonAliases);
+                    var aliases = JsonSerializer.Deserialize<ItemSpriteAliases>(jsonAliases);
                     return aliases;
                 }
             }
