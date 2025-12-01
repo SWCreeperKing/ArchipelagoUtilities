@@ -69,7 +69,8 @@ namespace KaitoKid.ArchipelagoUtilities.AssetDownloader.ItemSprites
                 if (File.Exists(aliasesFile))
                 {
                     var jsonAliases = File.ReadAllText(aliasesFile);
-                    var aliases = JsonSerializer.Deserialize<ItemSpriteAliases>(jsonAliases);
+                    var options = new JsonSerializerOptions { AllowTrailingCommas = true };
+                    var aliases = JsonSerializer.Deserialize<ItemSpriteAliases>(jsonAliases, options);
                     return aliases;
                 }
             }

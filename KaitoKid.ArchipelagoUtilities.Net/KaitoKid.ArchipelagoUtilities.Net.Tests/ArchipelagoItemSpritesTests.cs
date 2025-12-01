@@ -23,14 +23,8 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Tests
         [TestCase("Hollow Knight", "Combat Level", true, false, null)]
         [TestCase("Hollow Knight", "ABDJF", true, true, "")]
         [TestCase("ANOGF", "ABDJF", false, false, null)]
-        [TestCase("A Hat in Time", "25 Pons", true, true, "Pons")]
-        [TestCase("A Hat in Time", "50 Pons", true, true, "Pons")]
-        [TestCase("A Hat in Time", "75 Pons", true, true, "")]
-        [TestCase("A Hat in Time", "100 Pons", true, true, "Pons")]
-        [TestCase("A Hat in Time", "Relic (Necklace Bust)", true, true, "Relic (Necklace Bust)")]
-        [TestCase("A Hat in Time", "Relic (Necklace)", true, true, "Relic Necklace")]
         [TestCase("A Hat in Time", "Relic (Red Crayon)", true, true, "Relic (Red Crayon)")]
-        public void Constructor_LoadsSpritesProperly(string gameName, string itemName, bool expectedSuccess, bool expectedCorrectGame, string expectedItem)
+        public void TestLoadsSpritesProperly(string gameName, string itemName, bool expectedSuccess, bool expectedCorrectGame, string expectedItem)
         {
             // Arrange
             if (expectedItem == null)
@@ -60,6 +54,48 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Tests
                     sprite.FilePath.Should().EndWith($@"Custom Assets\{gameName}\{expectedFilePath}");
                 }
             }
+        }
+
+        [TestCase("A Hat in Time", "25 Pons", "Pons")]
+        [TestCase("A Hat in Time", "50 Pons", "Pons")]
+        [TestCase("A Hat in Time", "75 Pons", "")]
+        [TestCase("A Hat in Time", "100 Pons", "Pons")]
+        [TestCase("A Hat in Time", "Relic (Necklace Bust)", "Relic (Necklace Bust)")]
+        [TestCase("A Hat in Time", "Relic (Necklace)", "Relic Necklace")]
+        [TestCase("The Witness", "Desert Laser", "Lasers")]
+        [TestCase("The Witness", "Colored Squares", "Symbols")]
+        [TestCase("TUNIC", "Cyan Peril Ring", "Cards")]
+        [TestCase("TUNIC", "Ladders to Frog's Domain", "Ladders")]
+        [TestCase("Super Mario 64", "Cannon Unlock RR", "Cannon Unlock BoB")]
+        [TestCase("Super Mario 64", "Second Floor Key", "Progressive Key")]
+        [TestCase("Pokemon Red and Blue", "TM11", "TMs")]
+        [TestCase("Pokemon Red and Blue", "TM47 Explosion", "TMs")]
+        [TestCase("Lingo", "Color Hunt - Purple Barrier", "Color Hunt")]
+        [TestCase("Lingo", "Orange Tower - Second Floor", "Orange Tower")]
+        [TestCase("Lunacid", "Destroying Angel Mushroom", "Material")]
+        [TestCase("Lunacid", "Fire Worm", "Fire Spell")]
+        [TestCase("Paper Mario The Thousand Year Door", "Black Key (Plane Curse)", "Black Key")]
+        [TestCase("Mario & Luigi Superstar Saga", "1-UP Super", "1-UP Mushroom")]
+        public void TestAliasesLoadsSpritesProperly(string gameName, string itemName, string expectedItem)
+        {
+            // Arrange
+            _itemSprites = new ArchipelagoItemSprites(_logger);
+            var scoutedLocation = new ScoutedLocation("", itemName, "", gameName, 1, 2, 3, ItemFlags.Advancement);
+            _itemSprites.PrepareGameAssets(gameName);
+
+            // Act
+            var success = _itemSprites.TryGetCustomAsset(scoutedLocation, "Stardew Valley", true, true, out var sprite);
+
+            // Assert
+            success.Should().BeTrue();
+            sprite.Item.Should().Be(expectedItem);
+            sprite.Game.Should().Be(gameName);
+            var expectedFilePath = $"{gameName}_{expectedItem}.png";
+            if (expectedItem == "")
+            {
+                expectedFilePath = $"{gameName}.png";
+            }
+            sprite.FilePath.Should().EndWith($@"Custom Assets\{gameName}\{expectedFilePath}");
         }
 
         [TestCase("Balatro", "j_delayed_grat")]
