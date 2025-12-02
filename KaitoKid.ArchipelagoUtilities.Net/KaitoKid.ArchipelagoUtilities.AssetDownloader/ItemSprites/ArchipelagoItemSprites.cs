@@ -47,6 +47,11 @@ namespace KaitoKid.ArchipelagoUtilities.AssetDownloader.ItemSprites
                 return;
             }
 
+            if (!Directory.Exists(_spritesFolder))
+            {
+                Directory.CreateDirectory(_spritesFolder);
+            }
+
             var gameSubfolders = Directory.EnumerateDirectories(_spritesFolder, "*", SearchOption.TopDirectoryOnly).ToArray();
             foreach (var gameSubfolder in gameSubfolders)
             {

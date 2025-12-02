@@ -5,9 +5,9 @@
 		<Nullable>disable</Nullable>
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 		<Authors>KaitoKid</Authors>
-		<AssemblyVersion>3.1.1</AssemblyVersion>
-		<FileVersion>3.1.1</FileVersion>
-		<Version>3.1.1</Version>
+		<AssemblyVersion>3.1.2</AssemblyVersion>
+		<FileVersion>3.1.2</FileVersion>
+		<Version>3.1.2</Version>
 		<Description>.NET library for Archipelago Item Sprites</Description>
 		<PackageProjectUrl>https://github.com/agilbert1412/ArchipelagoUtilities/blob/main/README.md</PackageProjectUrl>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
