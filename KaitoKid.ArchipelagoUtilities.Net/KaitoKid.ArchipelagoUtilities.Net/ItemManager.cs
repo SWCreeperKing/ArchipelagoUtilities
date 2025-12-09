@@ -27,13 +27,16 @@ namespace KaitoKid.ArchipelagoUtilities.Net
 
         protected virtual void ReceiveNewItem(ReceivedItem receivedItem, bool immediatelyIfPossible)
         {
-            if (_itemsAlreadyProcessed.Contains(receivedItem))
+            lock (_itemsAlreadyProcessed)
             {
-                return;
-            }
+                if (_itemsAlreadyProcessed.Contains(receivedItem))
+                {
+                    return;
+                }
 
-            ProcessItem(receivedItem, immediatelyIfPossible);
-            _itemsAlreadyProcessed.Add(receivedItem);
+                ProcessItem(receivedItem, immediatelyIfPossible);
+                _itemsAlreadyProcessed.Add(receivedItem);
+            }
         }
 
         protected abstract void ProcessItem(ReceivedItem receivedItem, bool immediatelyIfPossible);

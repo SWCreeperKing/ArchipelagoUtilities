@@ -8,9 +8,9 @@ namespace KaitoKid.ArchipelagoUtilities.Net
 {
     public class LocationChecker
     {
-        private static ILogger _logger;
-        private ArchipelagoClient _archipelago;
-        private Dictionary<string, long> _checkedLocations;
+        protected static ILogger _logger;
+        protected ArchipelagoClient _archipelago;
+        protected Dictionary<string, long> _checkedLocations;
 
         public LocationChecker(ILogger logger, ArchipelagoClient archipelago, List<string> locationsAlreadyChecked)
         {
