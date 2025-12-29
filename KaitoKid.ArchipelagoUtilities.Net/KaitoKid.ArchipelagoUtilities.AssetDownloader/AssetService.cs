@@ -26,7 +26,6 @@ namespace KaitoKid.ArchipelagoUtilities.AssetDownloader
 
         public void TryDownloadGameAssets(string gameName, ArchipelagoItemSprites itemSprites, bool async)
         {
-            // ArchipelagoItemSprites._logger.LogDebug($"try downloading: [{gameName}]");
             if (!_downloadedGameZips.Add(gameName))
             {
                 return;

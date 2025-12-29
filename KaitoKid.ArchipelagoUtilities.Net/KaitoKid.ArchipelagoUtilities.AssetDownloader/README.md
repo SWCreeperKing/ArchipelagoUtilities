@@ -4,7 +4,7 @@ This is a simple readme made to give an idea on how to use the asset downloader
 ### Step 1. Extend ILogger
 You will need to create a logger that extends from `KaitoKid.Utilities.Interfaces.ILogger`
 
-here is a `MelonLoader` one used
+here is a template for `MelonLoader` 
 ```csharp
 public class Logger : ILogger
 {
@@ -63,7 +63,7 @@ ArchipelagoItemSprites(ILogger Logger, Func<string, ItemSpriteAliases> stringToA
 > This ensures that the library doesn't import a JSON conversion dependency.
 
 ---
-### Step 5. Getting Sprite Paths
+### Step 4. Getting Sprite Paths
 Finally, time to get a sprite path. call `ArchipelagoItemSprites`'s  `TryGetCustomAsset` function as follows:
 
 ```csharp
