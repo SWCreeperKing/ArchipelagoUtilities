@@ -41,37 +41,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Folder Include="NewFolder\" />
-	</ItemGroup>
-
-	<ItemGroup>
 	  <None Include="..\..\README.md" Link="README.md">
 	    <PackagePath>\</PackagePath>
 	    <Pack>True</Pack>
 	  </None>
-	</ItemGroup>
-
-	<ItemGroup Condition="'$(TargetFramework)' == 'net462'">
-		<PackageReference Include="System.Text.Json">
-			<Version>10.0.0</Version>
-		</PackageReference>
-	</ItemGroup>
-
-	<ItemGroup Condition="'$(TargetFramework)' == 'netstandard2.0'">
-	  <PackageReference Include="System.Text.Json">
-	    <Version>10.0.0</Version>
-	  </PackageReference>
-	</ItemGroup>
-
-	<ItemGroup Condition="'$(TargetFramework)' == 'net5.0'">
-	  <PackageReference Include="System.Text.Json">
-	    <Version>10.0.0</Version>
-	  </PackageReference>
-	</ItemGroup>
-
-	<ItemGroup Condition="'$(TargetFramework)' == 'net6.0'">
-	  <PackageReference Include="System.Text.Json">
-	    <Version>10.0.0</Version>
-	  </PackageReference>
 	</ItemGroup>
 </Project>

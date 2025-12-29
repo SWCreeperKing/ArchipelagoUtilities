@@ -4,6 +4,7 @@ using KaitoKid.ArchipelagoUtilities.AssetDownloader;
 using KaitoKid.ArchipelagoUtilities.AssetDownloader.ItemSprites;
 using KaitoKid.ArchipelagoUtilities.Net.Client;
 using KaitoKid.Utilities.Interfaces;
+using Newtonsoft.Json;
 
 namespace KaitoKid.ArchipelagoUtilities.Net.Tests
 {
@@ -31,7 +32,7 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Tests
             {
                 expectedItem = itemName;
             }
-            _itemSprites = new ArchipelagoItemSprites(_logger);
+            _itemSprites = new ArchipelagoItemSprites(_logger, s => JsonConvert.DeserializeObject<ItemSpriteAliases>(s));
             var scoutedLocation = new ScoutedLocation("", itemName, "", gameName, 1, 2, 3, ItemFlags.Advancement);
             _itemSprites.PrepareGameAssets(gameName);
 
@@ -79,7 +80,7 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Tests
         public void TestAliasesLoadsSpritesProperly(string gameName, string itemName, string expectedItem)
         {
             // Arrange
-            _itemSprites = new ArchipelagoItemSprites(_logger);
+            _itemSprites = new ArchipelagoItemSprites(_logger, s => JsonConvert.DeserializeObject<ItemSpriteAliases>(s));
             var scoutedLocation = new ScoutedLocation("", itemName, "", gameName, 1, 2, 3, ItemFlags.Advancement);
             _itemSprites.PrepareGameAssets(gameName);
 
@@ -102,7 +103,7 @@ namespace KaitoKid.ArchipelagoUtilities.Net.Tests
         public void TestMissingEntireGameDownloadsProperly(string gameName, string itemName)
         {
             // Arrange
-            _itemSprites = new ArchipelagoItemSprites(_logger);
+            _itemSprites = new ArchipelagoItemSprites(_logger, s => JsonConvert.DeserializeObject<ItemSpriteAliases>(s));
             var scoutedLocation = new ScoutedLocation("", itemName, "", gameName, 1, 2, 3, ItemFlags.Advancement);
             var zipPath = Path.Combine(Paths.CustomAssetsDirectory, $"{gameName}.zip");
             var folderPath = Path.Combine(Paths.CustomAssetsDirectory, gameName);

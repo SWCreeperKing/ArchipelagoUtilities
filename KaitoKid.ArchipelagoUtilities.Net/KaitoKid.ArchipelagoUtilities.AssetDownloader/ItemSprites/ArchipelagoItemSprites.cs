@@ -3,7 +3,6 @@ using KaitoKid.Utilities.Interfaces;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Text.Json;
 
 namespace KaitoKid.ArchipelagoUtilities.AssetDownloader.ItemSprites
 {
@@ -18,13 +17,15 @@ namespace KaitoKid.ArchipelagoUtilities.AssetDownloader.ItemSprites
         private Dictionary<string, List<ItemSprite>> _spritesByGame;
         private Dictionary<string, List<ItemSprite>> _spritesByItemName;
         private Dictionary<string, Dictionary<string, ItemSprite>> _spritesByGameByItemName;
+        private Func<string, ItemSpriteAliases> _aliasConversion;
 
-        public ArchipelagoItemSprites(ILogger logger, TimeSpan? timeUntilRedownloadAssets = null)
+        public ArchipelagoItemSprites(ILogger logger,  Func<string, ItemSpriteAliases> stringToAliasConversion, TimeSpan? timeUntilRedownloadAssets = null)
         {
             _logger = logger;
             _nameCleaner = new NameCleaner();
             _assetService = new AssetService(timeUntilRedownloadAssets);
             _spritesFolder = Paths.CustomAssetsDirectory;
+            _aliasConversion = stringToAliasConversion;
             
             LoadCustomSprites();
         }
@@ -73,15 +74,13 @@ namespace KaitoKid.ArchipelagoUtilities.AssetDownloader.ItemSprites
                 var aliasesFile = Path.Combine(gameSubfolder, ALIASES_FILE_NAME);
                 if (File.Exists(aliasesFile))
                 {
-                    var jsonAliases = File.ReadAllText(aliasesFile);
-                    var options = new JsonSerializerOptions { AllowTrailingCommas = true };
-                    var aliases = JsonSerializer.Deserialize<ItemSpriteAliases>(jsonAliases, options);
-                    return aliases;
+                    return _aliasConversion(File.ReadAllText(aliasesFile));
                 }
             }
             catch (Exception e)
             {
                 _logger.LogError($"Error getting the aliases in {gameSubfolder}. {e.Message}");
+                _logger.LogErrorException(e);
             }
 
             return new ItemSpriteAliases();
