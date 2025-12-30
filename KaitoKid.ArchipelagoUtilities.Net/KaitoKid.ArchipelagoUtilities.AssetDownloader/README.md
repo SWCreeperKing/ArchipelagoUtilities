@@ -55,18 +55,23 @@ public class AssetItem(string game, string item, ItemFlags flags) : IAssetLocati
 ### Step 3. Create the Downloader
 Next you need to create an instance of `ArchipelagoItemSprites` 
 ```csharp
+/// <param name="stringToAliasConversion">`stringToAliasConversion` is for converting a JSON formatted string into an ItemSpriteAliases. This ensures that the library doesn't import a JSON conversion dependency.</param>
 ArchipelagoItemSprites(ILogger Logger, Func<string, ItemSpriteAliases> stringToAliasConversion);
 ```
 > I would recommend making this a static singleton somewhere
-
-> `stringToAliasConversion` is for converting a JSON formatted string into an ItemSpriteAliases.
-> This ensures that the library doesn't import a JSON conversion dependency.
 
 ---
 ### Step 4. Getting Sprite Paths
 Finally, time to get a sprite path. call `ArchipelagoItemSprites`'s  `TryGetCustomAsset` function as follows:
 
 ```csharp
+/// <param name="myGameName">The name of the game you are modding.</param>
+/// <param name="fallbackOnDifferentGameAsset">if this is true then:
+///- it will try to get a sprite from `myGameName` that matches the item name if the game the location is from doesn't have an asset
+///- if that fails, it will try to get a random sprite from any game that matches the item name
+/// </param>
+/// <param name="fallbackOnGenericGameAsset">it will get the default sprite of the game the location is from, if the game doesn't have an asset that matches</param>
+/// <returns>bool - true if the function succeeded, false if failed</returns>
 TryGetCustomAsset(
     IAssetLocation scoutedLocation,
     string myGameName,
@@ -75,14 +80,6 @@ TryGetCustomAsset(
     out ItemSprite sprite 
 )
 ```
-
-- `myGameName` - the name of the game you are modding.
-- `fallbackOnDifferentGameAsset` - if this is true then:
-  - it will try to get a sprite from `myGameName` that matches the item name if the game the location is from doesn't have an asset
-  - if that fails, it will try to get a random sprite from any game that matches the item name
-- `fallbackOnGenericGameAsset` - it will get the default sprite of the game the location is from, if the game doesn't have an asset that matches
-- `sprite` - this is what contains the file path
-- Returns `bool` - true if the function succeeded, false if failed
 
 > `fallbackOnDifferentGameAsset` will be tested before `fallbackOnGenericGameAsset`
 
